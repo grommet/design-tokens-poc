@@ -1,0 +1,19 @@
+{
+  "name": "grommet-exp-tokens",
+  "version": "0.1.0",
+  "description": "a token library for grommet",
+  "main": "index.js",
+  "authors": ["Eric Soderberg", "Taylor Seamans"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grommet/grommet-exp-tokens.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grommet/grommet-exp-tokens/issues"
+  },
+  "homepage": "https://github.com/grommet/grommet-exp-tokens#readme"
+}
