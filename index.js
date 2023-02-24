@@ -1,3 +1,3 @@
-import tokens from "./tokens.json";
+import tokens from "./resolved-tokens.json";
 
 export { tokens };
