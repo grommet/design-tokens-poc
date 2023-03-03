@@ -88,6 +88,7 @@
   "font.family": "Metric",
   "font.fallback": "Arial",
   "font.url.light": "https://d3hq6blov2iije.cloudfront.net/fonts/HPEXS.Metric.Fonts/MetricHPEXSThin.Regular.woff2",
+  "font.url.regular": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Regular.woff2",
   "font.weight.light": 300,
   "font.weight.regular": 400,
   "font.weight.medium": 500,
