@@ -64,8 +64,8 @@ declare module "grommet-exp-tokens" {
     "breakpoints.tablet": string;
     "breakpoints.desktop": string;
 
-    "text.height": number;
-    "heading.height": number;
+    "text.height": string | number;
+    "heading.height": string | number;
     "text.size.mobile": string;
     "text.size.tablet": string;
     "text.size.desktop": string;
