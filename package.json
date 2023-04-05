@@ -1,5 +1,5 @@
 {
-  "name": "grommet-exp-tokens",
+  "name": "hpe-design-tokens",
   "version": "0.1.0",
   "description": "a token library for grommet",
   "main": "index.js",
@@ -11,11 +11,11 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grommet/grommet-exp-tokens.git"
+    "url": "git+https://github.com/grommet/hpe-design-tokens.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/grommet/grommet-exp-tokens/issues"
+    "url": "https://github.com/grommet/hpe-design-tokens/issues"
   },
-  "homepage": "https://github.com/grommet/grommet-exp-tokens#readme"
+  "homepage": "https://github.com/grommet/hpe-design-tokens#readme"
 }
