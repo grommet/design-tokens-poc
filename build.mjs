@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
-import { resolveValues } from "./utils.js";
+import { resolveValues } from "./utils.mjs";
 
 const createResolvedTokens = () => {
   const raw = readFileSync("./tokens.json");

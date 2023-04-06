@@ -1,4 +1,4 @@
-declare module "grommet-exp-tokens" {
+declare module "hpe-design-tokens" {
   export interface TokensType {
     "color.background": string;
     "color.background.front": string;
@@ -71,10 +71,20 @@ declare module "grommet-exp-tokens" {
     "text.size.desktop": string;
 
     "text.xsmall.size": string;
+    "text.xsmall.height": string;
+    "text.xsmall.weight": string;
     "text.small.size": string;
+    "text.small.height": string;
+    "text.small.weight": string;
     "text.medium.size": string;
+    "text.medium.height": string;
+    "text.medium.weight": string;
     "text.large.size": string;
+    "text.large.height": string;
+    "text.large.weight": string;
     "text.xlarge.size": string;
+    "text.xlarge.height": string;
+    "text.xlarge.weight": string;
     "heading.1.size": string;
     "heading.2.size": string;
     "heading.3.size": string;
@@ -122,7 +132,7 @@ declare module "grommet-exp-tokens" {
     "text.xlarge.desktop.size": string;
     "text.xlarge.desktop.height": string;
     "text.xlarge.desktop.weight": string;
-    "text.xlarge.table.size": string;
+    "text.xlarge.tablet.size": string;
     "text.xlarge.tablet.height": string;
     "text.xlarge.tablet.weight": string;
     "text.xlarge.mobile.size": string;
@@ -202,5 +212,5 @@ declare module "grommet-exp-tokens" {
     "stroke.xlarge": string;
   }
 
-  export var tokens : TokensType;
+  export var tokens: TokensType;
 }

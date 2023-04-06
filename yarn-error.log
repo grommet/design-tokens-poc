@@ -1,0 +1,54 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js cache clean
+
+PATH: 
+  /Users/taylorseamans/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/Apple/usr/bin:/Users/taylorseamans/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  16.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/taylorseamans/Documents/hpe-design-tokens/package.json: Unexpected token } in JSON at position 595
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "hpe-design-tokens",
+    "version": "0.1.0",
+    "description": "a token library for grommet",
+    "main": "index.js",
+    "authors": [
+      "Eric Soderberg",
+      "Taylor Seamans"
+    ],
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "node build.js"
+    },
+    "type": "module",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/grommet/hpe-design-tokens.git"
+    },
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/grommet/hpe-design-tokens/issues"
+    },
+    "homepage": "https://github.com/grommet/hpe-design-tokens#readme",
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
