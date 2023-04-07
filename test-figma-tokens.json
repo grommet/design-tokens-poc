@@ -243,32 +243,35 @@
       "validation.critical": { "value": "#CC1F1A4D", "type": "color" }
     }
   },
-  "components/button": {
-    "primary": {
-      "background": {
-        "value": "{colors.brand}",
-        "type": "color"
+  "components": {
+    "button": {
+      "primary": {
+        "background": {
+          "value": "{colors.brand}",
+          "type": "color"
+        },
+        "label": {
+          "value": "{colors.text.selected}",
+          "type": "color"
+        }
       },
-      "label": {
-        "value": "{colors.text.selected}",
-        "type": "color"
+      "borderRadius": {
+        "value": "{radius.full}",
+        "type": "borderRadius"
       }
     },
-    "borderRadius": {
-      "value": "{radius.full}",
-      "type": "borderRadius"
+    "formfield": {
+      "label": {
+        "value": "{text.xsmall.desktop}",
+        "type": "typography"
+      },
+      "description": {
+        "value": "{text.xsmall.desktop}",
+        "type": "typography"
+      }
     }
   },
-  "components/formfield": {
-    "label": {
-      "value": "{text.xsmall.desktop}",
-      "type": "typography"
-    },
-    "description": {
-      "value": "{text.xsmall.desktop}",
-      "type": "typography"
-    }
-  },
+
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": ["core", "light", "dark", "theme"]
