@@ -172,6 +172,26 @@
       "type": "typography"
     },
     "text.height": { "value": 1.25 },
+    "text.xsmall.desktop": {
+      "value": {
+        "fontColor": "{colors.text.strong}",
+        "fontFamily": "{fontFamilies.metrichpe}",
+        "fontWeight": "{fontWeights.regular}",
+        "lineHeight": "0.875rem * {text.height}",
+        "fontSize": "0.875rem"
+      },
+      "type": "typography"
+    },
+    "text.small.desktop": {
+      "value": {
+        "fontColor": "{colors.text.strong}",
+        "fontFamily": "{fontFamilies.metrichpe}",
+        "fontWeight": "{fontWeights.regular}",
+        "lineHeight": "1rem * {text.height}",
+        "fontSize": "1rem"
+      },
+      "type": "typography"
+    },
     "text.medium.desktop": {
       "value": {
         "fontColor": "{colors.text.strong}",
@@ -266,6 +286,12 @@
     "borderRadius": {
       "value": "{radius.full}",
       "type": "borderRadius"
+    }
+  },
+  "components/formfield": {
+    "label": {
+      "value": "{text.xsmall.desktop}",
+      "type": "typography"
     }
   },
   "$themes": [],
