@@ -1,6 +1,6 @@
 {
   "global": {
-    "color": {
+    "colors": {
       "brand": { "value": "#01A982", "type": "color" },
       "grey": { "value": "#333", "type": "color" },
       "background.default": { "value": "#FFFFFF", "type": "color" },
@@ -43,7 +43,7 @@
   },
   "components/button": {
     "primary": {
-      "background": { "value": "{global.color.brand}", "type": "color" }
+      "background": { "value": "{colors.brand}", "type": "color" }
     }
   }
 }
