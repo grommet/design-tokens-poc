@@ -1,52 +1,52 @@
 {
   "core": {
-    "gradients": {
-      "brand-gradient-01": {
-        "value": "linear-gradient(181deg, #008567 0%, #01a982 32.29%, #008968 67.71%, #00c781 100%)",
-        "type": "color"
-      },
-      "brand-gradient-02": {
-        "value": "linear-gradient(180deg, #00c781 0%, #0ece93 23.44%, #01a982 48.96%, #00c781 72.92%, #17eba0 100%)",
-        "type": "color"
-      },
-      "gradient-01": {
-        "value": "linear-gradient(0deg, #ffec3e 0%, #00e8cf 49.96%, #885bdf 100%)",
-        "type": "color",
-        "description": "Edge"
-      },
-      "gradient-02": {
-        "value": "linear-gradient(180deg, #8f00ff 0%, #00e8cf 100%)",
-        "type": "color",
-        "description": "Data"
-      },
-      "gradient-03": {
-        "value": "linear-gradient(180deg, #8f00ff 0%, #f740ff 52.6%, #ffc400 100%)",
-        "type": "color",
-        "description": "Cloud"
-      },
-      "gradient-04": {
-        "value": "linear-gradient(0deg, #ff5c00 0%, #ffc400 100%)",
-        "type": "color",
-        "description": "Security"
-      },
-      "grey-gradient-01": {
-        "value": "linear-gradient(180deg, #f7f7f7 0%, #f7f7f700 100%)",
-        "type": "color",
-        "description": "Background"
-      },
-      "grey-gradient-02": {
-        "value": "linear-gradient(180deg, #f7f7f7 0%, #f7f7f700 20.83%, #ffffff 42.19%, #f0f0f0 64.06%, #fbfbfb 100%)",
-        "type": "color",
-        "description": "Button"
-      },
-      "gradient-quote": {
-        "value": "linear-gradient(-6deg, #ffec3e 0%, #17c5eb 28.49%, #885bdf 60.55%, #7630ea 100%)",
-        "type": "color",
-        "description": "Quote"
-      }
-    },
     "colors": {
-      "brand": { "value": "#01A982", "type": "color" }
+      "brand": { "value": "#01A982", "type": "color" },
+      "gradients": {
+        "brand-gradient-01": {
+          "value": "linear-gradient(181deg, #008567 0%, #01a982 32.29%, #008968 67.71%, #00c781 100%)",
+          "type": "color"
+        },
+        "brand-gradient-02": {
+          "value": "linear-gradient(180deg, #00c781 0%, #0ece93 23.44%, #01a982 48.96%, #00c781 72.92%, #17eba0 100%)",
+          "type": "color"
+        },
+        "gradient-01": {
+          "value": "linear-gradient(0deg, #ffec3e 0%, #00e8cf 49.96%, #885bdf 100%)",
+          "type": "color",
+          "description": "Edge"
+        },
+        "gradient-02": {
+          "value": "linear-gradient(180deg, #8f00ff 0%, #00e8cf 100%)",
+          "type": "color",
+          "description": "Data"
+        },
+        "gradient-03": {
+          "value": "linear-gradient(180deg, #8f00ff 0%, #f740ff 52.6%, #ffc400 100%)",
+          "type": "color",
+          "description": "Cloud"
+        },
+        "gradient-04": {
+          "value": "linear-gradient(0deg, #ff5c00 0%, #ffc400 100%)",
+          "type": "color",
+          "description": "Security"
+        },
+        "grey-gradient-01": {
+          "value": "linear-gradient(180deg, #f7f7f7 0%, #f7f7f700 100%)",
+          "type": "color",
+          "description": "Background"
+        },
+        "grey-gradient-02": {
+          "value": "linear-gradient(180deg, #f7f7f7 0%, #f7f7f700 20.83%, #ffffff 42.19%, #f0f0f0 64.06%, #fbfbfb 100%)",
+          "type": "color",
+          "description": "Button"
+        },
+        "gradient-quote": {
+          "value": "linear-gradient(-6deg, #ffec3e 0%, #17c5eb 28.49%, #885bdf 60.55%, #7630ea 100%)",
+          "type": "color",
+          "description": "Quote"
+        }
+      }
     },
     "fontFamilies": {
       "metrichpe": {
@@ -169,6 +169,24 @@
         "fontSize": "16px"
       },
       "type": "typography"
+    },
+    "radius": {
+      "none": { "value": "0px", "type": "borderRadius" },
+      "xsmall": { "value": "1px", "type": "borderRadius" },
+      "small": { "value": "3px", "type": "borderRadius" },
+      "medium": { "value": "6px", "type": "borderRadius" },
+      "large": { "value": "12px", "type": "borderRadius" },
+      "xlarge": { "value": "24px", "type": "borderRadius" },
+      "full": { "value": "2em", "type": "borderRadius" }
+    },
+    "spacing": {
+      "3xsmall": { "value": "1px", "type": "spacing" },
+      "2xsmall": { "value": "3px", "type": "spacing" },
+      "xsmall": { "value": "6px", "type": "spacing" },
+      "small": { "value": "12px", "type": "spacing" },
+      "medium": { "value": "24px", "type": "spacing" },
+      "large": { "value": "48px", "type": "spacing" },
+      "xlarge": { "value": "96px", "type": "spacing" }
     }
   },
   "light": {
