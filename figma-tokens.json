@@ -2,13 +2,11 @@
   "colors": {
     "brand": { "value": "#01A982", "type": "color" },
     "grey": { "value": "#333", "type": "color" },
-    "background": {
-      "default": { "value": "#FFFFFF", "type": "color" },
-      "back": { "value": "#F7F7F7", "type": "color" },
-      "front": { "value": "#FFFFFF", "type": "color" },
-      "contrast": { "value": "#0000000A", "type": "color" }
-    },
-    "text.default": { "value": "red", "type": "color" },
+    "background.default": { "value": "#FFFFFF", "type": "color" },
+    "background.back": { "value": "#F7F7F7", "type": "color" },
+    "background.front": { "value": "#FFFFFF", "type": "color" },
+    "background.contrast": { "value": "#0000000A", "type": "color" },
+    "text.default": { "value": "#6F6F6F", "type": "color" },
     "text.strong": { "value": "#444444", "type": "color" },
     "text.weak": { "value": "#757575", "type": "color" }
   },
