@@ -173,7 +173,7 @@
     "text.medium.desktop": {
       "value": {
         "fontFamily": "{fontFamilies.metrichpe}",
-        "fontWeight": "{fontWeights.medium}",
+        "fontWeight": "{fontWeights.regular}",
         "lineHeight": 1.25,
         "fontSize": "1.125rem"
       },
