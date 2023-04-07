@@ -8,7 +8,7 @@
       "front": { "value": "#FFFFFF", "type": "color" },
       "contrast": { "value": "#0000000A", "type": "color" }
     },
-    "text.default": { "value": "#6F6F6F", "type": "color" },
+    "text.default": { "value": "red", "type": "color" },
     "text.strong": { "value": "#444444", "type": "color" },
     "text.weak": { "value": "#757575", "type": "color" }
   },
