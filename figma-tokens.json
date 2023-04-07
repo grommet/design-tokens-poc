@@ -3,7 +3,9 @@
     "background": { "value": "#FFFFFF", "type": "color" },
     "front": { "value": "#FFFFFF", "type": "color" },
     "grey": { "value": "#333", "type": "color" },
-    "text": { "value": "{grey}", "type": "color" }
+    "text": {
+      "default": { "value": "{grey}", "type": "color" }
+    }
   },
   "radius": {
     "none": { "value": "0px", "type": "radius" },
