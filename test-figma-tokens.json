@@ -170,6 +170,15 @@
       },
       "type": "typography"
     },
+    "text.medium.desktop": {
+      "value": {
+        "fontFamily": "{fontFamilies.metrichpe}",
+        "fontWeight": "{fontWeights.medium}",
+        "lineHeight": 1.25,
+        "fontSize": "1.125rem"
+      },
+      "type": "typography"
+    },
     "radius": {
       "none": { "value": "0px", "type": "borderRadius" },
       "xsmall": { "value": "1px", "type": "borderRadius" },
