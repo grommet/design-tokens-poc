@@ -60,7 +60,7 @@
       "label": { "value": "{colors.text.default}", "type": "color" },
       "description": { "value": "{colors.text.default}", "type": "color" },
       "background.error": {
-        "value": "{colors.validation.critical}",
+        "value": "{colors.status.critical}",
         "type": "color"
       }
     }
