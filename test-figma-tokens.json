@@ -158,6 +158,7 @@
       },
       "type": "typography"
     },
+    "opacity.disabled": { "value": 0.3, "type": "opacity" },
     "radius": {
       "none": { "value": "0px", "type": "borderRadius" },
       "xsmall": { "value": "1px", "type": "borderRadius" },
@@ -243,21 +244,36 @@
       "validation.critical": { "value": "#CC1F1A4D", "type": "color" }
     }
   },
-  "components/button": {
-    "primary": {
-      "background": {
-        "value": "{color.brand}",
-        "type": "color"
-      },
-      "label": {
-        "value": "{color.text.selected}",
-        "type": "color"
-      }
+  "components/button/primary": {
+    "background": {
+      "value": "{color.brand}",
+      "type": "color"
+    },
+    "label": {
+      "value": "{color.text.selected}",
+      "type": "color"
     },
     "borderRadius": {
       "value": "{radius.full}",
       "type": "borderRadius"
-    }
+    },
+    "opacity.disabled": { "value": "{opacity.disabled}", "type": "opacity" }
+  },
+  "components/button/secondary": {
+    "border": {
+      "value": "{color.brand}",
+      "type": "color"
+    },
+    "label": {
+      "value": "{color.text.selected}",
+      "type": "color"
+    },
+    "borderWidth": { "value": "{stroke.small}", "type": "borderWidth" },
+    "borderRadius": {
+      "value": "{radius.full}",
+      "type": "borderRadius"
+    },
+    "opacity.disabled": { "value": "{opacity.disabled}", "type": "opacity" }
   },
   "components/formfield": {
     "label": {
