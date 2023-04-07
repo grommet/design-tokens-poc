@@ -170,11 +170,12 @@
       },
       "type": "typography"
     },
+    "text.height": { "value": 1.25 },
     "text.medium.desktop": {
       "value": {
         "fontFamily": "{fontFamilies.metrichpe}",
         "fontWeight": "{fontWeights.regular}",
-        "lineHeight": 1.25,
+        "lineHeight": "1.25rem * {text.height}",
         "fontSize": "1.125rem"
       },
       "type": "typography"
