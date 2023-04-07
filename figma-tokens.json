@@ -11,7 +11,7 @@
         "type": "color"
       },
       "background.contrast": { "value": "#0000000A", "type": "color" },
-      "background.selected": { "value": "{color.brand}", "type": "color" },
+      "background.selected": { "value": "{colors.brand}", "type": "color" },
       "text.default": { "value": "#6F6F6F", "type": "color" },
       "text.strong": { "value": "#444444", "type": "color" },
       "text.weak": { "value": "#757575", "type": "color" },
