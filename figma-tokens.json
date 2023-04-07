@@ -1,24 +1,31 @@
 {
   "global": {
-    "colors": {
+    "color": {
       "brand": { "value": "#01A982", "type": "color" },
       "grey": { "value": "#333", "type": "color" },
       "background.default": { "value": "#FFFFFF", "type": "color" },
       "background.back": { "value": "#F7F7F7", "type": "color" },
       "background.front": { "value": "#FFFFFF", "type": "color" },
       "background.contrast": { "value": "#0000000A", "type": "color" },
+      "background.selected": { "value": "{color.brand}", "type": "color" },
       "text.default": { "value": "#6F6F6F", "type": "color" },
       "text.strong": { "value": "#444444", "type": "color" },
-      "text.weak": { "value": "#757575", "type": "color" }
+      "text.weak": { "value": "#757575", "type": "color" },
+      "text.xweak": { "value": "#BBBBBB", "type": "color" },
+      "text.selected": { "value": "#FFFFFF", "type": "color" },
+      "validation.critical": { "value": "#C54E4B", "type": "color" },
+      "validation.warning": { "value": "#FEC901", "type": "color" },
+      "validation.ok": { "value": "#01A982", "type": "color" },
+      "validation.unknown": { "value": "#CCCCCC", "type": "color" }
     },
     "radius": {
-      "none": { "value": "0px", "type": "radius" },
-      "xsmall": { "value": "1px", "type": "radius" },
-      "small": { "value": "3px", "type": "radius" },
-      "medium": { "value": "6px", "type": "radius" },
-      "large": { "value": "12px", "type": "radius" },
-      "xlarge": { "value": "24px", "type": "radius" },
-      "full": { "value": "2em", "type": "radius" }
+      "none": { "value": "0px", "type": "borderRadius" },
+      "xsmall": { "value": "1px", "type": "borderRadius" },
+      "small": { "value": "3px", "type": "borderRadius" },
+      "medium": { "value": "6px", "type": "borderRadius" },
+      "large": { "value": "12px", "type": "borderRadius" },
+      "xlarge": { "value": "24px", "type": "borderRadius" },
+      "full": { "value": "2em", "type": "borderRadius" }
     },
     "spacing": {
       "3xsmall": { "value": "1px", "type": "spacing" },
