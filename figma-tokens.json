@@ -41,7 +41,7 @@
       "xlarge": { "value": "96px", "type": "spacing" }
     }
   },
-  "components/button": {
+  "button": {
     "primary": {
       "background": { "value": "{colors.brand}", "type": "color" }
     }
