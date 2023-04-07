@@ -219,6 +219,14 @@
       "medium": { "value": "24px", "type": "spacing" },
       "large": { "value": "48px", "type": "spacing" },
       "xlarge": { "value": "96px", "type": "spacing" }
+    },
+    "size": {
+      "2xsmall": { "value": "48px", "type": "sizing" },
+      "xsmall": { "value": "96px", "type": "sizing" },
+      "small": { "value": "192px", "type": "sizing" },
+      "medium": { "value": "384px", "type": "sizing" },
+      "large": { "value": "768px", "type": "sizing" },
+      "xlarge": { "value": "1536px", "type": "sizing" }
     }
   },
   "light": {
