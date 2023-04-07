@@ -118,6 +118,7 @@
     },
     "h1.desktop": {
       "value": {
+        "fontColor": "{colors.text.strong}",
         "fontFamily": "{fontFamilies.metrichpe}",
         "fontWeight": "{fontWeights.regular}",
         "lineHeight": "36px",
@@ -173,7 +174,7 @@
     "text.height": { "value": 1.25 },
     "text.medium.desktop": {
       "value": {
-        "fontColor": "{colors.text.strong",
+        "fontColor": "{colors.text.strong}",
         "fontFamily": "{fontFamilies.metrichpe}",
         "fontWeight": "{fontWeights.regular}",
         "lineHeight": "1.125rem * {text.height}",
