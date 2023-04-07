@@ -211,6 +211,13 @@
       "xlarge": { "value": "24px", "type": "borderRadius" },
       "full": { "value": "2em", "type": "borderRadius" }
     },
+    "stroke": {
+      "xsmall": { "value": "1px", "type": "borderWidth" },
+      "small": { "value": "2px", "type": "borderWidth" },
+      "medium": { "value": "4px", "type": "borderWidth" },
+      "large": { "value": "12px", "type": "borderWidth" },
+      "xlarge": { "value": "24px", "type": "borderWidth" }
+    },
     "spacing": {
       "3xsmall": { "value": "1px", "type": "spacing" },
       "2xsmall": { "value": "3px", "type": "spacing" },
