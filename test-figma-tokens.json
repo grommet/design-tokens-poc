@@ -54,28 +54,6 @@
         "type": "fontFamilies"
       }
     },
-    "lineHeights": {
-      "xsmall": {
-        "value": "16px",
-        "type": "lineHeights"
-      },
-      "small": {
-        "value": "20px",
-        "type": "lineHeights"
-      },
-      "medium": {
-        "value": "24px",
-        "type": "lineHeights"
-      },
-      "large": {
-        "value": "30px",
-        "type": "lineHeights"
-      },
-      "xlarge": {
-        "value": "36px",
-        "type": "lineHeights"
-      }
-    },
     "fontWeights": {
       "light": {
         "value": "Light",
@@ -92,28 +70,6 @@
       "bold": {
         "value": "Bold",
         "type": "fontWeights"
-      }
-    },
-    "fontSize": {
-      "xsmall": {
-        "value": "14px",
-        "type": "fontSizes"
-      },
-      "small": {
-        "value": "16px",
-        "type": "fontSizes"
-      },
-      "medium": {
-        "value": "18px",
-        "type": "fontSizes"
-      },
-      "large": {
-        "value": "24px",
-        "type": "fontSizes"
-      },
-      "xlarge": {
-        "value": "30px",
-        "type": "fontSizes"
       }
     },
     "h1.desktop": {
