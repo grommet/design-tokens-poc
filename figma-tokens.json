@@ -5,7 +5,11 @@
       "grey": { "value": "#333", "type": "color" },
       "background.default": { "value": "#FFFFFF", "type": "color" },
       "background.back": { "value": "#F7F7F7", "type": "color" },
-      "background.front": { "value": "#FFFFFF", "type": "color" },
+      "background.front": {
+        "value": "#FFFFFF",
+        "description": "Background color to be used on top of background.back",
+        "type": "color"
+      },
       "background.contrast": { "value": "#0000000A", "type": "color" },
       "background.selected": { "value": "{color.brand}", "type": "color" },
       "text.default": { "value": "#6F6F6F", "type": "color" },
@@ -13,10 +17,10 @@
       "text.weak": { "value": "#757575", "type": "color" },
       "text.xweak": { "value": "#BBBBBB", "type": "color" },
       "text.selected": { "value": "#FFFFFF", "type": "color" },
-      "validation.critical": { "value": "#C54E4B", "type": "color" },
-      "validation.warning": { "value": "#FEC901", "type": "color" },
-      "validation.ok": { "value": "#01A982", "type": "color" },
-      "validation.unknown": { "value": "#CCCCCC", "type": "color" }
+      "status.critical": { "value": "#C54E4B", "type": "color" },
+      "status.warning": { "value": "#FEC901", "type": "color" },
+      "status.ok": { "value": "#01A982", "type": "color" },
+      "status.unknown": { "value": "#CCCCCC", "type": "color" }
     },
     "radius": {
       "none": { "value": "0px", "type": "borderRadius" },
