@@ -1,8 +1,10 @@
 {
   "colors": {
-    "background": { "value": "#FFFFFF", "type": "color" },
-    "front": { "value": "#FFFFFF", "type": "color" },
     "grey": { "value": "#333", "type": "color" },
+    "background": {
+      "default": { "value": "#FFFFFF", "type": "color" },
+      "front": { "value": "#FFFFFF", "type": "color" }
+    },
     "text": {
       "default": { "value": "{grey}", "type": "color" }
     }
