@@ -40,5 +40,10 @@
       "large": { "value": "48px", "type": "spacing" },
       "xlarge": { "value": "96px", "type": "spacing" }
     }
+  },
+  "components/button": {
+    "primary": {
+      "background": { "value": "#01A982", "type": "color" }
+    }
   }
 }
