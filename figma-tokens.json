@@ -43,7 +43,7 @@
   },
   "components/button": {
     "primary": {
-      "background": { "value": "{color.brand}", "type": "color" }
+      "background": { "value": "{global.color.brand}", "type": "color" }
     }
   }
 }
