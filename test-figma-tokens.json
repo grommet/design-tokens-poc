@@ -292,6 +292,10 @@
     "label": {
       "value": "{text.xsmall.desktop}",
       "type": "typography"
+    },
+    "description": {
+      "value": "{text.xsmall.desktop}",
+      "type": "typography"
     }
   },
   "$themes": [],
