@@ -43,6 +43,11 @@
       "medium": { "value": "24px", "type": "spacing" },
       "large": { "value": "48px", "type": "spacing" },
       "xlarge": { "value": "96px", "type": "spacing" }
+    },
+    "stroke": {
+      "xsmall": { "value": "1px", "type": "borderWidth" },
+      "small": { "value": "2px", "type": "borderWidth" },
+      "medium": { "value": "4px", "type": "borderWidth" }
     }
   },
   "components/button": {
@@ -64,6 +69,8 @@
         "value": "{colors.validation.critical}",
         "type": "color"
       }
-    }
+    },
+    "radius": { "value": "{radius.medium}", "type": "borderRadius" },
+    "stroke": { "value": "{stroke.xsmall}", "type": "borderWidth" }
   }
 }
