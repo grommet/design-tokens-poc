@@ -45,6 +45,10 @@
     "primary": {
       "background": { "value": "{colors.brand}", "type": "color" },
       "label": { "value": "#FFFFFF", "type": "color" }
+    },
+    "secondary": {
+      "border": { "value": "{colors.brand}", "type": "color" },
+      "label": { "value": "{colors.text.strong}", "type": "color" }
     }
   }
 }
