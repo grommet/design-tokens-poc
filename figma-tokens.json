@@ -23,7 +23,8 @@
       "status.critical": { "value": "#C54E4B", "type": "color" },
       "status.warning": { "value": "#FEC901", "type": "color" },
       "status.ok": { "value": "#01A982", "type": "color" },
-      "status.unknown": { "value": "#CCCCCC", "type": "color" }
+      "status.unknown": { "value": "#CCCCCC", "type": "color" },
+      "validation.critical": { "value": "#FC61613D", "type": "color" }
     },
     "radius": {
       "none": { "value": "0px", "type": "borderRadius" },
@@ -60,7 +61,7 @@
       "label": { "value": "{colors.text.default}", "type": "color" },
       "description": { "value": "{colors.text.default}", "type": "color" },
       "background.error": {
-        "value": "{colors.status.critical}",
+        "value": "{colors.validation.critical}",
         "type": "color"
       }
     }
