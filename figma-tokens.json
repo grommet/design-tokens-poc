@@ -12,6 +12,9 @@
       },
       "background.contrast": { "value": "#0000000A", "type": "color" },
       "background.selected": { "value": "{colors.brand}", "type": "color" },
+      "border.default": { "value": "#6F6F6F", "type": "color" },
+      "border.strong": { "value": "#444444", "type": "color" },
+      "border.weak": { "value": "#757575", "type": "color" },
       "text.default": { "value": "#6F6F6F", "type": "color" },
       "text.strong": { "value": "#444444", "type": "color" },
       "text.weak": { "value": "#757575", "type": "color" },
@@ -49,6 +52,17 @@
     "secondary": {
       "border": { "value": "{colors.brand}", "type": "color" },
       "label": { "value": "{colors.text.strong}", "type": "color" }
+    }
+  },
+  "components/formfield": {
+    "colors": {
+      "border": { "value": "{colors.border.default}", "type": "color" },
+      "label": { "value": "{colors.text.default}", "type": "color" },
+      "description": { "value": "{colors.text.default}", "type": "color" },
+      "background.error": {
+        "value": "{colors.validation.critical}",
+        "type": "color"
+      }
     }
   }
 }
