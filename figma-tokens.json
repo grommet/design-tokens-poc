@@ -73,9 +73,9 @@
     "radius": { "value": "{radius.medium}", "type": "borderRadius" },
     "stroke": { "value": "{stroke.xsmall}", "type": "borderWidth" },
     "font": {
-      "label": { "value": "16px", "type": "fontSize" },
-      "description": { "value": "14px", "type": "fontSize" },
-      "error": { "value": "14px", "type": "fontSize" }
+      "label": { "value": "16px", "type": "fontSizes" },
+      "description": { "value": "14px", "type": "fontSizes" },
+      "error": { "value": "14px", "type": "fontSizes" }
     }
   }
 }
