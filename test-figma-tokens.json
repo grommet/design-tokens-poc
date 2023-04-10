@@ -127,7 +127,7 @@
       },
       "type": "typography"
     },
-    "text.height": { "value": 1.25 },
+    "height.text": { "value": 1.25, "type": "lineHeight" },
     "text.xsmall.desktop": {
       "value": {
         "fontColor": "{color.text.strong}",
@@ -202,7 +202,7 @@
         "description": "Background color to be used on top of background.back",
         "type": "color"
       },
-      "background.contrast": { "value": "#0000000A", "type": "color" },
+      "background.contrast": { "value": "red", "type": "color" },
       "background.selected": { "value": "{color.brand}", "type": "color" },
       "border.default": { "value": "#6F6F6F", "type": "color" },
       "border.strong": { "value": "#444444", "type": "color" },
@@ -283,6 +283,10 @@
     "description": {
       "value": "{text.xsmall.desktop}",
       "type": "typography"
+    },
+    "border": {
+      "value": "{color.border.default}",
+      "type": "color"
     }
   },
   "$themes": [],
