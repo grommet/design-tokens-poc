@@ -1,0 +1,88 @@
+version: 2.1
+
+defaults: &defaults
+  working_directory: ~/grommet-ci
+  docker:
+    - image: cimg/node:18.13.0
+
+jobs:
+  checkout:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - yarn-cache-{{ checksum "yarn.lock" }}
+      - run: yarn --frozen-lockfile
+      - save_cache:
+          key: yarn-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache
+            - ./node_modules
+      - persist_to_workspace:
+          root: ~/grommet-ci
+          paths:
+            - ./
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/grommet-ci
+      - run:
+          name: Running linter
+          command: yarn lint
+  build:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/grommet-ci
+      - run:
+          name: Build
+          command: yarn build && yarn jsonify
+      - persist_to_workspace:
+          root: ~/grommet-ci
+          paths:
+            - ./
+  release-stable:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/grommet-ci
+      - run:
+          command: |
+            git config --global user.name "Grommet Community Bot"
+            git config --global user.email "grommet@hpe.com"
+            yarn release-stable
+workflows:
+  build_test:
+    jobs:
+      - checkout:
+          filters:
+            tags:
+              only: /.*/
+      - lint:
+          requires:
+            - checkout
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore:
+                - stable
+      - build:
+          requires:
+            - checkout
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore:
+                - stable
+      - release-stable:
+          requires:
+            - lint
+            - build
+          filters:
+            branches:
+              only:
+                - master
