@@ -38,7 +38,7 @@ jobs:
           at: ~/grommet-ci
       - run:
           name: Build
-          command: yarn build && yarn jsonify
+          command: yarn build
       - persist_to_workspace:
           root: ~/grommet-ci
           paths:
