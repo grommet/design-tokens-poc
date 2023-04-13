@@ -10,6 +10,14 @@ export const resolveValues = tokens => {
     if (`${currentValue}.light` in tokens || `${currentValue}.dark` in tokens) {
       result[`${key}.light`] = tokens[`${currentValue}.light`];
       result[`${key}.dark`] = tokens[`${currentValue}.dark`];
+    } else if (
+      `${currentValue}.mobile` in tokens ||
+      `${currentValue}.tablet` in tokens ||
+      `${currentValue}.desktop` in tokens
+    ) {
+      result[`${key}.mobile`] = tokens[`${currentValue}.mobile`];
+      result[`${key}.tablet`] = tokens[`${currentValue}.tablet`];
+      result[`${key}.desktop`] = tokens[`${currentValue}.desktop`];
     } else {
       result[key] = currentValue;
     }
