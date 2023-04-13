@@ -1,13 +1,18 @@
 export const resolveValues = tokens => {
   const result = {};
-
   Object.entries(tokens).forEach(([key, value]) => {
     let currentValue = value;
+
     while (currentValue in tokens) {
       currentValue = tokens[currentValue];
     }
 
-    result[key] = currentValue;
+    if (`${currentValue}.light` in tokens || `${currentValue}.dark` in tokens) {
+      result[`${key}.light`] = tokens[`${currentValue}.light`];
+      result[`${key}.dark`] = tokens[`${currentValue}.dark`];
+    } else {
+      result[key] = currentValue;
+    }
   });
 
   return result;
