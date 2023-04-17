@@ -51,3 +51,20 @@ export const resolveFigmaValues = (
 
   return res;
 };
+
+export const structureTokens = (tokens) => {
+  const base = {};
+  Object.keys(tokens).forEach((key) => {
+    const parts = key.split('.');
+    let node = base;
+    while (parts.length > 1) {
+      const part = parts.shift();
+      if (part) {
+        if (!node[part]) node[part] = {};
+        node = node[part];
+      }
+    }
+    node[parts[0]] = tokens[key];
+  });
+  return base;
+};
