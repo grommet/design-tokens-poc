@@ -68,3 +68,10 @@ export const structureTokens = (tokens) => {
   });
   return base;
 };
+
+export const generateCssVars = (tokens) => `:root {
+${Object.keys(tokens).map(name => {
+    const parts = name.split('.');
+    return `  --${parts.join('-')}: ${tokens[name]};`
+  }).join('\n')}
+}`;
