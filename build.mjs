@@ -9,7 +9,7 @@ const tokens = JSON.parse(raw);
 
 const resolvedTokens = resolveValues(tokens);
 writeFileSync(
-  './dist/resolved-tokens.json',
+  './dist/tokens.json',
   JSON.stringify(resolvedTokens, null, 2),
 );
 
