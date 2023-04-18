@@ -1,3 +1,5 @@
+const breakpoints = ['mobile', 'tablet', 'desktop'];
+
 export const resolveValues = tokens => {
   const result = {};
   Object.entries(tokens).forEach(([key, value]) => {
@@ -7,17 +9,51 @@ export const resolveValues = tokens => {
       currentValue = tokens[currentValue];
     }
 
-    if (`${currentValue}.light` in tokens || `${currentValue}.dark` in tokens) {
-      result[`${key}.light`] = tokens[`${currentValue}.light`];
-      result[`${key}.dark`] = tokens[`${currentValue}.dark`];
+    const pattern = new RegExp(currentValue);
+    // create light and dark modes of color references. for example:
+    // "heading.color": "color.text.strong"
+    if (`${currentValue}.light` in tokens && `${currentValue}.dark` in tokens) {
+      ['light', 'dark'].forEach(mode => {
+        result[`${key}.${mode}`] = tokens[`${currentValue}.${mode}`];
+      });
+      // resolve breakpoints. for example:
+      // "formfield.margin-top": "spacing.xsmall"
     } else if (
-      `${currentValue}.mobile` in tokens ||
-      `${currentValue}.tablet` in tokens ||
+      `${currentValue}.mobile` in tokens &&
+      `${currentValue}.tablet` in tokens &&
       `${currentValue}.desktop` in tokens
     ) {
-      result[`${key}.mobile`] = tokens[`${currentValue}.mobile`];
-      result[`${key}.tablet`] = tokens[`${currentValue}.tablet`];
-      result[`${key}.desktop`] = tokens[`${currentValue}.desktop`];
+      breakpoints.forEach(breakpoint => {
+        result[`${key}.${breakpoint}`] =
+          tokens[`${currentValue}.${breakpoint}`];
+      });
+      // create typography sets. for example:
+      // "anchor.label": "text.small" should produce the appropriate
+      // font-size and font-weight across sizes and breakpoints.
+      // for components that want static typography, they will reference
+      // ".desktop" size and we will respect that.
+    } else if (
+      /\.label$/.test(key) &&
+      Object.keys(tokens).filter(token => pattern.test(token))
+    ) {
+      ['xsmall', 'small', 'medium', 'large', 'xlarge'].forEach(size => {
+        breakpoints.forEach(breakpoint => {
+          ['font-size', 'font-weight'].forEach(style => {
+            let resolvedValue = /\.desktop$/.test(currentValue)
+              ? tokens[
+                  `${
+                    currentValue.split('.desktop')[0]
+                  }.${size}.desktop.${style}`
+                ]
+              : tokens[`${currentValue}.${size}.${breakpoint}.${style}`];
+            while (resolvedValue in tokens) {
+              resolvedValue = tokens[resolvedValue];
+            }
+            if (!(tokens[`${key}.${style}`] in tokens))
+              result[`${key}.${size}.${breakpoint}.${style}`] = resolvedValue;
+          });
+        });
+      });
     } else {
       result[key] = currentValue;
     }
@@ -52,9 +88,9 @@ export const resolveFigmaValues = (
   return res;
 };
 
-export const structureTokens = (tokens) => {
+export const structureTokens = tokens => {
   const base = {};
-  Object.keys(tokens).forEach((key) => {
+  Object.keys(tokens).forEach(key => {
     const parts = key.split('.');
     let node = base;
     while (parts.length > 1) {
@@ -69,9 +105,11 @@ export const structureTokens = (tokens) => {
   return base;
 };
 
-export const generateCssVars = (tokens) => `:root {
-${Object.keys(tokens).map(name => {
+export const generateCssVars = tokens => `:root {
+${Object.keys(tokens)
+  .map(name => {
     const parts = name.split('.');
-    return `  --${parts.join('-')}: ${tokens[name]};`
-  }).join('\n')}
+    return `  --${parts.join('-')}: ${tokens[name]};`;
+  })
+  .join('\n')}
 }`;

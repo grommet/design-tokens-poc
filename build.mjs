@@ -4,14 +4,13 @@ import { generateCssVars, resolveValues, structureTokens } from './utils.mjs';
 copyFileSync('./index.js', './dist/index.js');
 copyFileSync('./index.d.ts', './dist/index.d.ts');
 
-const raw = readFileSync('./tokens.json');
-const tokens = JSON.parse(raw);
+const rawGlobal = readFileSync('./global.json');
+const global = JSON.parse(rawGlobal);
+const rawComponents = readFileSync('./components.json');
+const components = JSON.parse(rawComponents);
 
-const resolvedTokens = resolveValues(tokens);
-writeFileSync(
-  './dist/tokens.json',
-  JSON.stringify(resolvedTokens, null, 2),
-);
+const resolvedTokens = resolveValues({ ...global, ...components });
+writeFileSync('./dist/tokens.json', JSON.stringify(resolvedTokens, null, 2));
 
 const structuredTokens = structureTokens(resolvedTokens);
 writeFileSync(
@@ -21,15 +20,3 @@ writeFileSync(
 
 const cssVars = generateCssVars(resolvedTokens);
 writeFileSync('./dist/tokens.css', cssVars);
-
-// const createResolvedFigmaTokens = () => {
-//   const raw = readFileSync('./figma-tokens.json');
-//   const data = JSON.parse(raw);
-//   const resolvedTokens = resolveFigmaValues(data.global, data);
-//   writeFileSync(
-//     './resolved-figma-tokens.json',
-//     JSON.stringify(resolvedTokens, null, 2),
-//   );
-// };
-
-// createResolvedFigmTokens();
