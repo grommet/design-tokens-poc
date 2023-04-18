@@ -1,5 +1,3 @@
-'use strict';
-
 var tokens = {
   "border.xsmall": "1px",
   "border.small": "2px",
@@ -1503,5 +1501,4 @@ var structuredTokens = {
   }
 };
 
-exports.structuredTokens = structuredTokens;
-exports.tokens = tokens;
+export { structuredTokens, tokens };
