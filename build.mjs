@@ -1,5 +1,9 @@
 import { copyFileSync, readFileSync, writeFileSync } from 'fs';
-import { generateCssVars, resolveValues, structureTokens } from './utils.mjs';
+import {
+  flattenTokens,
+  generateCssVars,
+  stretchAndResolveTokens,
+} from './utils.mjs';
 
 copyFileSync('./index.js', './dist/index.js');
 copyFileSync('./index.d.ts', './dist/index.d.ts');
@@ -9,14 +13,16 @@ const global = JSON.parse(rawGlobal);
 const rawComponents = readFileSync('./components.json');
 const components = JSON.parse(rawComponents);
 
-const resolvedTokens = resolveValues({ ...global, ...components });
-writeFileSync('./dist/tokens.json', JSON.stringify(resolvedTokens, null, 2));
+const combined = { ...global, ...components };
+const resolved = stretchAndResolveTokens(combined);
+const flat = flattenTokens(resolved);
 
-const structuredTokens = structureTokens(resolvedTokens);
+writeFileSync('./dist/tokens.json', JSON.stringify(flat, null, 2));
+
 writeFileSync(
   './dist/structured-tokens.json',
-  JSON.stringify(structuredTokens, null, 2),
+  JSON.stringify(resolved, null, 2),
 );
 
-const cssVars = generateCssVars(resolvedTokens);
+const cssVars = generateCssVars(flat);
 writeFileSync('./dist/tokens.css', cssVars);

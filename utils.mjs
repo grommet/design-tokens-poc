@@ -88,21 +88,92 @@ export const resolveFigmaValues = (
   return res;
 };
 
-export const structureTokens = tokens => {
-  const base = {};
+export const stretchAndResolveTokens = tokens => {
+  const result = {};
+
+  // first, build up object structure
+  // 'anchor.label = text' becomes { anchor: { label: { v: text } } }
   Object.keys(tokens).forEach(key => {
     const parts = key.split('.');
-    let node = base;
-    while (parts.length > 1) {
+    let node = result;
+    while (parts.length) {
       const part = parts.shift();
       if (part) {
         if (!node[part]) node[part] = {};
         node = node[part];
       }
     }
-    node[parts[0]] = tokens[key];
+    node.v = tokens[key];
   });
-  return base;
+
+  // second, resolve value references
+  const find = path => {
+    const parts = path.split('.');
+    let node = result;
+    while (node && parts.length) node = node[parts.shift()];
+    return node;
+  };
+
+  const resolve = node => {
+    Object.keys(node).forEach(key => {
+      const value = node[key];
+      if (typeof value === 'object') return resolve(value);
+      if (typeof value === 'string') node[key] = find(value) ?? value;
+    });
+  };
+
+  resolve(result);
+
+  // third, remove 'v'
+  const prune = node => {
+    Object.keys(node).forEach(key => {
+      while (node[key].v !== undefined) node[key] = node[key].v;
+      if (typeof node[key] === 'object') prune(node[key]);
+    });
+  }
+
+  prune(result);
+
+  return result;
+};
+
+export const flattenTokens = tokens => {
+  const result = {};
+
+  const descend = (node, path = []) => {
+    Object.keys(node).forEach(key => {
+      const value = node[key];
+      if (typeof value === 'object') return descend(value, path.concat(key));
+      result[path.join('.')] = value;
+    })
+  }
+
+  descend(tokens);
+
+  return result;
+};
+
+export const resolveTokens = tokens => {
+  const result = JSON.parse(JSON.stringify(tokens));
+
+  const find = path => {
+    const parts = path.split('.');
+    let node = result;
+    while (node && parts.length) node = node[parts.shift()];
+    return node;
+  };
+
+  const resolve = node => {
+    Object.keys(node).forEach(key => {
+      const value = node[key];
+      if (typeof value === 'object') return resolve(value);
+      if (typeof value === 'string') node[key] = find(value) ?? value;
+    });
+  };
+
+  resolve(result);
+
+  return result;
 };
 
 export const generateCssVars = tokens => `:root {
