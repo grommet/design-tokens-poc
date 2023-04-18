@@ -2,3 +2,7 @@
 node_modules/
 dist/
 yarn-error.log
+structured-tokens.js
+tokens.js
+tokens.css
+tokens.json

@@ -5,7 +5,6 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "type": "module",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -15,7 +14,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf ./dist && mkdir ./dist && node build.mjs",
+    "build": "node build.mjs && rm -rf ./dist && rollup -c ./rollup.config.mjs",
     "release-stable": "babel-node ./tools/release-stable.mjs"
   },
   "repository": {
@@ -35,8 +34,12 @@
     "eslint": "^8.37.0",
     "eslint-plugin-prettier": "^4.2.1",
     "fs-extra": "^11.1.1",
+    "jest": "^29.5.0",
     "path": "^0.12.7",
     "prettier": "^2.8.7",
-    "simple-git": "^3.17.0"
+    "rollup": "^3.20.6",
+    "rollup-plugin-copy": "^3.4.0",
+    "simple-git": "^3.17.0",
+    "typescript": "^5.0.4"
   }
 }
