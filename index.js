@@ -105,12 +105,12 @@ var tokens = {
   "button.primary": "#01A982",
   "button.primary.hover": "",
   "button.option": "0px",
-  "button.option.padding-left": "12px",
-  "button.option.padding-right": "12px",
-  "button.option.padding-top": "6px",
-  "button.option.padding-bottom": "6px",
+  "button.option.paddingLeft": "12px",
+  "button.option.paddingRight": "12px",
+  "button.option.paddingTop": "6px",
+  "button.option.paddingBottom": "6px",
   "button.option.selected": "#01A982",
-  "button.secondary.border-width": "2px",
+  "button.secondary.borderWidth": "2px",
   "button.secondary": "#01A982",
   "button.secondary.active": "transparent",
   "button.secondary.hover": "none",
@@ -128,9 +128,9 @@ var tokens = {
   "card.background": "#222222",
   "card": "12px",
   "card.body.padding": "24px",
-  "checkbox.border-color": "#FFFFFF5C",
-  "checkbox.border-color.strong": "#FFFFFFB8",
-  "checkbox.border-color.weak": "#FFFFFF1F",
+  "checkbox.borderColor": "#FFFFFF5C",
+  "checkbox.borderColor.strong": "#FFFFFFB8",
+  "checkbox.borderColor.weak": "#FFFFFF1F",
   "checkbox": "1px",
   "checkbox.label": 500,
   "checkbox.hover.background": "#FFFFFF0F",
@@ -147,28 +147,29 @@ var tokens = {
   "checkbox.toggle.background.validation.ok": "#17D0A64D",
   "checkbox.toggle.background.active": "#FFFFFF0F",
   "checkbox.toggle.checked": "#01A982",
-  "checkbox.toggle.knob.box-shadow": "0px 2px 4px #0000001F",
-  "checkbox.toggle.knob.border-color": "#FFFFFF5C",
-  "checkbox.toggle.knob.border-color.strong": "#FFFFFFB8",
-  "checkbox.toggle.knob.border-color.weak": "#FFFFFF1F",
+  "checkbox.toggle.knob.boxShadow": "0px 2px 4px #0000001F",
+  "checkbox.toggle.knob.borderColor": "#FFFFFF5C",
+  "checkbox.toggle.knob.borderColor.strong": "#FFFFFFB8",
+  "checkbox.toggle.knob.borderColor.weak": "#FFFFFF1F",
   "checkbox.toggle.knob": "1px",
-  "datatable.header.border-bottom-color": "#FFFFFF5C",
-  "datatable.header.border-bottom-color.strong": "#FFFFFFB8",
-  "datatable.header.border-bottom-color.weak": "#FFFFFF1F",
+  "datatable.header.borderBottomColor": "#FFFFFF5C",
+  "datatable.header.borderBottomColor.strong": "#FFFFFFB8",
+  "datatable.header.borderBottomColor.weak": "#FFFFFF1F",
   "datatable.header": 500,
+  "datatable.header.color": "#FFFFFFF5",
   "datatable.header.cell.hover.background": "#FFFFFF0F",
-  "datatable.header.cell.padding-top": "6px",
-  "datatable.header.cell.padding-bottom": "6px",
-  "datatable.header.cell.padding-left": "12px",
-  "datatable.header.cell.padding-right": "12px",
+  "datatable.header.cell.paddingTop": "6px",
+  "datatable.header.cell.paddingBottom": "6px",
+  "datatable.header.cell.paddingLeft": "12px",
+  "datatable.header.cell.paddingRight": "12px",
   "datatable.header.cell.units.color": "#FFFFFF80",
   "datatable.cell.pinned": "blur(12px)",
   "datatable.body.cell.primary.color": "#FFFFFFF5",
-  "formfield.margin-top": "6px",
-  "formfield.margin-bottom": "6px",
-  "formfield.focus.border-color": "#FFFFFFB8",
-  "formfield.error.border-color": "#FFFFFFB8",
-  "formfield.error.background-color": "#CC1F1A4D",
+  "formfield.marginTop": "6px",
+  "formfield.marginBottom": "6px",
+  "formfield.focus.borderColor": "#FFFFFFB8",
+  "formfield.error.borderColor": "#FFFFFFB8",
+  "formfield.error.backgroundColor": "#CC1F1A4D",
   "formfield.label.typography.mobile": "0.875rem",
   "formfield.label.typography.tablet": "0.875rem",
   "formfield.label.typography.desktop": "0.875rem",
@@ -178,7 +179,7 @@ var tokens = {
   "formfield.label.color.xweak": "#FFFFFF33",
   "formfield.label.color.disabled": "#FFFFFF80",
   "formfield.label.color.active": "#FFFFFFF5",
-  "formfield.label.margin-top": "6px",
+  "formfield.label.marginTop": "6px",
   "formfield.label": 500,
   "formfield.info.typography.mobile": "0.875rem",
   "formfield.info.typography.tablet": "0.875rem",
@@ -189,7 +190,7 @@ var tokens = {
   "formfield.info.color.xweak": "#FFFFFF33",
   "formfield.info.color.disabled": "#FFFFFF80",
   "formfield.info.color.active": "#FFFFFFF5",
-  "formfield.info.margin-bottom": "6px",
+  "formfield.info.marginBottom": "6px",
   "formfield.help.typography.mobile": "0.875rem",
   "formfield.help.typography.tablet": "0.875rem",
   "formfield.help.typography.desktop": "0.875rem",
@@ -211,16 +212,16 @@ var tokens = {
   "heading.3.mobile": "font.weight.semibold",
   "heading.color": "#FFFFFFF5",
   "heading": 1,
-  "icon.small": "text.small.font-size",
-  "icon.medium": "text.medium.font-size",
-  "icon.large": "text.large.font-size",
-  "icon.xlarge": "text.xlarge.font-size",
-  "icon.xxlarge": "text.xxlarge.font-size",
-  "input.border-color": "#FFFFFF5C",
-  "input.border-color.strong": "#FFFFFFB8",
-  "input.border-color.weak": "#FFFFFF1F",
+  "icon.small": "text.small.fontSize",
+  "icon.medium": "text.medium.fontSize",
+  "icon.large": "text.large.fontSize",
+  "icon.xlarge": "text.xlarge.fontSize",
+  "icon.xxlarge": "text.xxlarge.fontSize",
+  "input.borderColor": "#FFFFFF5C",
+  "input.borderColor.strong": "#FFFFFFB8",
+  "input.borderColor.weak": "#FFFFFF1F",
   "input": "6px",
-  "input.border-size": "1px",
+  "input.borderSize": "1px",
   "input.placeholder.color": "#FFFFFF33",
   "input.placeholder": 400,
   "input.value.color": "#FFFFFFF5",
@@ -314,10 +315,10 @@ var structuredTokens = {
   },
   "breakpoints": {
     "tablet": {
-      "min-width": "768px"
+      "minWidth": "768px"
     },
     "desktop": {
-      "min-width": "1536px"
+      "minWidth": "1536px"
     }
   },
   "color": {
@@ -428,39 +429,39 @@ var structuredTokens = {
   },
   "elevation": {
     "small": {
-      "box-shadow": "0px 2px 4px #0000001F"
+      "boxShadow": "0px 2px 4px #0000001F"
     },
     "medium": {
-      "box-shadow": "0px 6px 12px #0000001F"
+      "boxShadow": "0px 6px 12px #0000001F"
     },
     "large": {
-      "box-shadow": "0px 12px 24px #0000003D"
+      "boxShadow": "0px 12px 24px #0000003D"
     }
   },
   "font": {
-    "font-family": "Metric, Arial, sans-serif",
+    "fontFamily": "Metric, Arial, sans-serif",
     "light": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Light.woff2",
-      "font-weight": 300
+      "fontWeight": 300
     },
     "regular": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Regular.woff2",
-      "font-weight": 400
+      "fontWeight": 400
     },
     "medium": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Medium.woff2",
-      "font-weight": 500
+      "fontWeight": 500
     },
     "semibold": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Semibold.woff2",
-      "font-weight": 600
+      "fontWeight": 600
     },
     "bold": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Bold.woff2",
-      "font-weight": 700
+      "fontWeight": 700
     },
     "black": {
-      "font-weight": 900
+      "fontWeight": 900
     }
   },
   "opacity": {
@@ -517,16 +518,16 @@ var structuredTokens = {
       "light": "#444444",
       "dark": "#FFFFFFF5"
     },
-    "text-decoration": "underline",
-    "font-weight": 500,
+    "textDecoration": "underline",
+    "fontWeight": 500,
     "hover": {
-      "text-decoration": "underline"
+      "textDecoration": "underline"
     },
     "icon": {
       "color": "#01A982"
     },
     "label": {
-      "line-height": 1.25,
+      "lineHeight": 1.25,
       "color": {
         "light": "#6F6F6F",
         "dark": "#FFFFFFE6",
@@ -554,70 +555,70 @@ var structuredTokens = {
       },
       "xsmall": {
         "mobile": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "tablet": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "desktop": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         }
       },
       "small": {
         "mobile": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "tablet": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "desktop": {
-          "font-size": "1rem"
+          "fontSize": "1rem"
         }
       },
       "medium": {
         "mobile": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "tablet": {
-          "font-size": "1rem"
+          "fontSize": "1rem"
         },
         "desktop": {
-          "font-size": "1.125rem"
+          "fontSize": "1.125rem"
         }
       },
       "large": {
         "mobile": {
-          "font-size": "1rem"
+          "fontSize": "1rem"
         },
         "tablet": {
-          "font-size": "1.125rem"
+          "fontSize": "1.125rem"
         },
         "desktop": {
-          "font-size": "1.5rem",
-          "font-weight": 300
+          "fontSize": "1.5rem",
+          "fontWeight": 300
         }
       },
       "xlarge": {
         "mobile": {
-          "font-size": "1.125rem"
+          "fontSize": "1.125rem"
         },
         "tablet": {
-          "font-size": "1.5rem",
-          "font-weight": 300
+          "fontSize": "1.5rem",
+          "fontWeight": 300
         },
         "desktop": {
-          "font-size": "1.875rem",
-          "font-weight": 300
+          "fontSize": "1.875rem",
+          "fontWeight": 300
         }
       }
     },
     "large": {
       "color": "#01A982",
-      "text-decoration": "none"
+      "textDecoration": "none"
     },
     "xlarge": {
       "color": "#01A982",
-      "text-decoration": "none"
+      "textDecoration": "none"
     }
   },
   "avatar": {
@@ -638,24 +639,24 @@ var structuredTokens = {
     },
     "text": {
       "xsmall": {
-        "font-size": "0.875rem"
+        "fontSize": "0.875rem"
       },
       "small": {
-        "font-size": "1rem"
+        "fontSize": "1rem"
       },
       "medium": {
-        "font-size": "1.125rem"
+        "fontSize": "1.125rem"
       },
       "large": {
-        "font-size": "1.5rem"
+        "fontSize": "1.5rem"
       },
       "xlarge": {
-        "font-size": "1.875rem"
+        "fontSize": "1.875rem"
       }
     }
   },
   "button": {
-    "border-radius": "2em",
+    "borderRadius": "2em",
     "hover": {
       "background": {
         "light": "#0000000A",
@@ -672,43 +673,43 @@ var structuredTokens = {
       "opacity": 0.3
     },
     "small": {
-      "padding-top": "6px",
-      "padding-bottom": "6px",
-      "padding-left": "18px",
-      "padding-right": "18px",
+      "paddingTop": "6px",
+      "paddingBottom": "6px",
+      "paddingLeft": "18px",
+      "paddingRight": "18px",
       "iconOnly": {
         "padding": "10px"
       }
     },
     "medium": {
-      "padding-top": "6px",
-      "padding-bottom": "6px",
-      "padding-left": "18px",
-      "padding-right": "18px",
+      "paddingTop": "6px",
+      "paddingBottom": "6px",
+      "paddingLeft": "18px",
+      "paddingRight": "18px",
       "iconOnly": {
         "padding": "9px"
       },
       "toolbar": {
-        "padding-top": "6px",
-        "padding-bottom": "6px",
-        "padding-left": "12px",
-        "padding-right": "12px"
+        "paddingTop": "6px",
+        "paddingBottom": "6px",
+        "paddingLeft": "12px",
+        "paddingRight": "12px"
       }
     },
     "large": {
-      "padding-top": "8px",
-      "padding-bottom": "8px",
-      "padding-left": "24px",
-      "padding-right": "24px",
+      "paddingTop": "8px",
+      "paddingBottom": "8px",
+      "paddingLeft": "24px",
+      "paddingRight": "24px",
       "iconOnly": {
         "padding": "12px"
       }
     },
     "xlarge": {
-      "padding-top": "18px",
-      "padding-bottom": "18px",
-      "padding-left": "30px",
-      "padding-right": "30px",
+      "paddingTop": "18px",
+      "paddingBottom": "18px",
+      "paddingLeft": "30px",
+      "paddingRight": "30px",
       "iconOnly": {
         "padding": "21px"
       }
@@ -726,23 +727,23 @@ var structuredTokens = {
       }
     },
     "option": {
-      "border-radius": "0px",
-      "padding-left": {
+      "borderRadius": "0px",
+      "paddingLeft": {
         "mobile": "6px",
         "tablet": "12px",
         "desktop": "12px"
       },
-      "padding-right": {
+      "paddingRight": {
         "mobile": "6px",
         "tablet": "12px",
         "desktop": "12px"
       },
-      "padding-top": {
+      "paddingTop": {
         "mobile": "3px",
         "tablet": "6px",
         "desktop": "6px"
       },
-      "padding-bottom": {
+      "paddingBottom": {
         "mobile": "3px",
         "tablet": "6px",
         "desktop": "6px"
@@ -752,22 +753,22 @@ var structuredTokens = {
       }
     },
     "secondary": {
-      "border-width": {
+      "borderWidth": {
         "mobile": "2px",
         "tablet": "2px",
         "desktop": "2px"
       },
-      "border-color": "#01A982",
+      "borderColor": "#01A982",
       "active": {
-        "border-color": "transparent"
+        "borderColor": "transparent"
       },
       "hover": {
-        "border-width": "",
+        "borderWidth": "",
         "background": "none"
       }
     },
     "toolbar": {
-      "border-radius": "6px"
+      "borderRadius": "6px"
     },
     "badge": {
       "background": {
@@ -775,7 +776,7 @@ var structuredTokens = {
         "dark": "#FFFFFFF5"
       },
       "label": {
-        "font-size": "0.875rem"
+        "fontSize": "0.875rem"
       }
     },
     "label": "text.desktop"
@@ -786,31 +787,31 @@ var structuredTokens = {
         "light": "#444444",
         "dark": "#FFFFFFF5"
       },
-      "font-weight": 500,
+      "fontWeight": 500,
       "small": {
-        "font-size": "1.125rem"
+        "fontSize": "1.125rem"
       },
       "medium": {
-        "font-size": "1.5rem"
+        "fontSize": "1.5rem"
       },
       "large": {
-        "font-size": "1.875rem"
+        "fontSize": "1.875rem"
       }
     },
     "day": {
       "small": {
-        "font-size": "13.6px",
-        "line-height": 1.375,
+        "fontSize": "13.6px",
+        "lineHeight": 1.375,
         "width": "27.43px"
       },
       "medium": {
-        "font-size": "18px",
-        "line-height": 1.45,
+        "fontSize": "18px",
+        "lineHeight": 1.45,
         "width": "54.86px"
       },
       "large": {
-        "font-size": "31.2px",
-        "line-height": 1.11,
+        "fontSize": "31.2px",
+        "lineHeight": 1.11,
         "width": "109.71px"
       }
     }
@@ -820,8 +821,8 @@ var structuredTokens = {
       "light": "#FFFFFF",
       "dark": "#222222"
     },
-    "box-shadow": "0px 6px 12px #0000001F",
-    "border-radius": "12px",
+    "boxShadow": "0px 6px 12px #0000001F",
+    "borderRadius": "12px",
     "body": {
       "padding": {
         "mobile": "12px",
@@ -831,7 +832,7 @@ var structuredTokens = {
     }
   },
   "checkbox": {
-    "border-color": {
+    "borderColor": {
       "light": "#0000005C",
       "dark": "#FFFFFF5C",
       "strong": {
@@ -843,9 +844,9 @@ var structuredTokens = {
         "dark": "#FFFFFF1F"
       }
     },
-    "border-width": "1px",
+    "borderWidth": "1px",
     "label": {
-      "font-weight": 500
+      "fontWeight": 500
     },
     "hover": {
       "background": {
@@ -854,7 +855,7 @@ var structuredTokens = {
       }
     },
     "check": {
-      "border-radius": "4px",
+      "borderRadius": "4px",
       "checked": {
         "background": "#01A982"
       }
@@ -905,10 +906,10 @@ var structuredTokens = {
         "background": "#01A982"
       },
       "knob": {
-        "box-shadow": {
-          "box-shadow": "0px 2px 4px #0000001F"
+        "boxShadow": {
+          "boxShadow": "0px 2px 4px #0000001F"
         },
-        "border-color": {
+        "borderColor": {
           "light": "#0000005C",
           "dark": "#FFFFFF5C",
           "strong": {
@@ -920,13 +921,13 @@ var structuredTokens = {
             "dark": "#FFFFFF1F"
           }
         },
-        "border-width": "1px"
+        "borderWidth": "1px"
       }
     }
   },
   "datatable": {
     "header": {
-      "border-bottom-color": {
+      "borderBottomColor": {
         "light": "#0000005C",
         "dark": "#FFFFFF5C",
         "strong": {
@@ -938,9 +939,12 @@ var structuredTokens = {
           "dark": "#FFFFFF1F"
         }
       },
-      "border-bottom-width": "1px",
-      "color": "color.text-strong",
-      "font-weight": 500,
+      "borderBottomWidth": "1px",
+      "color": {
+        "light": "#444444",
+        "dark": "#FFFFFFF5"
+      },
+      "fontWeight": 500,
       "cell": {
         "hover": {
           "background": {
@@ -948,22 +952,22 @@ var structuredTokens = {
             "dark": "#FFFFFF0F"
           }
         },
-        "padding-top": {
+        "paddingTop": {
           "mobile": "3px",
           "tablet": "6px",
           "desktop": "6px"
         },
-        "padding-bottom": {
+        "paddingBottom": {
           "mobile": "3px",
           "tablet": "6px",
           "desktop": "6px"
         },
-        "padding-left": {
+        "paddingLeft": {
           "mobile": "6px",
           "tablet": "12px",
           "desktop": "12px"
         },
-        "padding-right": {
+        "paddingRight": {
           "mobile": "6px",
           "tablet": "12px",
           "desktop": "12px"
@@ -978,7 +982,7 @@ var structuredTokens = {
     },
     "cell": {
       "pinned": {
-        "backdrop-filter": "blur(12px)"
+        "backdropFilter": "blur(12px)"
       }
     },
     "body": {
@@ -993,28 +997,28 @@ var structuredTokens = {
     }
   },
   "formfield": {
-    "margin-top": {
+    "marginTop": {
       "mobile": "3px",
       "tablet": "6px",
       "desktop": "6px"
     },
-    "margin-bottom": {
+    "marginBottom": {
       "mobile": "3px",
       "tablet": "6px",
       "desktop": "6px"
     },
     "focus": {
-      "border-color": {
+      "borderColor": {
         "light": "#000000B8",
         "dark": "#FFFFFFB8"
       }
     },
     "error": {
-      "border-color": {
+      "borderColor": {
         "light": "#000000B8",
         "dark": "#FFFFFFB8"
       },
-      "background-color": {
+      "backgroundColor": {
         "light": "#C54E4B",
         "dark": "#CC1F1A4D"
       }
@@ -1022,13 +1026,13 @@ var structuredTokens = {
     "label": {
       "typography": {
         "mobile": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "tablet": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "desktop": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         }
       },
       "color": {
@@ -1056,23 +1060,23 @@ var structuredTokens = {
           "dark": "#FFFFFFF5"
         }
       },
-      "margin-top": {
+      "marginTop": {
         "mobile": "3px",
         "tablet": "6px",
         "desktop": "6px"
       },
-      "font-weight": 500
+      "fontWeight": 500
     },
     "info": {
       "typography": {
         "mobile": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "tablet": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "desktop": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         }
       },
       "color": {
@@ -1100,7 +1104,7 @@ var structuredTokens = {
           "dark": "#FFFFFFF5"
         }
       },
-      "margin-bottom": {
+      "marginBottom": {
         "mobile": "3px",
         "tablet": "6px",
         "desktop": "6px"
@@ -1109,13 +1113,13 @@ var structuredTokens = {
     "help": {
       "typography": {
         "mobile": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "tablet": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         },
         "desktop": {
-          "font-size": "0.875rem"
+          "fontSize": "0.875rem"
         }
       },
       "color": {
@@ -1151,71 +1155,71 @@ var structuredTokens = {
   "heading": {
     "1": {
       "desktop": {
-        "font-size": "2.25rem",
-        "font-weight": "font.weight.regular"
+        "fontSize": "2.25rem",
+        "fontWeight": "font.weight.regular"
       },
       "tablet": {
-        "font-size": "1.5rem",
-        "font-weight": "font.weight.medium"
+        "fontSize": "1.5rem",
+        "fontWeight": "font.weight.medium"
       },
       "mobile": {
-        "font-size": "1.25rem",
-        "font-weight": "font.weight.medium"
+        "fontSize": "1.25rem",
+        "fontWeight": "font.weight.medium"
       }
     },
     "2": {
       "desktop": {
-        "font-size": "1.5rem",
-        "font-weight": "font.weight.regular"
+        "fontSize": "1.5rem",
+        "fontWeight": "font.weight.regular"
       },
       "tablet": {
-        "font-size": "1.25rem",
-        "font-weight": "font.weight.medium"
+        "fontSize": "1.25rem",
+        "fontWeight": "font.weight.medium"
       },
       "mobile": {
-        "font-size": "1rem",
-        "font-weight": "font.weight.semibold"
+        "fontSize": "1rem",
+        "fontWeight": "font.weight.semibold"
       }
     },
     "3": {
       "desktop": {
-        "font-size": "1.25rem",
-        "font-weight": "font.weight.medium"
+        "fontSize": "1.25rem",
+        "fontWeight": "font.weight.medium"
       },
       "tablet": {
-        "font-size": "1rem",
-        "font-weight": "font.weight.semibold"
+        "fontSize": "1rem",
+        "fontWeight": "font.weight.semibold"
       },
       "mobile": {
-        "font-size": "1rem",
-        "font-weight": "font.weight.semibold"
+        "fontSize": "1rem",
+        "fontWeight": "font.weight.semibold"
       }
     },
     "color": {
       "light": "#444444",
       "dark": "#FFFFFFF5"
     },
-    "line-height": 1
+    "lineHeight": 1
   },
   "icon": {
     "small": {
-      "height": "text.small.font-size"
+      "height": "text.small.fontSize"
     },
     "medium": {
-      "height": "text.medium.font-size"
+      "height": "text.medium.fontSize"
     },
     "large": {
-      "height": "text.large.font-size"
+      "height": "text.large.fontSize"
     },
     "xlarge": {
-      "height": "text.xlarge.font-size"
+      "height": "text.xlarge.fontSize"
     },
     "xxlarge": {
-      "height": "text.xxlarge.font-size"
+      "height": "text.xxlarge.fontSize"
     }
   },
   "input": {
-    "border-color": {
+    "borderColor": {
       "light": "#0000005C",
       "dark": "#FFFFFF5C",
       "strong": {
@@ -1227,8 +1231,8 @@ var structuredTokens = {
         "dark": "#FFFFFF1F"
       }
     },
-    "border-radius": "6px",
-    "border-size": {
+    "borderRadius": "6px",
+    "borderSize": {
       "mobile": "1px",
       "tablet": "1px",
       "desktop": "1px"
@@ -1238,14 +1242,14 @@ var structuredTokens = {
         "light": "#BBBBBB",
         "dark": "#FFFFFF33"
       },
-      "font-weight": 400
+      "fontWeight": 400
     },
     "value": {
       "color": {
         "light": "#444444",
         "dark": "#FFFFFFF5"
       },
-      "font-weight": 500
+      "fontWeight": 500
     }
   },
   "layer": {
@@ -1287,8 +1291,8 @@ var structuredTokens = {
         "dark": "#FFFFFF0F"
       }
     },
-    "border-radius": "3px",
-    "box-shadow": "0px 12px 24px #0000003D",
+    "borderRadius": "3px",
+    "boxShadow": "0px 12px 24px #0000003D",
     "overlay": {
       "background": "#00000080"
     }
@@ -1299,7 +1303,7 @@ var structuredTokens = {
         "light": "#444444",
         "dark": "#FFFFFFF5"
       },
-      "font-weight": 500
+      "fontWeight": 500
     }
   },
   "notification": {
@@ -1307,12 +1311,12 @@ var structuredTokens = {
       "light": "#444444",
       "dark": "#FFFFFFF5"
     },
-    "border-radius": "1px",
+    "borderRadius": "1px",
     "global": {
-      "border-radius": "0px"
+      "borderRadius": "0px"
     },
     "title": {
-      "font-weight": 500
+      "fontWeight": 500
     },
     "critical": {
       "background": {
@@ -1376,15 +1380,15 @@ var structuredTokens = {
     }
   },
   "page": {
-    "min-width": "384px",
+    "minWidth": "384px",
     "narrow": {
-      "max-width": "768px"
+      "maxWidth": "768px"
     },
     "wide": {
-      "max-width": "1536px"
+      "maxWidth": "1536px"
     },
     "full": {
-      "max-width": "content.full"
+      "maxWidth": "content.full"
     },
     "padding": {
       "mobile": "12px",
@@ -1396,21 +1400,21 @@ var structuredTokens = {
     "subtitle": {
       "typography": {
         "mobile": {
-          "font-size": "1.125rem"
+          "fontSize": "1.125rem"
         },
         "tablet": {
-          "font-size": "1.5rem",
-          "font-weight": 300
+          "fontSize": "1.5rem",
+          "fontWeight": 300
         },
         "desktop": {
-          "font-size": "1.875rem",
-          "font-weight": 300
+          "fontSize": "1.875rem",
+          "fontWeight": 300
         }
       }
     }
   },
   "text": {
-    "line-height": 1.25,
+    "lineHeight": 1.25,
     "color": {
       "light": "#6F6F6F",
       "dark": "#FFFFFFE6",
@@ -1438,60 +1442,60 @@ var structuredTokens = {
     },
     "xsmall": {
       "mobile": {
-        "font-size": "0.875rem"
+        "fontSize": "0.875rem"
       },
       "tablet": {
-        "font-size": "0.875rem"
+        "fontSize": "0.875rem"
       },
       "desktop": {
-        "font-size": "0.875rem"
+        "fontSize": "0.875rem"
       }
     },
     "small": {
       "mobile": {
-        "font-size": "0.875rem"
+        "fontSize": "0.875rem"
       },
       "tablet": {
-        "font-size": "0.875rem"
+        "fontSize": "0.875rem"
       },
       "desktop": {
-        "font-size": "1rem"
+        "fontSize": "1rem"
       }
     },
     "medium": {
       "mobile": {
-        "font-size": "0.875rem"
+        "fontSize": "0.875rem"
       },
       "tablet": {
-        "font-size": "1rem"
+        "fontSize": "1rem"
       },
       "desktop": {
-        "font-size": "1.125rem"
+        "fontSize": "1.125rem"
       }
     },
     "large": {
       "mobile": {
-        "font-size": "1rem"
+        "fontSize": "1rem"
       },
       "tablet": {
-        "font-size": "1.125rem"
+        "fontSize": "1.125rem"
       },
       "desktop": {
-        "font-size": "1.5rem",
-        "font-weight": 300
+        "fontSize": "1.5rem",
+        "fontWeight": 300
       }
     },
     "xlarge": {
       "mobile": {
-        "font-size": "1.125rem"
+        "fontSize": "1.125rem"
       },
       "tablet": {
-        "font-size": "1.5rem",
-        "font-weight": 300
+        "fontSize": "1.5rem",
+        "fontWeight": 300
       },
       "desktop": {
-        "font-size": "1.875rem",
-        "font-weight": 300
+        "fontSize": "1.875rem",
+        "fontWeight": 300
       }
     }
   }
