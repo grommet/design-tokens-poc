@@ -15,10 +15,13 @@ const resolved = stretchAndResolveTokens(combined);
 const flat = flattenTokens(resolved);
 
 writeFileSync('./tokens.json', JSON.stringify(flat, null, 2));
-writeFileSync('./tokens.js', `export default ${JSON.stringify(flat, null, 2)}`);
+writeFileSync(
+  './tokens.ts',
+  `export default ${JSON.stringify(flat, null, 2)}`,
+);
 
 writeFileSync(
-  './structured-tokens.js',
+  './structured-tokens.ts',
   `export default ${JSON.stringify(resolved, null, 2)}`,
 );
 

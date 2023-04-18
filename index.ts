@@ -1,4 +1,4 @@
-import tokens from "./tokens.js";
-import structuredTokens from "./structured-tokens.js";
+import tokens from "./tokens.ts";
+import structuredTokens from "./structured-tokens.ts";
 
 export { tokens, structuredTokens };

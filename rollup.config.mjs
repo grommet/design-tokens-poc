@@ -1,19 +1,45 @@
-import copy from 'rollup-plugin-copy'
+import typescript from 'rollup-plugin-typescript2';
+import copy from 'rollup-plugin-copy';
+import pkg from './package.json' assert { type: 'json' };
 
-const config = [
-  {
-    input: ["index.ts"],
-    output: {
-      dir: "dist",
-      format: "es",
+export default {
+  input: 'index.ts',
+  output: [
+    {
+      file: pkg.main,
+      format: 'cjs',
     },
-    plugins: [
-      copy({
-        targets: [
-          { src: ['tokens.json', 'tokens.css'], dest: 'dist' },
-        ]
-      })
-    ]
-  },
-];
-export default config;
+    {
+      file: pkg.module,
+      format: 'es',
+    },
+  ],
+  external: [
+    ...Object.keys(pkg.dependencies || {}),
+    ...Object.keys(pkg.peerDependencies || {}),
+  ],
+  plugins: [
+    typescript(),
+    copy({
+      targets: [{ src: ['tokens.json', 'tokens.css'], dest: 'dist' }],
+    }),
+  ],
+};
+
+// const config = [
+//   {
+//     input: ["index.ts"],
+//     output: {
+//       dir: "dist",
+//       format: "es",
+//     },
+//     plugins: [
+//       copy({
+//         targets: [
+//           { src: ['tokens.json', 'tokens.css'], dest: 'dist' },
+//         ]
+//       })
+//     ]
+//   },
+// ];
+// export default config;

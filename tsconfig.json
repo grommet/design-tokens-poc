@@ -1,7 +1,15 @@
 {
   "compilerOptions": {
-    "declaration": true
+    "declaration": true,
+    "declarationDir": "./dist",
+    "module": "es6",
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "target": "es6",
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true
   },
+  "include": ["*.ts"],
   "exclude": [
     "node_modules",
     "dist"
