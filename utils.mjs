@@ -92,12 +92,15 @@ export const splitTheme = tokens => {
 
   const split = (node, path = []) => {
     Object.keys(node)
-      .filter(key => key !== 'light' && key !== 'dark')
+      .filter(
+        key =>
+          typeof node[key] !== 'string' || (key !== 'light' && key !== 'dark'),
+      )
       .forEach(key => {
         const keyPath = [...path, key];
         const value = node[key];
         if (typeof value === 'object') {
-          if (value.light && value.dark) {
+          if (typeof value.light === 'string' && value.light && value.dark) {
             if (Object.keys(value).length > 2) {
               // need to inject 'default' so we can keep other keys
               const defaultKeyPath = [...keyPath, 'default'];
@@ -109,8 +112,7 @@ export const splitTheme = tokens => {
             }
           }
           split(value, keyPath);
-        }
-        else set(light, keyPath, value);
+        } else set(light, keyPath, value);
       });
   };
 
