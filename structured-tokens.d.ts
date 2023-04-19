@@ -35,100 +35,16 @@ declare const _default: {
         };
     };
     color: {
-        background: {
-            light: string;
-            dark: string;
-            front: {
-                light: string;
-                dark: string;
-            };
-            back: {
-                light: string;
-                dark: string;
-            };
-            contrast: {
-                light: string;
-                dark: string;
-            };
-            layer: {
-                overlay: string;
-            };
-            validation: {
-                critical: {
-                    light: string;
-                    dark: string;
-                };
-                warning: {
-                    light: string;
-                    dark: string;
-                };
-                ok: {
-                    light: string;
-                    dark: string;
-                };
-            };
-            selected: string;
-            active: {
-                light: string;
-                dark: string;
-            };
-        };
+        background: string;
         brand: string;
-        border: {
-            light: string;
-            dark: string;
-            strong: {
-                light: string;
-                dark: string;
-            };
-            weak: {
-                light: string;
-                dark: string;
-            };
-        };
+        border: string;
         status: {
-            critical: {
-                light: string;
-                dark: string;
-            };
-            warning: {
-                light: string;
-                dark: string;
-            };
-            ok: {
-                light: string;
-                dark: string;
-            };
-            unknown: {
-                light: string;
-                dark: string;
-            };
+            critical: string;
+            warning: string;
+            ok: string;
+            unknown: string;
         };
-        text: {
-            light: string;
-            dark: string;
-            strong: {
-                light: string;
-                dark: string;
-            };
-            weak: {
-                light: string;
-                dark: string;
-            };
-            xweak: {
-                light: string;
-                dark: string;
-            };
-            disabled: {
-                light: string;
-                dark: string;
-            };
-            selected: string;
-            active: {
-                light: string;
-                dark: string;
-            };
-        };
+        text: string;
         focus: string;
     };
     content: {
@@ -227,10 +143,7 @@ declare const _default: {
         };
     };
     anchor: {
-        color: {
-            light: string;
-            dark: string;
-        };
+        color: string;
         textDecoration: string;
         fontWeight: string;
         hover: {
@@ -241,31 +154,7 @@ declare const _default: {
         };
         label: {
             lineHeight: string;
-            color: {
-                light: string;
-                dark: string;
-                strong: {
-                    light: string;
-                    dark: string;
-                };
-                weak: {
-                    light: string;
-                    dark: string;
-                };
-                xweak: {
-                    light: string;
-                    dark: string;
-                };
-                disabled: {
-                    light: string;
-                    dark: string;
-                };
-                selected: string;
-                active: {
-                    light: string;
-                    dark: string;
-                };
-            };
+            color: string;
             xsmall: {
                 mobile: {
                     fontSize: string;
@@ -371,16 +260,10 @@ declare const _default: {
     button: {
         borderRadius: string;
         hover: {
-            background: {
-                light: string;
-                dark: string;
-            };
+            background: string;
         };
         active: {
-            background: {
-                light: string;
-                dark: string;
-            };
+            background: string;
         };
         disabled: {
             opacity: string;
@@ -484,10 +367,7 @@ declare const _default: {
             borderRadius: string;
         };
         badge: {
-            background: {
-                light: string;
-                dark: string;
-            };
+            background: string;
             label: {
                 fontSize: string;
             };
@@ -496,10 +376,7 @@ declare const _default: {
     };
     calendar: {
         title: {
-            color: {
-                light: string;
-                dark: string;
-            };
+            color: string;
             fontWeight: string;
             small: {
                 fontSize: string;
@@ -530,10 +407,7 @@ declare const _default: {
         };
     };
     card: {
-        background: {
-            light: string;
-            dark: string;
-        };
+        background: string;
         boxShadow: string;
         borderRadius: string;
         body: {
@@ -545,27 +419,13 @@ declare const _default: {
         };
     };
     checkbox: {
-        borderColor: {
-            light: string;
-            dark: string;
-            strong: {
-                light: string;
-                dark: string;
-            };
-            weak: {
-                light: string;
-                dark: string;
-            };
-        };
+        borderColor: string;
         borderWidth: string;
         label: {
             fontWeight: string;
         };
         hover: {
-            background: {
-                light: string;
-                dark: string;
-            };
+            background: string;
         };
         check: {
             borderRadius: string;
@@ -577,44 +437,7 @@ declare const _default: {
             stroke: string;
         };
         toggle: {
-            background: {
-                light: string;
-                dark: string;
-                front: {
-                    light: string;
-                    dark: string;
-                };
-                back: {
-                    light: string;
-                    dark: string;
-                };
-                contrast: {
-                    light: string;
-                    dark: string;
-                };
-                layer: {
-                    overlay: string;
-                };
-                validation: {
-                    critical: {
-                        light: string;
-                        dark: string;
-                    };
-                    warning: {
-                        light: string;
-                        dark: string;
-                    };
-                    ok: {
-                        light: string;
-                        dark: string;
-                    };
-                };
-                selected: string;
-                active: {
-                    light: string;
-                    dark: string;
-                };
-            };
+            background: string;
             checked: {
                 background: string;
             };
@@ -622,48 +445,20 @@ declare const _default: {
                 boxShadow: {
                     boxShadow: string;
                 };
-                borderColor: {
-                    light: string;
-                    dark: string;
-                    strong: {
-                        light: string;
-                        dark: string;
-                    };
-                    weak: {
-                        light: string;
-                        dark: string;
-                    };
-                };
+                borderColor: string;
                 borderWidth: string;
             };
         };
     };
     datatable: {
         header: {
-            borderBottomColor: {
-                light: string;
-                dark: string;
-                strong: {
-                    light: string;
-                    dark: string;
-                };
-                weak: {
-                    light: string;
-                    dark: string;
-                };
-            };
+            borderBottomColor: string;
             borderBottomWidth: string;
-            color: {
-                light: string;
-                dark: string;
-            };
+            color: string;
             fontWeight: string;
             cell: {
                 hover: {
-                    background: {
-                        light: string;
-                        dark: string;
-                    };
+                    background: string;
                 };
                 paddingTop: {
                     mobile: string;
@@ -686,10 +481,7 @@ declare const _default: {
                     desktop: string;
                 };
                 units: {
-                    color: {
-                        light: string;
-                        dark: string;
-                    };
+                    color: string;
                 };
             };
         };
@@ -701,10 +493,7 @@ declare const _default: {
         body: {
             cell: {
                 primary: {
-                    color: {
-                        light: string;
-                        dark: string;
-                    };
+                    color: string;
                 };
             };
         };
@@ -721,20 +510,11 @@ declare const _default: {
             desktop: string;
         };
         focus: {
-            borderColor: {
-                light: string;
-                dark: string;
-            };
+            borderColor: string;
         };
         error: {
-            borderColor: {
-                light: string;
-                dark: string;
-            };
-            backgroundColor: {
-                light: string;
-                dark: string;
-            };
+            borderColor: string;
+            backgroundColor: string;
         };
         label: {
             typography: {
@@ -748,31 +528,7 @@ declare const _default: {
                     fontSize: string;
                 };
             };
-            color: {
-                light: string;
-                dark: string;
-                strong: {
-                    light: string;
-                    dark: string;
-                };
-                weak: {
-                    light: string;
-                    dark: string;
-                };
-                xweak: {
-                    light: string;
-                    dark: string;
-                };
-                disabled: {
-                    light: string;
-                    dark: string;
-                };
-                selected: string;
-                active: {
-                    light: string;
-                    dark: string;
-                };
-            };
+            color: string;
             marginTop: {
                 mobile: string;
                 tablet: string;
@@ -792,31 +548,7 @@ declare const _default: {
                     fontSize: string;
                 };
             };
-            color: {
-                light: string;
-                dark: string;
-                strong: {
-                    light: string;
-                    dark: string;
-                };
-                weak: {
-                    light: string;
-                    dark: string;
-                };
-                xweak: {
-                    light: string;
-                    dark: string;
-                };
-                disabled: {
-                    light: string;
-                    dark: string;
-                };
-                selected: string;
-                active: {
-                    light: string;
-                    dark: string;
-                };
-            };
+            color: string;
             marginBottom: {
                 mobile: string;
                 tablet: string;
@@ -835,31 +567,7 @@ declare const _default: {
                     fontSize: string;
                 };
             };
-            color: {
-                light: string;
-                dark: string;
-                strong: {
-                    light: string;
-                    dark: string;
-                };
-                weak: {
-                    light: string;
-                    dark: string;
-                };
-                xweak: {
-                    light: string;
-                    dark: string;
-                };
-                disabled: {
-                    light: string;
-                    dark: string;
-                };
-                selected: string;
-                active: {
-                    light: string;
-                    dark: string;
-                };
-            };
+            color: string;
         };
         disabled: {
             opacity: string;
@@ -908,10 +616,7 @@ declare const _default: {
                 fontWeight: string;
             };
         };
-        color: {
-            light: string;
-            dark: string;
-        };
+        color: string;
         lineHeight: string;
     };
     icon: {
@@ -932,18 +637,7 @@ declare const _default: {
         };
     };
     input: {
-        borderColor: {
-            light: string;
-            dark: string;
-            strong: {
-                light: string;
-                dark: string;
-            };
-            weak: {
-                light: string;
-                dark: string;
-            };
-        };
+        borderColor: string;
         borderRadius: string;
         borderSize: {
             mobile: string;
@@ -951,59 +645,16 @@ declare const _default: {
             desktop: string;
         };
         placeholder: {
-            color: {
-                light: string;
-                dark: string;
-            };
+            color: string;
             fontWeight: string;
         };
         value: {
-            color: {
-                light: string;
-                dark: string;
-            };
+            color: string;
             fontWeight: string;
         };
     };
     layer: {
-        background: {
-            light: string;
-            dark: string;
-            front: {
-                light: string;
-                dark: string;
-            };
-            back: {
-                light: string;
-                dark: string;
-            };
-            contrast: {
-                light: string;
-                dark: string;
-            };
-            layer: {
-                overlay: string;
-            };
-            validation: {
-                critical: {
-                    light: string;
-                    dark: string;
-                };
-                warning: {
-                    light: string;
-                    dark: string;
-                };
-                ok: {
-                    light: string;
-                    dark: string;
-                };
-            };
-            selected: string;
-            active: {
-                light: string;
-                dark: string;
-            };
-        };
+        background: string;
         borderRadius: string;
         boxShadow: string;
         overlay: {
@@ -1012,18 +663,12 @@ declare const _default: {
     };
     namevaluepair: {
         name: {
-            color: {
-                light: string;
-                dark: string;
-            };
+            color: string;
             fontWeight: string;
         };
     };
     notification: {
-        color: {
-            light: string;
-            dark: string;
-        };
+        color: string;
         borderRadius: string;
         global: {
             borderRadius: string;
@@ -1032,63 +677,33 @@ declare const _default: {
             fontWeight: string;
         };
         critical: {
-            background: {
-                light: string;
-                dark: string;
-            };
+            background: string;
             toast: {
-                background: {
-                    light: string;
-                    dark: string;
-                };
+                background: string;
             };
         };
         info: {
-            background: {
-                light: string;
-                dark: string;
-            };
+            background: string;
             toast: {
-                background: {
-                    light: string;
-                    dark: string;
-                };
+                background: string;
             };
         };
         ok: {
-            background: {
-                light: string;
-                dark: string;
-            };
+            background: string;
             toast: {
-                background: {
-                    light: string;
-                    dark: string;
-                };
+                background: string;
             };
         };
         unknown: {
-            background: {
-                light: string;
-                dark: string;
-            };
+            background: string;
             toast: {
-                background: {
-                    light: string;
-                    dark: string;
-                };
+                background: string;
             };
         };
         warning: {
-            background: {
-                light: string;
-                dark: string;
-            };
+            background: string;
             toast: {
-                background: {
-                    light: string;
-                    dark: string;
-                };
+                background: string;
             };
         };
     };
@@ -1128,31 +743,7 @@ declare const _default: {
     };
     text: {
         lineHeight: string;
-        color: {
-            light: string;
-            dark: string;
-            strong: {
-                light: string;
-                dark: string;
-            };
-            weak: {
-                light: string;
-                dark: string;
-            };
-            xweak: {
-                light: string;
-                dark: string;
-            };
-            disabled: {
-                light: string;
-                dark: string;
-            };
-            selected: string;
-            active: {
-                light: string;
-                dark: string;
-            };
-        };
+        color: string;
         xsmall: {
             mobile: {
                 fontSize: string;

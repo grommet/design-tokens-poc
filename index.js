@@ -561,100 +561,16 @@ var structuredTokens = {
     }
   },
   "color": {
-    "background": {
-      "light": "#FFFFFF",
-      "dark": "#1C1C1C",
-      "front": {
-        "light": "#FFFFFF",
-        "dark": "#222222"
-      },
-      "back": {
-        "light": "#F7F7F7",
-        "dark": "#1C1C1C"
-      },
-      "contrast": {
-        "light": "#0000000A",
-        "dark": "#FFFFFF0F"
-      },
-      "layer": {
-        "overlay": "#00000080"
-      },
-      "validation": {
-        "critical": {
-          "light": "#C54E4B",
-          "dark": "#CC1F1A4D"
-        },
-        "warning": {
-          "light": "#FEC901",
-          "dark": "#D891284D"
-        },
-        "ok": {
-          "light": "#01A982",
-          "dark": "#17D0A64D"
-        }
-      },
-      "selected": "#01A982",
-      "active": {
-        "light": "#0000000A",
-        "dark": "#FFFFFF0F"
-      }
-    },
+    "background": "#FFFFFF",
     "brand": "#01A982",
-    "border": {
-      "light": "#0000005C",
-      "dark": "#FFFFFF5C",
-      "strong": {
-        "light": "#000000B8",
-        "dark": "#FFFFFFB8"
-      },
-      "weak": {
-        "light": "#0000001F",
-        "dark": "#FFFFFF1F"
-      }
-    },
+    "border": "#0000005C",
     "status": {
-      "critical": {
-        "light": "#C54E4B",
-        "dark": "#D04F4E"
-      },
-      "warning": {
-        "light": "#FEC901",
-        "dark": "#9B6310"
-      },
-      "ok": {
-        "light": "#01A982",
-        "dark": "#008567"
-      },
-      "unknown": {
-        "light": "#CCCCCC",
-        "dark": "#555555"
-      }
+      "critical": "#C54E4B",
+      "warning": "#FEC901",
+      "ok": "#01A982",
+      "unknown": "#CCCCCC"
     },
-    "text": {
-      "light": "#6F6F6F",
-      "dark": "#FFFFFFE6",
-      "strong": {
-        "light": "#444444",
-        "dark": "#FFFFFFF5"
-      },
-      "weak": {
-        "light": "#757575",
-        "dark": "#FFFFFF80"
-      },
-      "xweak": {
-        "light": "#BBBBBB",
-        "dark": "#FFFFFF33"
-      },
-      "disabled": {
-        "light": "#757575",
-        "dark": "#FFFFFF80"
-      },
-      "selected": "#FFFFFF",
-      "active": {
-        "light": "#444444",
-        "dark": "#FFFFFFF5"
-      }
-    },
+    "text": "#6F6F6F",
     "focus": ""
   },
   "content": {
@@ -753,10 +669,7 @@ var structuredTokens = {
     }
   },
   "anchor": {
-    "color": {
-      "light": "#444444",
-      "dark": "#FFFFFFF5"
-    },
+    "color": "#444444",
     "textDecoration": "underline",
     "fontWeight": "500",
     "hover": {
@@ -767,31 +680,7 @@ var structuredTokens = {
     },
     "label": {
       "lineHeight": "1.25",
-      "color": {
-        "light": "#6F6F6F",
-        "dark": "#FFFFFFE6",
-        "strong": {
-          "light": "#444444",
-          "dark": "#FFFFFFF5"
-        },
-        "weak": {
-          "light": "#757575",
-          "dark": "#FFFFFF80"
-        },
-        "xweak": {
-          "light": "#BBBBBB",
-          "dark": "#FFFFFF33"
-        },
-        "disabled": {
-          "light": "#757575",
-          "dark": "#FFFFFF80"
-        },
-        "selected": "#FFFFFF",
-        "active": {
-          "light": "#444444",
-          "dark": "#FFFFFFF5"
-        }
-      },
+      "color": "#6F6F6F",
       "xsmall": {
         "mobile": {
           "fontSize": "0.875rem"
@@ -897,16 +786,10 @@ var structuredTokens = {
   "button": {
     "borderRadius": "2em",
     "hover": {
-      "background": {
-        "light": "#0000000A",
-        "dark": "#FFFFFF0F"
-      }
+      "background": "#0000000A"
     },
     "active": {
-      "background": {
-        "light": "#0000000A",
-        "dark": "#FFFFFF0F"
-      }
+      "background": "#0000000A"
     },
     "disabled": {
       "opacity": "0.3"
@@ -1010,10 +893,7 @@ var structuredTokens = {
       "borderRadius": "6px"
     },
     "badge": {
-      "background": {
-        "light": "#444444",
-        "dark": "#FFFFFFF5"
-      },
+      "background": "#444444",
       "label": {
         "fontSize": "0.875rem"
       }
@@ -1022,10 +902,7 @@ var structuredTokens = {
   },
   "calendar": {
     "title": {
-      "color": {
-        "light": "#444444",
-        "dark": "#FFFFFFF5"
-      },
+      "color": "#444444",
       "fontWeight": "500",
       "small": {
         "fontSize": "1.125rem"
@@ -1056,10 +933,7 @@ var structuredTokens = {
     }
   },
   "card": {
-    "background": {
-      "light": "#FFFFFF",
-      "dark": "#222222"
-    },
+    "background": "#FFFFFF",
     "boxShadow": "0px 6px 12px #0000001F",
     "borderRadius": "12px",
     "body": {
@@ -1071,27 +945,13 @@ var structuredTokens = {
     }
   },
   "checkbox": {
-    "borderColor": {
-      "light": "#0000005C",
-      "dark": "#FFFFFF5C",
-      "strong": {
-        "light": "#000000B8",
-        "dark": "#FFFFFFB8"
-      },
-      "weak": {
-        "light": "#0000001F",
-        "dark": "#FFFFFF1F"
-      }
-    },
+    "borderColor": "#0000005C",
     "borderWidth": "1px",
     "label": {
       "fontWeight": "500"
     },
     "hover": {
-      "background": {
-        "light": "#0000000A",
-        "dark": "#FFFFFF0F"
-      }
+      "background": "#0000000A"
     },
     "check": {
       "borderRadius": "4px",
@@ -1103,44 +963,7 @@ var structuredTokens = {
       "stroke": "#FFFFFF"
     },
     "toggle": {
-      "background": {
-        "light": "#FFFFFF",
-        "dark": "#1C1C1C",
-        "front": {
-          "light": "#FFFFFF",
-          "dark": "#222222"
-        },
-        "back": {
-          "light": "#F7F7F7",
-          "dark": "#1C1C1C"
-        },
-        "contrast": {
-          "light": "#0000000A",
-          "dark": "#FFFFFF0F"
-        },
-        "layer": {
-          "overlay": "#00000080"
-        },
-        "validation": {
-          "critical": {
-            "light": "#C54E4B",
-            "dark": "#CC1F1A4D"
-          },
-          "warning": {
-            "light": "#FEC901",
-            "dark": "#D891284D"
-          },
-          "ok": {
-            "light": "#01A982",
-            "dark": "#17D0A64D"
-          }
-        },
-        "selected": "#01A982",
-        "active": {
-          "light": "#0000000A",
-          "dark": "#FFFFFF0F"
-        }
-      },
+      "background": "#FFFFFF",
       "checked": {
         "background": "#01A982"
       },
@@ -1148,48 +971,20 @@ var structuredTokens = {
         "boxShadow": {
           "boxShadow": "0px 2px 4px #0000001F"
         },
-        "borderColor": {
-          "light": "#0000005C",
-          "dark": "#FFFFFF5C",
-          "strong": {
-            "light": "#000000B8",
-            "dark": "#FFFFFFB8"
-          },
-          "weak": {
-            "light": "#0000001F",
-            "dark": "#FFFFFF1F"
-          }
-        },
+        "borderColor": "#0000005C",
         "borderWidth": "1px"
       }
     }
   },
   "datatable": {
     "header": {
-      "borderBottomColor": {
-        "light": "#0000005C",
-        "dark": "#FFFFFF5C",
-        "strong": {
-          "light": "#000000B8",
-          "dark": "#FFFFFFB8"
-        },
-        "weak": {
-          "light": "#0000001F",
-          "dark": "#FFFFFF1F"
-        }
-      },
+      "borderBottomColor": "#0000005C",
       "borderBottomWidth": "1px",
-      "color": {
-        "light": "#444444",
-        "dark": "#FFFFFFF5"
-      },
+      "color": "#444444",
       "fontWeight": "500",
       "cell": {
         "hover": {
-          "background": {
-            "light": "#0000000A",
-            "dark": "#FFFFFF0F"
-          }
+          "background": "#0000000A"
         },
         "paddingTop": {
           "mobile": "3px",
@@ -1212,10 +1007,7 @@ var structuredTokens = {
           "desktop": "12px"
         },
         "units": {
-          "color": {
-            "light": "#757575",
-            "dark": "#FFFFFF80"
-          }
+          "color": "#757575"
         }
       }
     },
@@ -1227,10 +1019,7 @@ var structuredTokens = {
     "body": {
       "cell": {
         "primary": {
-          "color": {
-            "light": "#444444",
-            "dark": "#FFFFFFF5"
-          }
+          "color": "#444444"
         }
       }
     }
@@ -1247,20 +1036,11 @@ var structuredTokens = {
       "desktop": "6px"
     },
     "focus": {
-      "borderColor": {
-        "light": "#000000B8",
-        "dark": "#FFFFFFB8"
-      }
+      "borderColor": "#000000B8"
     },
     "error": {
-      "borderColor": {
-        "light": "#000000B8",
-        "dark": "#FFFFFFB8"
-      },
-      "backgroundColor": {
-        "light": "#C54E4B",
-        "dark": "#CC1F1A4D"
-      }
+      "borderColor": "#000000B8",
+      "backgroundColor": "#C54E4B"
     },
     "label": {
       "typography": {
@@ -1274,31 +1054,7 @@ var structuredTokens = {
           "fontSize": "0.875rem"
         }
       },
-      "color": {
-        "light": "#6F6F6F",
-        "dark": "#FFFFFFE6",
-        "strong": {
-          "light": "#444444",
-          "dark": "#FFFFFFF5"
-        },
-        "weak": {
-          "light": "#757575",
-          "dark": "#FFFFFF80"
-        },
-        "xweak": {
-          "light": "#BBBBBB",
-          "dark": "#FFFFFF33"
-        },
-        "disabled": {
-          "light": "#757575",
-          "dark": "#FFFFFF80"
-        },
-        "selected": "#FFFFFF",
-        "active": {
-          "light": "#444444",
-          "dark": "#FFFFFFF5"
-        }
-      },
+      "color": "#6F6F6F",
       "marginTop": {
         "mobile": "3px",
         "tablet": "6px",
@@ -1318,31 +1074,7 @@ var structuredTokens = {
           "fontSize": "0.875rem"
         }
       },
-      "color": {
-        "light": "#6F6F6F",
-        "dark": "#FFFFFFE6",
-        "strong": {
-          "light": "#444444",
-          "dark": "#FFFFFFF5"
-        },
-        "weak": {
-          "light": "#757575",
-          "dark": "#FFFFFF80"
-        },
-        "xweak": {
-          "light": "#BBBBBB",
-          "dark": "#FFFFFF33"
-        },
-        "disabled": {
-          "light": "#757575",
-          "dark": "#FFFFFF80"
-        },
-        "selected": "#FFFFFF",
-        "active": {
-          "light": "#444444",
-          "dark": "#FFFFFFF5"
-        }
-      },
+      "color": "#6F6F6F",
       "marginBottom": {
         "mobile": "3px",
         "tablet": "6px",
@@ -1361,31 +1093,7 @@ var structuredTokens = {
           "fontSize": "0.875rem"
         }
       },
-      "color": {
-        "light": "#6F6F6F",
-        "dark": "#FFFFFFE6",
-        "strong": {
-          "light": "#444444",
-          "dark": "#FFFFFFF5"
-        },
-        "weak": {
-          "light": "#757575",
-          "dark": "#FFFFFF80"
-        },
-        "xweak": {
-          "light": "#BBBBBB",
-          "dark": "#FFFFFF33"
-        },
-        "disabled": {
-          "light": "#757575",
-          "dark": "#FFFFFF80"
-        },
-        "selected": "#FFFFFF",
-        "active": {
-          "light": "#444444",
-          "dark": "#FFFFFFF5"
-        }
-      }
+      "color": "#6F6F6F"
     },
     "disabled": {
       "opacity": "0.3"
@@ -1434,10 +1142,7 @@ var structuredTokens = {
         "fontWeight": "font.weight.semibold"
       }
     },
-    "color": {
-      "light": "#444444",
-      "dark": "#FFFFFFF5"
-    },
+    "color": "#444444",
     "lineHeight": "1"
   },
   "icon": {
@@ -1458,18 +1163,7 @@ var structuredTokens = {
     }
   },
   "input": {
-    "borderColor": {
-      "light": "#0000005C",
-      "dark": "#FFFFFF5C",
-      "strong": {
-        "light": "#000000B8",
-        "dark": "#FFFFFFB8"
-      },
-      "weak": {
-        "light": "#0000001F",
-        "dark": "#FFFFFF1F"
-      }
-    },
+    "borderColor": "#0000005C",
     "borderRadius": "6px",
     "borderSize": {
       "mobile": "1px",
@@ -1477,59 +1171,16 @@ var structuredTokens = {
       "desktop": "1px"
     },
     "placeholder": {
-      "color": {
-        "light": "#BBBBBB",
-        "dark": "#FFFFFF33"
-      },
+      "color": "#BBBBBB",
       "fontWeight": "400"
     },
     "value": {
-      "color": {
-        "light": "#444444",
-        "dark": "#FFFFFFF5"
-      },
+      "color": "#444444",
       "fontWeight": "500"
     }
   },
   "layer": {
-    "background": {
-      "light": "#FFFFFF",
-      "dark": "#1C1C1C",
-      "front": {
-        "light": "#FFFFFF",
-        "dark": "#222222"
-      },
-      "back": {
-        "light": "#F7F7F7",
-        "dark": "#1C1C1C"
-      },
-      "contrast": {
-        "light": "#0000000A",
-        "dark": "#FFFFFF0F"
-      },
-      "layer": {
-        "overlay": "#00000080"
-      },
-      "validation": {
-        "critical": {
-          "light": "#C54E4B",
-          "dark": "#CC1F1A4D"
-        },
-        "warning": {
-          "light": "#FEC901",
-          "dark": "#D891284D"
-        },
-        "ok": {
-          "light": "#01A982",
-          "dark": "#17D0A64D"
-        }
-      },
-      "selected": "#01A982",
-      "active": {
-        "light": "#0000000A",
-        "dark": "#FFFFFF0F"
-      }
-    },
+    "background": "#FFFFFF",
     "borderRadius": "3px",
     "boxShadow": "0px 12px 24px #0000003D",
     "overlay": {
@@ -1538,18 +1189,12 @@ var structuredTokens = {
   },
   "namevaluepair": {
     "name": {
-      "color": {
-        "light": "#444444",
-        "dark": "#FFFFFFF5"
-      },
+      "color": "#444444",
       "fontWeight": "500"
     }
   },
   "notification": {
-    "color": {
-      "light": "#444444",
-      "dark": "#FFFFFFF5"
-    },
+    "color": "#444444",
     "borderRadius": "1px",
     "global": {
       "borderRadius": "0px"
@@ -1558,63 +1203,33 @@ var structuredTokens = {
       "fontWeight": "500"
     },
     "critical": {
-      "background": {
-        "light": "#C54E4B",
-        "dark": "#CC1F1A4D"
-      },
+      "background": "#C54E4B",
       "toast": {
-        "background": {
-          "light": "#FFFFFF",
-          "dark": "#222222"
-        }
+        "background": "#FFFFFF"
       }
     },
     "info": {
-      "background": {
-        "light": "#0000000A",
-        "dark": "#FFFFFF0F"
-      },
+      "background": "#0000000A",
       "toast": {
-        "background": {
-          "light": "#FFFFFF",
-          "dark": "#222222"
-        }
+        "background": "#FFFFFF"
       }
     },
     "ok": {
-      "background": {
-        "light": "#01A982",
-        "dark": "#17D0A64D"
-      },
+      "background": "#01A982",
       "toast": {
-        "background": {
-          "light": "#FFFFFF",
-          "dark": "#222222"
-        }
+        "background": "#FFFFFF"
       }
     },
     "unknown": {
-      "background": {
-        "light": "#0000000A",
-        "dark": "#FFFFFF0F"
-      },
+      "background": "#0000000A",
       "toast": {
-        "background": {
-          "light": "#FFFFFF",
-          "dark": "#222222"
-        }
+        "background": "#FFFFFF"
       }
     },
     "warning": {
-      "background": {
-        "light": "#FEC901",
-        "dark": "#D891284D"
-      },
+      "background": "#FEC901",
       "toast": {
-        "background": {
-          "light": "#FFFFFF",
-          "dark": "#222222"
-        }
+        "background": "#FFFFFF"
       }
     }
   },
@@ -1654,31 +1269,7 @@ var structuredTokens = {
   },
   "text": {
     "lineHeight": "1.25",
-    "color": {
-      "light": "#6F6F6F",
-      "dark": "#FFFFFFE6",
-      "strong": {
-        "light": "#444444",
-        "dark": "#FFFFFFF5"
-      },
-      "weak": {
-        "light": "#757575",
-        "dark": "#FFFFFF80"
-      },
-      "xweak": {
-        "light": "#BBBBBB",
-        "dark": "#FFFFFF33"
-      },
-      "disabled": {
-        "light": "#757575",
-        "dark": "#FFFFFF80"
-      },
-      "selected": "#FFFFFF",
-      "active": {
-        "light": "#444444",
-        "dark": "#FFFFFFF5"
-      }
-    },
+    "color": "#6F6F6F",
     "xsmall": {
       "mobile": {
         "fontSize": "0.875rem"
@@ -1740,5 +1331,152 @@ var structuredTokens = {
   }
 };
 
+var structuredTokensDark = {
+  "color": {
+    "background": "#1C1C1C",
+    "border": "#FFFFFF5C",
+    "status": {
+      "critical": "#D04F4E",
+      "warning": "#9B6310",
+      "ok": "#008567",
+      "unknown": "#555555"
+    },
+    "text": "#FFFFFFE6"
+  },
+  "anchor": {
+    "color": "#FFFFFFF5",
+    "label": {
+      "color": "#FFFFFFE6"
+    }
+  },
+  "button": {
+    "hover": {
+      "background": "#FFFFFF0F"
+    },
+    "active": {
+      "background": "#FFFFFF0F"
+    },
+    "badge": {
+      "background": "#FFFFFFF5"
+    }
+  },
+  "calendar": {
+    "title": {
+      "color": "#FFFFFFF5"
+    }
+  },
+  "card": {
+    "background": "#222222"
+  },
+  "checkbox": {
+    "borderColor": "#FFFFFF5C",
+    "hover": {
+      "background": "#FFFFFF0F"
+    },
+    "toggle": {
+      "background": "#1C1C1C",
+      "knob": {
+        "borderColor": "#FFFFFF5C"
+      }
+    }
+  },
+  "datatable": {
+    "header": {
+      "borderBottomColor": "#FFFFFF5C",
+      "color": "#FFFFFFF5",
+      "cell": {
+        "hover": {
+          "background": "#FFFFFF0F"
+        },
+        "units": {
+          "color": "#FFFFFF80"
+        }
+      }
+    },
+    "body": {
+      "cell": {
+        "primary": {
+          "color": "#FFFFFFF5"
+        }
+      }
+    }
+  },
+  "formfield": {
+    "focus": {
+      "borderColor": "#FFFFFFB8"
+    },
+    "error": {
+      "borderColor": "#FFFFFFB8",
+      "backgroundColor": "#CC1F1A4D"
+    },
+    "label": {
+      "color": "#FFFFFFE6"
+    },
+    "info": {
+      "color": "#FFFFFFE6"
+    },
+    "help": {
+      "color": "#FFFFFFE6"
+    }
+  },
+  "heading": {
+    "color": "#FFFFFFF5"
+  },
+  "input": {
+    "borderColor": "#FFFFFF5C",
+    "placeholder": {
+      "color": "#FFFFFF33"
+    },
+    "value": {
+      "color": "#FFFFFFF5"
+    }
+  },
+  "layer": {
+    "background": "#1C1C1C"
+  },
+  "namevaluepair": {
+    "name": {
+      "color": "#FFFFFFF5"
+    }
+  },
+  "notification": {
+    "color": "#FFFFFFF5",
+    "critical": {
+      "background": "#CC1F1A4D",
+      "toast": {
+        "background": "#222222"
+      }
+    },
+    "info": {
+      "background": "#FFFFFF0F",
+      "toast": {
+        "background": "#222222"
+      }
+    },
+    "ok": {
+      "background": "#17D0A64D",
+      "toast": {
+        "background": "#222222"
+      }
+    },
+    "unknown": {
+      "background": "#FFFFFF0F",
+      "toast": {
+        "background": "#222222"
+      }
+    },
+    "warning": {
+      "background": "#D891284D",
+      "toast": {
+        "background": "#222222"
+      }
+    }
+  },
+  "text": {
+    "color": "#FFFFFFE6"
+  }
+};
+
 exports.structuredTokens = structuredTokens;
+exports.structuredTokensDark = structuredTokensDark;
 exports.tokens = tokens;
