@@ -155,30 +155,30 @@ declare const _default: {
         fontFamily: string;
         light: {
             url: string;
-            fontWeight: number;
+            fontWeight: string;
         };
         regular: {
             url: string;
-            fontWeight: number;
+            fontWeight: string;
         };
         medium: {
             url: string;
-            fontWeight: number;
+            fontWeight: string;
         };
         semibold: {
             url: string;
-            fontWeight: number;
+            fontWeight: string;
         };
         bold: {
             url: string;
-            fontWeight: number;
+            fontWeight: string;
         };
         black: {
-            fontWeight: number;
+            fontWeight: string;
         };
     };
     opacity: {
-        disabled: number;
+        disabled: string;
     };
     radius: {
         none: string;
@@ -232,7 +232,7 @@ declare const _default: {
             dark: string;
         };
         textDecoration: string;
-        fontWeight: number;
+        fontWeight: string;
         hover: {
             textDecoration: string;
         };
@@ -240,7 +240,7 @@ declare const _default: {
             color: string;
         };
         label: {
-            lineHeight: number;
+            lineHeight: string;
             color: {
                 light: string;
                 dark: string;
@@ -308,7 +308,7 @@ declare const _default: {
                 };
                 desktop: {
                     fontSize: string;
-                    fontWeight: number;
+                    fontWeight: string;
                 };
             };
             xlarge: {
@@ -317,11 +317,11 @@ declare const _default: {
                 };
                 tablet: {
                     fontSize: string;
-                    fontWeight: number;
+                    fontWeight: string;
                 };
                 desktop: {
                     fontSize: string;
-                    fontWeight: number;
+                    fontWeight: string;
                 };
             };
         };
@@ -383,7 +383,7 @@ declare const _default: {
             };
         };
         disabled: {
-            opacity: number;
+            opacity: string;
         };
         small: {
             paddingTop: string;
@@ -500,7 +500,7 @@ declare const _default: {
                 light: string;
                 dark: string;
             };
-            fontWeight: number;
+            fontWeight: string;
             small: {
                 fontSize: string;
             };
@@ -514,17 +514,17 @@ declare const _default: {
         day: {
             small: {
                 fontSize: string;
-                lineHeight: number;
+                lineHeight: string;
                 width: string;
             };
             medium: {
                 fontSize: string;
-                lineHeight: number;
+                lineHeight: string;
                 width: string;
             };
             large: {
                 fontSize: string;
-                lineHeight: number;
+                lineHeight: string;
                 width: string;
             };
         };
@@ -559,7 +559,7 @@ declare const _default: {
         };
         borderWidth: string;
         label: {
-            fontWeight: number;
+            fontWeight: string;
         };
         hover: {
             background: {
@@ -657,7 +657,7 @@ declare const _default: {
                 light: string;
                 dark: string;
             };
-            fontWeight: number;
+            fontWeight: string;
             cell: {
                 hover: {
                     background: {
@@ -778,7 +778,7 @@ declare const _default: {
                 tablet: string;
                 desktop: string;
             };
-            fontWeight: number;
+            fontWeight: string;
         };
         info: {
             typography: {
@@ -862,7 +862,7 @@ declare const _default: {
             };
         };
         disabled: {
-            opacity: number;
+            opacity: string;
         };
     };
     heading: {
@@ -912,7 +912,7 @@ declare const _default: {
             light: string;
             dark: string;
         };
-        lineHeight: number;
+        lineHeight: string;
     };
     icon: {
         small: {
@@ -955,14 +955,14 @@ declare const _default: {
                 light: string;
                 dark: string;
             };
-            fontWeight: number;
+            fontWeight: string;
         };
         value: {
             color: {
                 light: string;
                 dark: string;
             };
-            fontWeight: number;
+            fontWeight: string;
         };
     };
     layer: {
@@ -1016,7 +1016,7 @@ declare const _default: {
                 light: string;
                 dark: string;
             };
-            fontWeight: number;
+            fontWeight: string;
         };
     };
     notification: {
@@ -1029,7 +1029,7 @@ declare const _default: {
             borderRadius: string;
         };
         title: {
-            fontWeight: number;
+            fontWeight: string;
         };
         critical: {
             background: {
@@ -1117,17 +1117,17 @@ declare const _default: {
                 };
                 tablet: {
                     fontSize: string;
-                    fontWeight: number;
+                    fontWeight: string;
                 };
                 desktop: {
                     fontSize: string;
-                    fontWeight: number;
+                    fontWeight: string;
                 };
             };
         };
     };
     text: {
-        lineHeight: number;
+        lineHeight: string;
         color: {
             light: string;
             dark: string;
@@ -1195,7 +1195,7 @@ declare const _default: {
             };
             desktop: {
                 fontSize: string;
-                fontWeight: number;
+                fontWeight: string;
             };
         };
         xlarge: {
@@ -1204,11 +1204,11 @@ declare const _default: {
             };
             tablet: {
                 fontSize: string;
-                fontWeight: number;
+                fontWeight: string;
             };
             desktop: {
                 fontSize: string;
-                fontWeight: number;
+                fontWeight: string;
             };
         };
     };

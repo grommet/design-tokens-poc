@@ -444,30 +444,30 @@ var structuredTokens = {
     "fontFamily": "Metric, Arial, sans-serif",
     "light": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Light.woff2",
-      "fontWeight": 300
+      "fontWeight": "300"
     },
     "regular": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Regular.woff2",
-      "fontWeight": 400
+      "fontWeight": "400"
     },
     "medium": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Medium.woff2",
-      "fontWeight": 500
+      "fontWeight": "500"
     },
     "semibold": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Semibold.woff2",
-      "fontWeight": 600
+      "fontWeight": "600"
     },
     "bold": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Bold.woff2",
-      "fontWeight": 700
+      "fontWeight": "700"
     },
     "black": {
-      "fontWeight": 900
+      "fontWeight": "900"
     }
   },
   "opacity": {
-    "disabled": 0.3
+    "disabled": "0.3"
   },
   "radius": {
     "none": "0px",
@@ -521,7 +521,7 @@ var structuredTokens = {
       "dark": "#FFFFFFF5"
     },
     "textDecoration": "underline",
-    "fontWeight": 500,
+    "fontWeight": "500",
     "hover": {
       "textDecoration": "underline"
     },
@@ -529,7 +529,7 @@ var structuredTokens = {
       "color": "#01A982"
     },
     "label": {
-      "lineHeight": 1.25,
+      "lineHeight": "1.25",
       "color": {
         "light": "#6F6F6F",
         "dark": "#FFFFFFE6",
@@ -597,7 +597,7 @@ var structuredTokens = {
         },
         "desktop": {
           "fontSize": "1.5rem",
-          "fontWeight": 300
+          "fontWeight": "300"
         }
       },
       "xlarge": {
@@ -606,11 +606,11 @@ var structuredTokens = {
         },
         "tablet": {
           "fontSize": "1.5rem",
-          "fontWeight": 300
+          "fontWeight": "300"
         },
         "desktop": {
           "fontSize": "1.875rem",
-          "fontWeight": 300
+          "fontWeight": "300"
         }
       }
     },
@@ -672,7 +672,7 @@ var structuredTokens = {
       }
     },
     "disabled": {
-      "opacity": 0.3
+      "opacity": "0.3"
     },
     "small": {
       "paddingTop": "6px",
@@ -789,7 +789,7 @@ var structuredTokens = {
         "light": "#444444",
         "dark": "#FFFFFFF5"
       },
-      "fontWeight": 500,
+      "fontWeight": "500",
       "small": {
         "fontSize": "1.125rem"
       },
@@ -803,17 +803,17 @@ var structuredTokens = {
     "day": {
       "small": {
         "fontSize": "13.6px",
-        "lineHeight": 1.375,
+        "lineHeight": "1.375",
         "width": "27.43px"
       },
       "medium": {
         "fontSize": "18px",
-        "lineHeight": 1.45,
+        "lineHeight": "1.45",
         "width": "54.86px"
       },
       "large": {
         "fontSize": "31.2px",
-        "lineHeight": 1.11,
+        "lineHeight": "1.11",
         "width": "109.71px"
       }
     }
@@ -848,7 +848,7 @@ var structuredTokens = {
     },
     "borderWidth": "1px",
     "label": {
-      "fontWeight": 500
+      "fontWeight": "500"
     },
     "hover": {
       "background": {
@@ -946,7 +946,7 @@ var structuredTokens = {
         "light": "#444444",
         "dark": "#FFFFFFF5"
       },
-      "fontWeight": 500,
+      "fontWeight": "500",
       "cell": {
         "hover": {
           "background": {
@@ -1067,7 +1067,7 @@ var structuredTokens = {
         "tablet": "6px",
         "desktop": "6px"
       },
-      "fontWeight": 500
+      "fontWeight": "500"
     },
     "info": {
       "typography": {
@@ -1151,7 +1151,7 @@ var structuredTokens = {
       }
     },
     "disabled": {
-      "opacity": 0.3
+      "opacity": "0.3"
     }
   },
   "heading": {
@@ -1201,7 +1201,7 @@ var structuredTokens = {
       "light": "#444444",
       "dark": "#FFFFFFF5"
     },
-    "lineHeight": 1
+    "lineHeight": "1"
   },
   "icon": {
     "small": {
@@ -1244,14 +1244,14 @@ var structuredTokens = {
         "light": "#BBBBBB",
         "dark": "#FFFFFF33"
       },
-      "fontWeight": 400
+      "fontWeight": "400"
     },
     "value": {
       "color": {
         "light": "#444444",
         "dark": "#FFFFFFF5"
       },
-      "fontWeight": 500
+      "fontWeight": "500"
     }
   },
   "layer": {
@@ -1305,7 +1305,7 @@ var structuredTokens = {
         "light": "#444444",
         "dark": "#FFFFFFF5"
       },
-      "fontWeight": 500
+      "fontWeight": "500"
     }
   },
   "notification": {
@@ -1318,7 +1318,7 @@ var structuredTokens = {
       "borderRadius": "0px"
     },
     "title": {
-      "fontWeight": 500
+      "fontWeight": "500"
     },
     "critical": {
       "background": {
@@ -1406,17 +1406,17 @@ var structuredTokens = {
         },
         "tablet": {
           "fontSize": "1.5rem",
-          "fontWeight": 300
+          "fontWeight": "300"
         },
         "desktop": {
           "fontSize": "1.875rem",
-          "fontWeight": 300
+          "fontWeight": "300"
         }
       }
     }
   },
   "text": {
-    "lineHeight": 1.25,
+    "lineHeight": "1.25",
     "color": {
       "light": "#6F6F6F",
       "dark": "#FFFFFFE6",
@@ -1484,7 +1484,7 @@ var structuredTokens = {
       },
       "desktop": {
         "fontSize": "1.5rem",
-        "fontWeight": 300
+        "fontWeight": "300"
       }
     },
     "xlarge": {
@@ -1493,11 +1493,11 @@ var structuredTokens = {
       },
       "tablet": {
         "fontSize": "1.5rem",
-        "fontWeight": 300
+        "fontWeight": "300"
       },
       "desktop": {
         "fontSize": "1.875rem",
-        "fontWeight": 300
+        "fontWeight": "300"
       }
     }
   }
