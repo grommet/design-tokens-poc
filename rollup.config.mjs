@@ -21,7 +21,12 @@ export default {
   plugins: [
     typescript(),
     copy({
-      targets: [{ src: ['tokens.json', '*.css'], dest: 'dist' }],
+      targets: [
+        {
+          src: ['package.json', 'LICENSE', 'tokens.json', '*.css'],
+          dest: 'dist',
+        },
+      ],
     }),
   ],
 };
