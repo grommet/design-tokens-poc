@@ -4,6 +4,7 @@
     "declarationDir": "./dist",
     "module": "es6",
     "noImplicitAny": true,
+    "esModuleInterop": true,
     "outDir": "./dist",
     "target": "es6",
     "emitDeclarationOnly": true,
@@ -12,6 +13,7 @@
   "include": ["*.ts"],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "*.test.*"
   ],
 }

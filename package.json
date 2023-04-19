@@ -13,7 +13,7 @@
     "Taylor Seamans"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config=jest.config.es.js && jest --config=jest.config.ts.js",
     "build": "node build.mjs && rm -rf ./dist && rollup -c ./rollup.config.mjs",
     "release-stable": "babel-node ./tools/release-stable.mjs"
   },
@@ -30,6 +30,7 @@
     "@babel/core": "^7.21.4",
     "@babel/eslint-parser": "^7.21.3",
     "@babel/node": "^7.20.7",
+    "@types/jest": "^29.5.0",
     "del": "^6.1.1",
     "eslint": "^8.37.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -41,6 +42,7 @@
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-typescript2": "^0.34.1",
     "simple-git": "^3.17.0",
+    "ts-jest": "^29.1.0",
     "typescript": "^5.0.4"
   }
 }
