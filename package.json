@@ -2,12 +2,12 @@
   "name": "hpe-design-tokens",
   "version": "0.1.0",
   "description": "a token library for the HPE design system",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "./index.js",
+  "module": "./index.mjs",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
+  "types": "./index.d.ts",
   "authors": [
     "Eric Soderberg",
     "Taylor Seamans"
