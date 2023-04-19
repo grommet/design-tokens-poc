@@ -3,6 +3,7 @@ import {
   flattenTokens,
   generateCssVars,
   stretchAndResolveTokens,
+  stringifyTokens,
 } from './utils.mjs';
 
 const rawGlobal = readFileSync('./global.json');
@@ -20,9 +21,11 @@ writeFileSync(
   `export default ${JSON.stringify(flat, null, 2)}`,
 );
 
+const stringified = stringifyTokens(resolved);
+
 writeFileSync(
   './structured-tokens.ts',
-  `export default ${JSON.stringify(resolved, null, 2)}`,
+  `export default ${JSON.stringify(stringified, null, 2)}`,
 );
 
 const cssVars = generateCssVars(flat);
