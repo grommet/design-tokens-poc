@@ -338,9 +338,8 @@
   --input-borderColor-strong: #000000B8;
   --input-borderColor-weak: #0000001F;
   --input-borderRadius: 6px;
-  --input-borderSize-mobile-width: 1px;
-  --input-borderSize-tablet-width: 1px;
-  --input-borderSize-desktop-width: 1px;
+  --input-borderSize-width: 1px;
+  --input-padding: 6px;
   --input-placeholder-color: #BBBBBB;
   --input-placeholder-fontWeight: 400;
   --input-value-color: #444444;

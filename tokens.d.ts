@@ -418,9 +418,8 @@ declare const _default: {
     "input.borderColor.weak.light": string;
     "input.borderColor.weak.dark": string;
     "input.borderRadius": string;
-    "input.borderSize.mobile.width": string;
-    "input.borderSize.tablet.width": string;
-    "input.borderSize.desktop.width": string;
+    "input.borderSize.width": string;
+    "input.padding": string;
     "input.placeholder.color.light": string;
     "input.placeholder.color.dark": string;
     "input.placeholder.fontWeight": number;

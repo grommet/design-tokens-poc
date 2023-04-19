@@ -772,16 +772,9 @@ declare const _default: {
         };
         borderRadius: string;
         borderSize: {
-            mobile: {
-                width: string;
-            };
-            tablet: {
-                width: string;
-            };
-            desktop: {
-                width: string;
-            };
+            width: string;
         };
+        padding: string;
         placeholder: {
             color: string;
             fontWeight: string;

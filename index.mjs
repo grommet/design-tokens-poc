@@ -418,9 +418,8 @@ var tokens = {
   "input.borderColor.weak.light": "#0000001F",
   "input.borderColor.weak.dark": "#FFFFFF1F",
   "input.borderRadius": "6px",
-  "input.borderSize.mobile.width": "1px",
-  "input.borderSize.tablet.width": "1px",
-  "input.borderSize.desktop.width": "1px",
+  "input.borderSize.width": "1px",
+  "input.padding": "6px",
   "input.placeholder.color.light": "#BBBBBB",
   "input.placeholder.color.dark": "#FFFFFF33",
   "input.placeholder.fontWeight": 400,
@@ -1295,16 +1294,9 @@ var structuredTokens = {
     },
     "borderRadius": "6px",
     "borderSize": {
-      "mobile": {
-        "width": "1px"
-      },
-      "tablet": {
-        "width": "1px"
-      },
-      "desktop": {
-        "width": "1px"
-      }
+      "width": "1px"
     },
+    "padding": "6px",
     "placeholder": {
       "color": "#BBBBBB",
       "fontWeight": "400"
