@@ -652,6 +652,10 @@ var structuredTokens = {
   },
   "font": {
     "fontFamily": "Metric, Arial, sans-serif",
+    "light": {
+      "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Light.woff2",
+      "fontWeight": "300"
+    },
     "regular": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Regular.woff2",
       "fontWeight": "400"

@@ -126,6 +126,10 @@ declare const _default: {
     };
     font: {
         fontFamily: string;
+        light: {
+            url: string;
+            fontWeight: string;
+        };
         regular: {
             url: string;
             fontWeight: string;
