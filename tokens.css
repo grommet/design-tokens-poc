@@ -329,11 +329,11 @@
   --heading-3-mobile-fontWeight: font.weight.semibold;
   --heading-color: #444444;
   --heading-lineHeight: 1;
-  --icon-small-height: text.small.fontSize;
-  --icon-medium-height: text.medium.fontSize;
-  --icon-large-height: text.large.fontSize;
-  --icon-xlarge-height: text.xlarge.fontSize;
-  --icon-xxlarge-height: text.xxlarge.fontSize;
+  --icon-small-height: 1rem;
+  --icon-medium-height: 1.125rem;
+  --icon-large-height: 1.5rem;
+  --icon-xlarge-height: 1.875rem;
+  --icon-xxlarge-height: text.xxlarge.desktop.fontSize;
   --input-borderColor: #0000005C;
   --input-borderColor-strong: #000000B8;
   --input-borderColor-weak: #0000001F;

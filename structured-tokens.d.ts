@@ -35,16 +35,43 @@ declare const _default: {
         };
     };
     color: {
-        background: string;
+        background: {
+            default: string;
+            front: string;
+            back: string;
+            contrast: string;
+            layer: {
+                overlay: string;
+            };
+            validation: {
+                critical: string;
+                warning: string;
+                ok: string;
+            };
+            selected: string;
+            active: string;
+        };
         brand: string;
-        border: string;
+        border: {
+            default: string;
+            strong: string;
+            weak: string;
+        };
         status: {
             critical: string;
             warning: string;
             ok: string;
             unknown: string;
         };
-        text: string;
+        text: {
+            default: string;
+            strong: string;
+            weak: string;
+            xweak: string;
+            disabled: string;
+            selected: string;
+            active: string;
+        };
         focus: string;
     };
     content: {
@@ -69,10 +96,6 @@ declare const _default: {
     };
     font: {
         fontFamily: string;
-        light: {
-            url: string;
-            fontWeight: string;
-        };
         regular: {
             url: string;
             fontWeight: string;
@@ -154,7 +177,15 @@ declare const _default: {
         };
         label: {
             lineHeight: string;
-            color: string;
+            color: {
+                default: string;
+                strong: string;
+                weak: string;
+                xweak: string;
+                disabled: string;
+                selected: string;
+                active: string;
+            };
             xsmall: {
                 mobile: {
                     fontSize: string;
@@ -419,7 +450,11 @@ declare const _default: {
         };
     };
     checkbox: {
-        borderColor: string;
+        borderColor: {
+            default: string;
+            strong: string;
+            weak: string;
+        };
         borderWidth: string;
         label: {
             fontWeight: string;
@@ -437,7 +472,22 @@ declare const _default: {
             stroke: string;
         };
         toggle: {
-            background: string;
+            background: {
+                default: string;
+                front: string;
+                back: string;
+                contrast: string;
+                layer: {
+                    overlay: string;
+                };
+                validation: {
+                    critical: string;
+                    warning: string;
+                    ok: string;
+                };
+                selected: string;
+                active: string;
+            };
             checked: {
                 background: string;
             };
@@ -445,14 +495,22 @@ declare const _default: {
                 boxShadow: {
                     boxShadow: string;
                 };
-                borderColor: string;
+                borderColor: {
+                    default: string;
+                    strong: string;
+                    weak: string;
+                };
                 borderWidth: string;
             };
         };
     };
     datatable: {
         header: {
-            borderBottomColor: string;
+            borderBottomColor: {
+                default: string;
+                strong: string;
+                weak: string;
+            };
             borderBottomWidth: string;
             color: string;
             fontWeight: string;
@@ -528,7 +586,15 @@ declare const _default: {
                     fontSize: string;
                 };
             };
-            color: string;
+            color: {
+                default: string;
+                strong: string;
+                weak: string;
+                xweak: string;
+                disabled: string;
+                selected: string;
+                active: string;
+            };
             marginTop: {
                 mobile: string;
                 tablet: string;
@@ -548,7 +614,15 @@ declare const _default: {
                     fontSize: string;
                 };
             };
-            color: string;
+            color: {
+                default: string;
+                strong: string;
+                weak: string;
+                xweak: string;
+                disabled: string;
+                selected: string;
+                active: string;
+            };
             marginBottom: {
                 mobile: string;
                 tablet: string;
@@ -567,7 +641,15 @@ declare const _default: {
                     fontSize: string;
                 };
             };
-            color: string;
+            color: {
+                default: string;
+                strong: string;
+                weak: string;
+                xweak: string;
+                disabled: string;
+                selected: string;
+                active: string;
+            };
         };
         disabled: {
             opacity: string;
@@ -637,7 +719,11 @@ declare const _default: {
         };
     };
     input: {
-        borderColor: string;
+        borderColor: {
+            default: string;
+            strong: string;
+            weak: string;
+        };
         borderRadius: string;
         borderSize: {
             mobile: string;
@@ -654,7 +740,22 @@ declare const _default: {
         };
     };
     layer: {
-        background: string;
+        background: {
+            default: string;
+            front: string;
+            back: string;
+            contrast: string;
+            layer: {
+                overlay: string;
+            };
+            validation: {
+                critical: string;
+                warning: string;
+                ok: string;
+            };
+            selected: string;
+            active: string;
+        };
         borderRadius: string;
         boxShadow: string;
         overlay: {
@@ -743,7 +844,15 @@ declare const _default: {
     };
     text: {
         lineHeight: string;
-        color: string;
+        color: {
+            default: string;
+            strong: string;
+            weak: string;
+            xweak: string;
+            disabled: string;
+            selected: string;
+            active: string;
+        };
         xsmall: {
             mobile: {
                 fontSize: string;

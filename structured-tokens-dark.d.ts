@@ -1,19 +1,48 @@
 declare const _default: {
     color: {
-        background: string;
-        border: string;
+        background: {
+            default: string;
+            front: string;
+            back: string;
+            contrast: string;
+            validation: {
+                critical: string;
+                warning: string;
+                ok: string;
+            };
+            active: string;
+        };
+        border: {
+            default: string;
+            strong: string;
+            weak: string;
+        };
         status: {
             critical: string;
             warning: string;
             ok: string;
             unknown: string;
         };
-        text: string;
+        text: {
+            default: string;
+            strong: string;
+            weak: string;
+            xweak: string;
+            disabled: string;
+            active: string;
+        };
     };
     anchor: {
         color: string;
         label: {
-            color: string;
+            color: {
+                default: string;
+                strong: string;
+                weak: string;
+                xweak: string;
+                disabled: string;
+                active: string;
+            };
         };
     };
     button: {
@@ -36,20 +65,43 @@ declare const _default: {
         background: string;
     };
     checkbox: {
-        borderColor: string;
+        borderColor: {
+            default: string;
+            strong: string;
+            weak: string;
+        };
         hover: {
             background: string;
         };
         toggle: {
-            background: string;
+            background: {
+                default: string;
+                front: string;
+                back: string;
+                contrast: string;
+                validation: {
+                    critical: string;
+                    warning: string;
+                    ok: string;
+                };
+                active: string;
+            };
             knob: {
-                borderColor: string;
+                borderColor: {
+                    default: string;
+                    strong: string;
+                    weak: string;
+                };
             };
         };
     };
     datatable: {
         header: {
-            borderBottomColor: string;
+            borderBottomColor: {
+                default: string;
+                strong: string;
+                weak: string;
+            };
             color: string;
             cell: {
                 hover: {
@@ -77,20 +129,45 @@ declare const _default: {
             backgroundColor: string;
         };
         label: {
-            color: string;
+            color: {
+                default: string;
+                strong: string;
+                weak: string;
+                xweak: string;
+                disabled: string;
+                active: string;
+            };
         };
         info: {
-            color: string;
+            color: {
+                default: string;
+                strong: string;
+                weak: string;
+                xweak: string;
+                disabled: string;
+                active: string;
+            };
         };
         help: {
-            color: string;
+            color: {
+                default: string;
+                strong: string;
+                weak: string;
+                xweak: string;
+                disabled: string;
+                active: string;
+            };
         };
     };
     heading: {
         color: string;
     };
     input: {
-        borderColor: string;
+        borderColor: {
+            default: string;
+            strong: string;
+            weak: string;
+        };
         placeholder: {
             color: string;
         };
@@ -99,7 +176,18 @@ declare const _default: {
         };
     };
     layer: {
-        background: string;
+        background: {
+            default: string;
+            front: string;
+            back: string;
+            contrast: string;
+            validation: {
+                critical: string;
+                warning: string;
+                ok: string;
+            };
+            active: string;
+        };
     };
     namevaluepair: {
         name: {
@@ -140,7 +228,14 @@ declare const _default: {
         };
     };
     text: {
-        color: string;
+        color: {
+            default: string;
+            strong: string;
+            weak: string;
+            xweak: string;
+            disabled: string;
+            active: string;
+        };
     };
 };
 export default _default;

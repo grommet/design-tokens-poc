@@ -406,11 +406,11 @@ var tokens = {
   "heading.color.light": "#444444",
   "heading.color.dark": "#FFFFFFF5",
   "heading.lineHeight": 1,
-  "icon.small.height": "text.small.fontSize",
-  "icon.medium.height": "text.medium.fontSize",
-  "icon.large.height": "text.large.fontSize",
-  "icon.xlarge.height": "text.xlarge.fontSize",
-  "icon.xxlarge.height": "text.xxlarge.fontSize",
+  "icon.small.height": "1rem",
+  "icon.medium.height": "1.125rem",
+  "icon.large.height": "1.5rem",
+  "icon.xlarge.height": "1.875rem",
+  "icon.xxlarge.height": "text.xxlarge.desktop.fontSize",
   "input.borderColor.light": "#0000005C",
   "input.borderColor.dark": "#FFFFFF5C",
   "input.borderColor.strong.light": "#000000B8",
@@ -559,16 +559,43 @@ var structuredTokens = {
     }
   },
   "color": {
-    "background": "#FFFFFF",
+    "background": {
+      "default": "#FFFFFF",
+      "front": "#FFFFFF",
+      "back": "#F7F7F7",
+      "contrast": "#0000000A",
+      "layer": {
+        "overlay": "#00000080"
+      },
+      "validation": {
+        "critical": "#C54E4B",
+        "warning": "#FEC901",
+        "ok": "#01A982"
+      },
+      "selected": "#01A982",
+      "active": "#0000000A"
+    },
     "brand": "#01A982",
-    "border": "#0000005C",
+    "border": {
+      "default": "#0000005C",
+      "strong": "#000000B8",
+      "weak": "#0000001F"
+    },
     "status": {
       "critical": "#C54E4B",
       "warning": "#FEC901",
       "ok": "#01A982",
       "unknown": "#CCCCCC"
     },
-    "text": "#6F6F6F",
+    "text": {
+      "default": "#6F6F6F",
+      "strong": "#444444",
+      "weak": "#757575",
+      "xweak": "#BBBBBB",
+      "disabled": "#757575",
+      "selected": "#FFFFFF",
+      "active": "#444444"
+    },
     "focus": ""
   },
   "content": {
@@ -593,10 +620,6 @@ var structuredTokens = {
   },
   "font": {
     "fontFamily": "Metric, Arial, sans-serif",
-    "light": {
-      "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Light.woff2",
-      "fontWeight": "300"
-    },
     "regular": {
       "url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Regular.woff2",
       "fontWeight": "400"
@@ -678,7 +701,15 @@ var structuredTokens = {
     },
     "label": {
       "lineHeight": "1.25",
-      "color": "#6F6F6F",
+      "color": {
+        "default": "#6F6F6F",
+        "strong": "#444444",
+        "weak": "#757575",
+        "xweak": "#BBBBBB",
+        "disabled": "#757575",
+        "selected": "#FFFFFF",
+        "active": "#444444"
+      },
       "xsmall": {
         "mobile": {
           "fontSize": "0.875rem"
@@ -943,7 +974,11 @@ var structuredTokens = {
     }
   },
   "checkbox": {
-    "borderColor": "#0000005C",
+    "borderColor": {
+      "default": "#0000005C",
+      "strong": "#000000B8",
+      "weak": "#0000001F"
+    },
     "borderWidth": "1px",
     "label": {
       "fontWeight": "500"
@@ -961,7 +996,22 @@ var structuredTokens = {
       "stroke": "#FFFFFF"
     },
     "toggle": {
-      "background": "#FFFFFF",
+      "background": {
+        "default": "#FFFFFF",
+        "front": "#FFFFFF",
+        "back": "#F7F7F7",
+        "contrast": "#0000000A",
+        "layer": {
+          "overlay": "#00000080"
+        },
+        "validation": {
+          "critical": "#C54E4B",
+          "warning": "#FEC901",
+          "ok": "#01A982"
+        },
+        "selected": "#01A982",
+        "active": "#0000000A"
+      },
       "checked": {
         "background": "#01A982"
       },
@@ -969,14 +1019,22 @@ var structuredTokens = {
         "boxShadow": {
           "boxShadow": "0px 2px 4px #0000001F"
         },
-        "borderColor": "#0000005C",
+        "borderColor": {
+          "default": "#0000005C",
+          "strong": "#000000B8",
+          "weak": "#0000001F"
+        },
         "borderWidth": "1px"
       }
     }
   },
   "datatable": {
     "header": {
-      "borderBottomColor": "#0000005C",
+      "borderBottomColor": {
+        "default": "#0000005C",
+        "strong": "#000000B8",
+        "weak": "#0000001F"
+      },
       "borderBottomWidth": "1px",
       "color": "#444444",
       "fontWeight": "500",
@@ -1052,7 +1110,15 @@ var structuredTokens = {
           "fontSize": "0.875rem"
         }
       },
-      "color": "#6F6F6F",
+      "color": {
+        "default": "#6F6F6F",
+        "strong": "#444444",
+        "weak": "#757575",
+        "xweak": "#BBBBBB",
+        "disabled": "#757575",
+        "selected": "#FFFFFF",
+        "active": "#444444"
+      },
       "marginTop": {
         "mobile": "3px",
         "tablet": "6px",
@@ -1072,7 +1138,15 @@ var structuredTokens = {
           "fontSize": "0.875rem"
         }
       },
-      "color": "#6F6F6F",
+      "color": {
+        "default": "#6F6F6F",
+        "strong": "#444444",
+        "weak": "#757575",
+        "xweak": "#BBBBBB",
+        "disabled": "#757575",
+        "selected": "#FFFFFF",
+        "active": "#444444"
+      },
       "marginBottom": {
         "mobile": "3px",
         "tablet": "6px",
@@ -1091,7 +1165,15 @@ var structuredTokens = {
           "fontSize": "0.875rem"
         }
       },
-      "color": "#6F6F6F"
+      "color": {
+        "default": "#6F6F6F",
+        "strong": "#444444",
+        "weak": "#757575",
+        "xweak": "#BBBBBB",
+        "disabled": "#757575",
+        "selected": "#FFFFFF",
+        "active": "#444444"
+      }
     },
     "disabled": {
       "opacity": "0.3"
@@ -1145,23 +1227,27 @@ var structuredTokens = {
   },
   "icon": {
     "small": {
-      "height": "text.small.fontSize"
+      "height": "1rem"
     },
     "medium": {
-      "height": "text.medium.fontSize"
+      "height": "1.125rem"
     },
     "large": {
-      "height": "text.large.fontSize"
+      "height": "1.5rem"
     },
     "xlarge": {
-      "height": "text.xlarge.fontSize"
+      "height": "1.875rem"
     },
     "xxlarge": {
-      "height": "text.xxlarge.fontSize"
+      "height": "text.xxlarge.desktop.fontSize"
     }
   },
   "input": {
-    "borderColor": "#0000005C",
+    "borderColor": {
+      "default": "#0000005C",
+      "strong": "#000000B8",
+      "weak": "#0000001F"
+    },
     "borderRadius": "6px",
     "borderSize": {
       "mobile": "1px",
@@ -1178,7 +1264,22 @@ var structuredTokens = {
     }
   },
   "layer": {
-    "background": "#FFFFFF",
+    "background": {
+      "default": "#FFFFFF",
+      "front": "#FFFFFF",
+      "back": "#F7F7F7",
+      "contrast": "#0000000A",
+      "layer": {
+        "overlay": "#00000080"
+      },
+      "validation": {
+        "critical": "#C54E4B",
+        "warning": "#FEC901",
+        "ok": "#01A982"
+      },
+      "selected": "#01A982",
+      "active": "#0000000A"
+    },
     "borderRadius": "3px",
     "boxShadow": "0px 12px 24px #0000003D",
     "overlay": {
@@ -1267,7 +1368,15 @@ var structuredTokens = {
   },
   "text": {
     "lineHeight": "1.25",
-    "color": "#6F6F6F",
+    "color": {
+      "default": "#6F6F6F",
+      "strong": "#444444",
+      "weak": "#757575",
+      "xweak": "#BBBBBB",
+      "disabled": "#757575",
+      "selected": "#FFFFFF",
+      "active": "#444444"
+    },
     "xsmall": {
       "mobile": {
         "fontSize": "0.875rem"
@@ -1331,20 +1440,49 @@ var structuredTokens = {
 
 var structuredTokensDark = {
   "color": {
-    "background": "#1C1C1C",
-    "border": "#FFFFFF5C",
+    "background": {
+      "default": "#1C1C1C",
+      "front": "#222222",
+      "back": "#1C1C1C",
+      "contrast": "#FFFFFF0F",
+      "validation": {
+        "critical": "#CC1F1A4D",
+        "warning": "#D891284D",
+        "ok": "#17D0A64D"
+      },
+      "active": "#FFFFFF0F"
+    },
+    "border": {
+      "default": "#FFFFFF5C",
+      "strong": "#FFFFFFB8",
+      "weak": "#FFFFFF1F"
+    },
     "status": {
       "critical": "#D04F4E",
       "warning": "#9B6310",
       "ok": "#008567",
       "unknown": "#555555"
     },
-    "text": "#FFFFFFE6"
+    "text": {
+      "default": "#FFFFFFE6",
+      "strong": "#FFFFFFF5",
+      "weak": "#FFFFFF80",
+      "xweak": "#FFFFFF33",
+      "disabled": "#FFFFFF80",
+      "active": "#FFFFFFF5"
+    }
   },
   "anchor": {
     "color": "#FFFFFFF5",
     "label": {
-      "color": "#FFFFFFE6"
+      "color": {
+        "default": "#FFFFFFE6",
+        "strong": "#FFFFFFF5",
+        "weak": "#FFFFFF80",
+        "xweak": "#FFFFFF33",
+        "disabled": "#FFFFFF80",
+        "active": "#FFFFFFF5"
+      }
     }
   },
   "button": {
@@ -1367,20 +1505,43 @@ var structuredTokensDark = {
     "background": "#222222"
   },
   "checkbox": {
-    "borderColor": "#FFFFFF5C",
+    "borderColor": {
+      "default": "#FFFFFF5C",
+      "strong": "#FFFFFFB8",
+      "weak": "#FFFFFF1F"
+    },
     "hover": {
       "background": "#FFFFFF0F"
     },
     "toggle": {
-      "background": "#1C1C1C",
+      "background": {
+        "default": "#1C1C1C",
+        "front": "#222222",
+        "back": "#1C1C1C",
+        "contrast": "#FFFFFF0F",
+        "validation": {
+          "critical": "#CC1F1A4D",
+          "warning": "#D891284D",
+          "ok": "#17D0A64D"
+        },
+        "active": "#FFFFFF0F"
+      },
       "knob": {
-        "borderColor": "#FFFFFF5C"
+        "borderColor": {
+          "default": "#FFFFFF5C",
+          "strong": "#FFFFFFB8",
+          "weak": "#FFFFFF1F"
+        }
       }
     }
   },
   "datatable": {
     "header": {
-      "borderBottomColor": "#FFFFFF5C",
+      "borderBottomColor": {
+        "default": "#FFFFFF5C",
+        "strong": "#FFFFFFB8",
+        "weak": "#FFFFFF1F"
+      },
       "color": "#FFFFFFF5",
       "cell": {
         "hover": {
@@ -1408,20 +1569,45 @@ var structuredTokensDark = {
       "backgroundColor": "#CC1F1A4D"
     },
     "label": {
-      "color": "#FFFFFFE6"
+      "color": {
+        "default": "#FFFFFFE6",
+        "strong": "#FFFFFFF5",
+        "weak": "#FFFFFF80",
+        "xweak": "#FFFFFF33",
+        "disabled": "#FFFFFF80",
+        "active": "#FFFFFFF5"
+      }
     },
     "info": {
-      "color": "#FFFFFFE6"
+      "color": {
+        "default": "#FFFFFFE6",
+        "strong": "#FFFFFFF5",
+        "weak": "#FFFFFF80",
+        "xweak": "#FFFFFF33",
+        "disabled": "#FFFFFF80",
+        "active": "#FFFFFFF5"
+      }
     },
     "help": {
-      "color": "#FFFFFFE6"
+      "color": {
+        "default": "#FFFFFFE6",
+        "strong": "#FFFFFFF5",
+        "weak": "#FFFFFF80",
+        "xweak": "#FFFFFF33",
+        "disabled": "#FFFFFF80",
+        "active": "#FFFFFFF5"
+      }
     }
   },
   "heading": {
     "color": "#FFFFFFF5"
   },
   "input": {
-    "borderColor": "#FFFFFF5C",
+    "borderColor": {
+      "default": "#FFFFFF5C",
+      "strong": "#FFFFFFB8",
+      "weak": "#FFFFFF1F"
+    },
     "placeholder": {
       "color": "#FFFFFF33"
     },
@@ -1430,7 +1616,18 @@ var structuredTokensDark = {
     }
   },
   "layer": {
-    "background": "#1C1C1C"
+    "background": {
+      "default": "#1C1C1C",
+      "front": "#222222",
+      "back": "#1C1C1C",
+      "contrast": "#FFFFFF0F",
+      "validation": {
+        "critical": "#CC1F1A4D",
+        "warning": "#D891284D",
+        "ok": "#17D0A64D"
+      },
+      "active": "#FFFFFF0F"
+    }
   },
   "namevaluepair": {
     "name": {
@@ -1471,7 +1668,14 @@ var structuredTokensDark = {
     }
   },
   "text": {
-    "color": "#FFFFFFE6"
+    "color": {
+      "default": "#FFFFFFE6",
+      "strong": "#FFFFFFF5",
+      "weak": "#FFFFFF80",
+      "xweak": "#FFFFFF33",
+      "disabled": "#FFFFFF80",
+      "active": "#FFFFFFF5"
+    }
   }
 };
 
