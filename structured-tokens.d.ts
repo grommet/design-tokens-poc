@@ -1,29 +1,59 @@
 declare const _default: {
     border: {
         xsmall: {
-            mobile: string;
-            tablet: string;
-            desktop: string;
+            mobile: {
+                width: string;
+            };
+            tablet: {
+                width: string;
+            };
+            desktop: {
+                width: string;
+            };
         };
         small: {
-            mobile: string;
-            tablet: string;
-            desktop: string;
+            mobile: {
+                width: string;
+            };
+            tablet: {
+                width: string;
+            };
+            desktop: {
+                width: string;
+            };
         };
         medium: {
-            mobile: string;
-            tablet: string;
-            desktop: string;
+            mobile: {
+                width: string;
+            };
+            tablet: {
+                width: string;
+            };
+            desktop: {
+                width: string;
+            };
         };
         large: {
-            mobile: string;
-            tablet: string;
-            desktop: string;
+            mobile: {
+                width: string;
+            };
+            tablet: {
+                width: string;
+            };
+            desktop: {
+                width: string;
+            };
         };
         xlarge: {
-            mobile: string;
-            tablet: string;
-            desktop: string;
+            mobile: {
+                width: string;
+            };
+            tablet: {
+                width: string;
+            };
+            desktop: {
+                width: string;
+            };
         };
     };
     breakpoints: {
@@ -381,9 +411,15 @@ declare const _default: {
         };
         secondary: {
             borderWidth: {
-                mobile: string;
-                tablet: string;
-                desktop: string;
+                mobile: {
+                    width: string;
+                };
+                tablet: {
+                    width: string;
+                };
+                desktop: {
+                    width: string;
+                };
             };
             borderColor: string;
             active: {
@@ -455,7 +491,9 @@ declare const _default: {
             strong: string;
             weak: string;
         };
-        borderWidth: string;
+        borderWidth: {
+            width: string;
+        };
         label: {
             fontWeight: string;
         };
@@ -500,7 +538,9 @@ declare const _default: {
                     strong: string;
                     weak: string;
                 };
-                borderWidth: string;
+                borderWidth: {
+                    width: string;
+                };
             };
         };
     };
@@ -511,7 +551,9 @@ declare const _default: {
                 strong: string;
                 weak: string;
             };
-            borderBottomWidth: string;
+            borderBottomWidth: {
+                width: string;
+            };
             color: string;
             fontWeight: string;
             cell: {
@@ -726,9 +768,15 @@ declare const _default: {
         };
         borderRadius: string;
         borderSize: {
-            mobile: string;
-            tablet: string;
-            desktop: string;
+            mobile: {
+                width: string;
+            };
+            tablet: {
+                width: string;
+            };
+            desktop: {
+                width: string;
+            };
         };
         placeholder: {
             color: string;

@@ -1,21 +1,21 @@
 'use strict';
 
 var tokens = {
-  "border.xsmall.mobile": "1px",
-  "border.xsmall.tablet": "1px",
-  "border.xsmall.desktop": "1px",
-  "border.small.mobile": "2px",
-  "border.small.tablet": "2px",
-  "border.small.desktop": "2px",
-  "border.medium.mobile": "4px",
-  "border.medium.tablet": "4px",
-  "border.medium.desktop": "4px",
-  "border.large.mobile": "6px",
-  "border.large.tablet": "12px",
-  "border.large.desktop": "12px",
-  "border.xlarge.mobile": "12px",
-  "border.xlarge.tablet": "24px",
-  "border.xlarge.desktop": "24px",
+  "border.xsmall.mobile.width": "1px",
+  "border.xsmall.tablet.width": "1px",
+  "border.xsmall.desktop.width": "1px",
+  "border.small.mobile.width": "2px",
+  "border.small.tablet.width": "2px",
+  "border.small.desktop.width": "2px",
+  "border.medium.mobile.width": "4px",
+  "border.medium.tablet.width": "4px",
+  "border.medium.desktop.width": "4px",
+  "border.large.mobile.width": "6px",
+  "border.large.tablet.width": "12px",
+  "border.large.desktop.width": "12px",
+  "border.xlarge.mobile.width": "12px",
+  "border.xlarge.tablet.width": "24px",
+  "border.xlarge.desktop.width": "24px",
   "breakpoints.tablet.minWidth": "768px",
   "breakpoints.desktop.minWidth": "1536px",
   "color.background.light": "#FFFFFF",
@@ -216,9 +216,9 @@ var tokens = {
   "button.option.paddingBottom.tablet": "6px",
   "button.option.paddingBottom.desktop": "6px",
   "button.option.selected.background": "#01A982",
-  "button.secondary.borderWidth.mobile": "2px",
-  "button.secondary.borderWidth.tablet": "2px",
-  "button.secondary.borderWidth.desktop": "2px",
+  "button.secondary.borderWidth.mobile.width": "2px",
+  "button.secondary.borderWidth.tablet.width": "2px",
+  "button.secondary.borderWidth.desktop.width": "2px",
   "button.secondary.borderColor": "#01A982",
   "button.secondary.active.borderColor": "transparent",
   "button.secondary.hover.borderWidth": "",
@@ -256,7 +256,7 @@ var tokens = {
   "checkbox.borderColor.strong.dark": "#FFFFFFB8",
   "checkbox.borderColor.weak.light": "#0000001F",
   "checkbox.borderColor.weak.dark": "#FFFFFF1F",
-  "checkbox.borderWidth": "1px",
+  "checkbox.borderWidth.width": "1px",
   "checkbox.label.fontWeight": 500,
   "checkbox.hover.background.light": "#0000000A",
   "checkbox.hover.background.dark": "#FFFFFF0F",
@@ -289,14 +289,14 @@ var tokens = {
   "checkbox.toggle.knob.borderColor.strong.dark": "#FFFFFFB8",
   "checkbox.toggle.knob.borderColor.weak.light": "#0000001F",
   "checkbox.toggle.knob.borderColor.weak.dark": "#FFFFFF1F",
-  "checkbox.toggle.knob.borderWidth": "1px",
+  "checkbox.toggle.knob.borderWidth.width": "1px",
   "datatable.header.borderBottomColor.light": "#0000005C",
   "datatable.header.borderBottomColor.dark": "#FFFFFF5C",
   "datatable.header.borderBottomColor.strong.light": "#000000B8",
   "datatable.header.borderBottomColor.strong.dark": "#FFFFFFB8",
   "datatable.header.borderBottomColor.weak.light": "#0000001F",
   "datatable.header.borderBottomColor.weak.dark": "#FFFFFF1F",
-  "datatable.header.borderBottomWidth": "1px",
+  "datatable.header.borderBottomWidth.width": "1px",
   "datatable.header.color.light": "#444444",
   "datatable.header.color.dark": "#FFFFFFF5",
   "datatable.header.fontWeight": 500,
@@ -420,9 +420,9 @@ var tokens = {
   "input.borderColor.weak.light": "#0000001F",
   "input.borderColor.weak.dark": "#FFFFFF1F",
   "input.borderRadius": "6px",
-  "input.borderSize.mobile": "1px",
-  "input.borderSize.tablet": "1px",
-  "input.borderSize.desktop": "1px",
+  "input.borderSize.mobile.width": "1px",
+  "input.borderSize.tablet.width": "1px",
+  "input.borderSize.desktop.width": "1px",
   "input.placeholder.color.light": "#BBBBBB",
   "input.placeholder.color.dark": "#FFFFFF33",
   "input.placeholder.fontWeight": 400,
@@ -527,29 +527,59 @@ var tokens = {
 var structuredTokens = {
   "border": {
     "xsmall": {
-      "mobile": "1px",
-      "tablet": "1px",
-      "desktop": "1px"
+      "mobile": {
+        "width": "1px"
+      },
+      "tablet": {
+        "width": "1px"
+      },
+      "desktop": {
+        "width": "1px"
+      }
     },
     "small": {
-      "mobile": "2px",
-      "tablet": "2px",
-      "desktop": "2px"
+      "mobile": {
+        "width": "2px"
+      },
+      "tablet": {
+        "width": "2px"
+      },
+      "desktop": {
+        "width": "2px"
+      }
     },
     "medium": {
-      "mobile": "4px",
-      "tablet": "4px",
-      "desktop": "4px"
+      "mobile": {
+        "width": "4px"
+      },
+      "tablet": {
+        "width": "4px"
+      },
+      "desktop": {
+        "width": "4px"
+      }
     },
     "large": {
-      "mobile": "6px",
-      "tablet": "12px",
-      "desktop": "12px"
+      "mobile": {
+        "width": "6px"
+      },
+      "tablet": {
+        "width": "12px"
+      },
+      "desktop": {
+        "width": "12px"
+      }
     },
     "xlarge": {
-      "mobile": "12px",
-      "tablet": "24px",
-      "desktop": "24px"
+      "mobile": {
+        "width": "12px"
+      },
+      "tablet": {
+        "width": "24px"
+      },
+      "desktop": {
+        "width": "24px"
+      }
     }
   },
   "breakpoints": {
@@ -907,9 +937,15 @@ var structuredTokens = {
     },
     "secondary": {
       "borderWidth": {
-        "mobile": "2px",
-        "tablet": "2px",
-        "desktop": "2px"
+        "mobile": {
+          "width": "2px"
+        },
+        "tablet": {
+          "width": "2px"
+        },
+        "desktop": {
+          "width": "2px"
+        }
       },
       "borderColor": "#01A982",
       "active": {
@@ -981,7 +1017,9 @@ var structuredTokens = {
       "strong": "#000000B8",
       "weak": "#0000001F"
     },
-    "borderWidth": "1px",
+    "borderWidth": {
+      "width": "1px"
+    },
     "label": {
       "fontWeight": "500"
     },
@@ -1026,7 +1064,9 @@ var structuredTokens = {
           "strong": "#000000B8",
           "weak": "#0000001F"
         },
-        "borderWidth": "1px"
+        "borderWidth": {
+          "width": "1px"
+        }
       }
     }
   },
@@ -1037,7 +1077,9 @@ var structuredTokens = {
         "strong": "#000000B8",
         "weak": "#0000001F"
       },
-      "borderBottomWidth": "1px",
+      "borderBottomWidth": {
+        "width": "1px"
+      },
       "color": "#444444",
       "fontWeight": "500",
       "cell": {
@@ -1252,9 +1294,15 @@ var structuredTokens = {
     },
     "borderRadius": "6px",
     "borderSize": {
-      "mobile": "1px",
-      "tablet": "1px",
-      "desktop": "1px"
+      "mobile": {
+        "width": "1px"
+      },
+      "tablet": {
+        "width": "1px"
+      },
+      "desktop": {
+        "width": "1px"
+      }
     },
     "placeholder": {
       "color": "#BBBBBB",
