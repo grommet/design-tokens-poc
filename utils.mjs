@@ -1,66 +1,3 @@
-// const breakpoints = ['mobile', 'tablet', 'desktop'];
-
-// export const resolveValues = tokens => {
-//   const result = {};
-//   Object.entries(tokens).forEach(([key, value]) => {
-//     let currentValue = value;
-
-//     while (currentValue in tokens) {
-//       currentValue = tokens[currentValue];
-//     }
-
-//     const pattern = new RegExp(currentValue);
-//     // create light and dark modes of color references. for example:
-//     // "heading.color": "color.text.strong"
-//     if (`${currentValue}.light` in tokens && `${currentValue}.dark` in tokens) {
-//       ['light', 'dark'].forEach(mode => {
-//         result[`${key}.${mode}`] = tokens[`${currentValue}.${mode}`];
-//       });
-//       // resolve breakpoints. for example:
-//       // "formfield.margin-top": "spacing.xsmall"
-//     } else if (
-//       `${currentValue}.mobile` in tokens &&
-//       `${currentValue}.tablet` in tokens &&
-//       `${currentValue}.desktop` in tokens
-//     ) {
-//       breakpoints.forEach(breakpoint => {
-//         result[`${key}.${breakpoint}`] =
-//           tokens[`${currentValue}.${breakpoint}`];
-//       });
-//       // create typography sets. for example:
-//       // "anchor.label": "text.small" should produce the appropriate
-//       // font-size and font-weight across sizes and breakpoints.
-//       // for components that want static typography, they will reference
-//       // ".desktop" size and we will respect that.
-//     } else if (
-//       /\.label$/.test(key) &&
-//       Object.keys(tokens).filter(token => pattern.test(token))
-//     ) {
-//       ['xsmall', 'small', 'medium', 'large', 'xlarge'].forEach(size => {
-//         breakpoints.forEach(breakpoint => {
-//           ['font-size', 'font-weight'].forEach(style => {
-//             let resolvedValue = /\.desktop$/.test(currentValue)
-//               ? tokens[
-//                   `${
-//                     currentValue.split('.desktop')[0]
-//                   }.${size}.desktop.${style}`
-//                 ]
-//               : tokens[`${currentValue}.${size}.${breakpoint}.${style}`];
-//             while (resolvedValue in tokens) {
-//               resolvedValue = tokens[resolvedValue];
-//             }
-//             if (!(tokens[`${key}.${style}`] in tokens))
-//               result[`${key}.${size}.${breakpoint}.${style}`] = resolvedValue;
-//           });
-//         });
-//       });
-//     } else {
-//       result[key] = currentValue;
-//     }
-//   });
-
-//   return result;
-// };
 
 // export const resolveFigmaValues = (
 //   obj = {},
@@ -130,7 +67,7 @@ export const stretchAndResolveTokens = tokens => {
       while (node[key].v !== undefined) node[key] = node[key].v;
       if (typeof node[key] === 'object') prune(node[key]);
     });
-  }
+  };
 
   prune(result);
 
@@ -146,8 +83,8 @@ export const flattenTokens = tokens => {
       const keyPath = [...path, key];
       if (typeof value === 'object') return descend(value, keyPath);
       result[keyPath.join('.')] = value;
-    })
-  }
+    });
+  };
 
   descend(tokens);
 
@@ -160,47 +97,38 @@ export const flattenTokens = tokens => {
 export const stringifyTokens = tokens => {
   const result = JSON.parse(JSON.stringify(tokens));
 
-  const convert = (node) => {
+  const convert = node => {
     Object.keys(node).forEach(key => {
       const value = node[key];
       if (typeof value === 'object') return convert(value);
       else if (typeof value === 'number') node[key] = `${value}`;
-    })
-  }
+    });
+  };
 
   convert(result);
 
   return result;
-}
+};
 
-// export const resolveTokens = tokens => {
-//   const result = JSON.parse(JSON.stringify(tokens));
-
-//   const find = path => {
-//     const parts = path.split('.');
-//     let node = result;
-//     while (node && parts.length) node = node[parts.shift()];
-//     return node;
-//   };
-
-//   const resolve = node => {
-//     Object.keys(node).forEach(key => {
-//       const value = node[key];
-//       if (typeof value === 'object') return resolve(value);
-//       if (typeof value === 'string') node[key] = find(value) ?? value;
-//     });
-//   };
-
-//   resolve(result);
-
-//   return result;
-// };
-
-export const generateCssVars = tokens => `:root {
+export const generateCssVars = tokens => [
+  `:root {
 ${Object.keys(tokens)
-  .map(name => {
-    const parts = name.split('.');
-    return `  --${parts.join('-')}: ${tokens[name]};`;
+  .filter(key => !key.endsWith('dark'))
+  .map(key => {
+    const parts = key.split('.');
+    if (parts[parts.length - 1] === 'light') parts.splice(-1);
+    return `  --${parts.join('-')}: ${tokens[key]};`;
   })
   .join('\n')}
-}`;
+}`,
+  `:root {
+${Object.keys(tokens)
+  .filter(key => key.endsWith('dark'))
+  .map(key => {
+    const parts = key.split('.');
+    parts.splice(-1);
+    return `  --${parts.join('-')}: ${tokens[key]};`;
+  })
+  .join('\n')}
+}`,
+];

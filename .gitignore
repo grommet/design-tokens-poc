@@ -4,5 +4,5 @@ dist/
 yarn-error.log
 structured-tokens.ts
 tokens.ts
-tokens.css
+*.css
 tokens.json

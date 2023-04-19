@@ -28,5 +28,6 @@ writeFileSync(
   `export default ${JSON.stringify(stringified, null, 2)}`,
 );
 
-const cssVars = generateCssVars(flat);
+const [cssVars, cssDarkVars] = generateCssVars(flat);
 writeFileSync('./tokens.css', cssVars);
+writeFileSync('./tokens-dark.css', cssDarkVars);
