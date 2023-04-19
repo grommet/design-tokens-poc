@@ -868,9 +868,6 @@ declare const _default: {
         wide: {
             maxWidth: string;
         };
-        full: {
-            maxWidth: string;
-        };
         padding: {
             mobile: string;
             tablet: string;

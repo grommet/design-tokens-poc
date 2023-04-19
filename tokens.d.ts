@@ -479,7 +479,6 @@ declare const _default: {
     "page.minWidth": string;
     "page.narrow.maxWidth": string;
     "page.wide.maxWidth": string;
-    "page.full.maxWidth": string;
     "page.padding.mobile": string;
     "page.padding.tablet": string;
     "page.padding.desktop": string;

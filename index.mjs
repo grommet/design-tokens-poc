@@ -479,7 +479,6 @@ var tokens = {
   "page.minWidth": "384px",
   "page.narrow.maxWidth": "768px",
   "page.wide.maxWidth": "1536px",
-  "page.full.maxWidth": "content.full",
   "page.padding.mobile": "12px",
   "page.padding.tablet": "24px",
   "page.padding.desktop": "24px",
@@ -1391,9 +1390,6 @@ var structuredTokens = {
     },
     "wide": {
       "maxWidth": "1536px"
-    },
-    "full": {
-      "maxWidth": "content.full"
     },
     "padding": {
       "mobile": "12px",
