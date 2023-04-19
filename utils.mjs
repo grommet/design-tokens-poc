@@ -1,4 +1,3 @@
-
 // export const resolveFigmaValues = (
 //   obj = {},
 //   originalObj,
@@ -44,6 +43,7 @@ export const stretchAndResolveTokens = tokens => {
   });
 
   // second, resolve value references
+
   const find = path => {
     const parts = path.split('.');
     let node = result;
@@ -62,6 +62,7 @@ export const stretchAndResolveTokens = tokens => {
   resolve(result);
 
   // third, remove 'v'
+
   const prune = node => {
     Object.keys(node).forEach(key => {
       while (node[key].v !== undefined) node[key] = node[key].v;
@@ -72,6 +73,38 @@ export const stretchAndResolveTokens = tokens => {
   prune(result);
 
   return result;
+};
+
+export const splitTheme = tokens => {
+  const light = {};
+  const dark = {};
+
+  const set = (root, path, value) => {
+    const setPath = [...path];
+    let node = root;
+    while (setPath.length > 1) {
+      const key = setPath.shift();
+      if (!node[key]) node[key] = {};
+      node = node[key];
+    }
+    node[setPath[0]] = value;
+  }
+
+  const split = (node, path = []) => {
+    Object.keys(node).forEach(key => {
+      const keyPath = [...path, key];
+      const value = node[key];
+      if (value.light && value.dark) {
+        set(light, keyPath, value.light);
+        set(dark, keyPath, value.dark);
+      } else if (typeof value === 'object') split(value, keyPath);
+      else set(light, keyPath, value);
+    });
+  };
+
+  split(tokens);
+
+  return [light, dark];
 };
 
 export const flattenTokens = tokens => {

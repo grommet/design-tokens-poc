@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync } from 'fs';
 import {
   flattenTokens,
   generateCssVars,
+  splitTheme,
   stretchAndResolveTokens,
   stringifyTokens,
 } from './utils.mjs';
@@ -21,11 +22,20 @@ writeFileSync(
   `export default ${JSON.stringify(flat, null, 2)}`,
 );
 
-const stringified = stringifyTokens(resolved);
+const [light, dark] = splitTheme(resolved);
+
+const stringified = stringifyTokens(light);
 
 writeFileSync(
   './structured-tokens.ts',
   `export default ${JSON.stringify(stringified, null, 2)}`,
+);
+
+const stringifiedDark = stringifyTokens(dark);
+
+writeFileSync(
+  './structured-tokens-dark.ts',
+  `export default ${JSON.stringify(stringifiedDark, null, 2)}`,
 );
 
 const [cssVars, cssDarkVars] = generateCssVars(flat);

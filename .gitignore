@@ -2,7 +2,7 @@
 node_modules/
 dist/
 yarn-error.log
-structured-tokens.ts
+structured-*.ts
 tokens.ts
 *.css
 tokens.json
