@@ -6,11 +6,11 @@ export default {
   input: 'index.ts',
   output: [
     {
-      file: pkg.main,
+      file: './dist/index.js',
       format: 'cjs',
     },
     {
-      file: pkg.module,
+      file: './dist/index.mjs',
       format: 'es',
     },
   ],
