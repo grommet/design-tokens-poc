@@ -143,8 +143,9 @@ export const flattenTokens = tokens => {
   const descend = (node, path = []) => {
     Object.keys(node).forEach(key => {
       const value = node[key];
-      if (typeof value === 'object') return descend(value, path.concat(key));
-      result[path.join('.')] = value;
+      const keyPath = [...path, key];
+      if (typeof value === 'object') return descend(value, keyPath);
+      result[keyPath.join('.')] = value;
     })
   }
 
