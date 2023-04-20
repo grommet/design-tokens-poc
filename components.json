@@ -187,7 +187,7 @@
   "notification.warning.toast.background": "color.background.front",
   "page.minWidth": "content.medium",
   "page.narrow.maxWidth": "content.large",
-  "page.wide.maxWidth": "content.2xlarge",
+  "page.wide.maxWidth": "content.xxlarge",
   "page.padding": "spacing.medium",
   "pageheader.subtitle.typography": "text.xlarge",
   "text.lineHeight": 1.25,
