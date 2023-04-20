@@ -105,13 +105,13 @@ declare const _default: {
         focus: string;
     };
     content: {
-        "2xsmall": string;
+        xxsmall: string;
         xsmall: string;
         small: string;
         medium: string;
         large: string;
         xlarge: string;
-        "2xlarge": string;
+        xxlarge: string;
     };
     elevation: {
         small: {
@@ -168,7 +168,7 @@ declare const _default: {
             tablet: string;
             desktop: string;
         };
-        "2xsmall": {
+        xxsmall: {
             mobile: string;
             tablet: string;
             desktop: string;

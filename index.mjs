@@ -63,13 +63,13 @@ var tokens = {
   "color.text.active.light": "#444444",
   "color.text.active.dark": "#FFFFFFF5",
   "color.focus": "",
-  "content.2xsmall": "48px",
+  "content.xxsmall": "48px",
   "content.xsmall": "96px",
   "content.small": "192px",
   "content.medium": "384px",
   "content.large": "768px",
   "content.xlarge": "1152px",
-  "content.2xlarge": "1536px",
+  "content.xxlarge": "1536px",
   "elevation.small.boxShadow": "0px 2px 4px #0000001F",
   "elevation.medium.boxShadow": "0px 6px 12px #0000001F",
   "elevation.large.boxShadow": "0px 12px 24px #0000003D",
@@ -96,9 +96,9 @@ var tokens = {
   "spacing.3xsmall.mobile": "1px",
   "spacing.3xsmall.tablet": "1px",
   "spacing.3xsmall.desktop": "1px",
-  "spacing.2xsmall.mobile": "2px",
-  "spacing.2xsmall.tablet": "3px",
-  "spacing.2xsmall.desktop": "3px",
+  "spacing.xxsmall.mobile": "2px",
+  "spacing.xxsmall.tablet": "3px",
+  "spacing.xxsmall.desktop": "3px",
   "spacing.xsmall.mobile": "3px",
   "spacing.xsmall.tablet": "6px",
   "spacing.xsmall.desktop": "6px",
@@ -627,13 +627,13 @@ var structuredTokens = {
     "focus": ""
   },
   "content": {
-    "2xsmall": "48px",
+    "xxsmall": "48px",
     "xsmall": "96px",
     "small": "192px",
     "medium": "384px",
     "large": "768px",
     "xlarge": "1152px",
-    "2xlarge": "1536px"
+    "xxlarge": "1536px"
   },
   "elevation": {
     "small": {
@@ -690,7 +690,7 @@ var structuredTokens = {
       "tablet": "1px",
       "desktop": "1px"
     },
-    "2xsmall": {
+    "xxsmall": {
       "mobile": "2px",
       "tablet": "3px",
       "desktop": "3px"

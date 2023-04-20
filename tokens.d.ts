@@ -63,13 +63,13 @@ declare const _default: {
     "color.text.active.light": string;
     "color.text.active.dark": string;
     "color.focus": string;
-    "content.2xsmall": string;
+    "content.xxsmall": string;
     "content.xsmall": string;
     "content.small": string;
     "content.medium": string;
     "content.large": string;
     "content.xlarge": string;
-    "content.2xlarge": string;
+    "content.xxlarge": string;
     "elevation.small.boxShadow": string;
     "elevation.medium.boxShadow": string;
     "elevation.large.boxShadow": string;
@@ -96,9 +96,9 @@ declare const _default: {
     "spacing.3xsmall.mobile": string;
     "spacing.3xsmall.tablet": string;
     "spacing.3xsmall.desktop": string;
-    "spacing.2xsmall.mobile": string;
-    "spacing.2xsmall.tablet": string;
-    "spacing.2xsmall.desktop": string;
+    "spacing.xxsmall.mobile": string;
+    "spacing.xxsmall.tablet": string;
+    "spacing.xxsmall.desktop": string;
     "spacing.xsmall.mobile": string;
     "spacing.xsmall.tablet": string;
     "spacing.xsmall.desktop": string;
