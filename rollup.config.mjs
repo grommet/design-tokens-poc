@@ -1,5 +1,4 @@
 import typescript from 'rollup-plugin-typescript2';
-import copy from 'rollup-plugin-copy';
 import pkg from './package.json' assert { type: 'json' };
 
 export default {
@@ -18,15 +17,5 @@ export default {
     ...Object.keys(pkg.dependencies || {}),
     ...Object.keys(pkg.peerDependencies || {}),
   ],
-  plugins: [
-    typescript(),
-    copy({
-      targets: [
-        {
-          src: ['package.json', 'LICENSE', 'tokens.json', '*.css'],
-          dest: 'dist',
-        },
-      ],
-    }),
-  ],
+  plugins: [typescript()],
 };

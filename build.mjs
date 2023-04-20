@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 import {
   flattenTokens,
   generateCssVars,
@@ -16,9 +16,10 @@ const combined = { ...global, ...components };
 const resolved = stretchAndResolveTokens(combined);
 const flat = flattenTokens(resolved);
 
+mkdirSync('./dist');
 writeFileSync('./tokens.json', JSON.stringify(flat, null, 2));
 writeFileSync(
-  './tokens.ts',
+  './dist/tokens.ts',
   `export default ${JSON.stringify(flat, null, 2)}`,
 );
 
@@ -27,17 +28,17 @@ const [light, dark] = splitTheme(resolved);
 const stringified = stringifyTokens(light);
 
 writeFileSync(
-  './structured-tokens.ts',
+  './dist/structured-tokens.ts',
   `export default ${JSON.stringify(stringified, null, 2)}`,
 );
 
 const stringifiedDark = stringifyTokens(dark);
 
 writeFileSync(
-  './structured-tokens-dark.ts',
+  './dist/structured-tokens-dark.ts',
   `export default ${JSON.stringify(stringifiedDark, null, 2)}`,
 );
 
 const [cssVars, cssDarkVars] = generateCssVars(flat);
-writeFileSync('./tokens.css', cssVars);
-writeFileSync('./tokens-dark.css', cssDarkVars);
+writeFileSync('./dist/tokens.css', cssVars);
+writeFileSync('./dist/tokens-dark.css', cssDarkVars);

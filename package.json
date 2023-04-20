@@ -2,19 +2,20 @@
   "name": "hpe-design-tokens",
   "version": "0.1.0",
   "description": "a token library for the HPE design system",
-  "main": "./index.js",
-  "module": "./index.mjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "files": [
-    "dist"
+    "dist",
+    "tokens.json"
   ],
-  "types": "./index.d.ts",
+  "types": "./dist/index.d.ts",
   "authors": [
     "Eric Soderberg",
     "Taylor Seamans"
   ],
   "scripts": {
     "test": "jest --config=jest.config.es.js && jest --config=jest.config.ts.js",
-    "build": "node build.mjs && rm -rf ./dist && rollup -c ./rollup.config.mjs",
+    "build": "rm -rf ./dist && node build.mjs && rollup -c ./rollup.config.mjs",
     "release-stable": "babel-node ./tools/release-stable.mjs"
   },
   "repository": {
@@ -39,7 +40,6 @@
     "path": "^0.12.7",
     "prettier": "^2.8.7",
     "rollup": "^3.20.6",
-    "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-typescript2": "^0.34.1",
     "simple-git": "^3.17.0",
     "ts-jest": "^29.1.0",
