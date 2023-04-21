@@ -17,27 +17,26 @@ const resolved = stretchAndResolveTokens(combined);
 const flat = flattenTokens(resolved);
 
 mkdirSync('./dist');
-writeFileSync('./tokens.json', JSON.stringify(flat, null, 2));
-writeFileSync(
-  './dist/tokens.ts',
-  `export default ${JSON.stringify(flat, null, 2)}`,
-);
+
+writeFileSync('./tokens.ts', `export default ${JSON.stringify(flat, null, 2)}`);
 
 const [light, dark] = splitTheme(resolved);
 
 const stringified = stringifyTokens(light);
 
 writeFileSync(
-  './dist/structured-tokens.ts',
+  './structured-tokens.ts',
   `export default ${JSON.stringify(stringified, null, 2)}`,
 );
 
 const stringifiedDark = stringifyTokens(dark);
 
 writeFileSync(
-  './dist/structured-tokens-dark.ts',
+  './structured-tokens-dark.ts',
   `export default ${JSON.stringify(stringifiedDark, null, 2)}`,
 );
+
+writeFileSync('./dist/tokens.json', JSON.stringify(flat, null, 2));
 
 const [cssVars, cssDarkVars] = generateCssVars(flat);
 writeFileSync('./dist/tokens.css', cssVars);
