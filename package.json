@@ -2,8 +2,8 @@
   "name": "hpe-design-tokens",
   "version": "0.1.0",
   "description": "a token library for the HPE design system",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "index.js",
+  "module": "index.mjs",
   "files": [
     "dist",
     "tokens.json"
