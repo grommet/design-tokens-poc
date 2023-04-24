@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-console */
 import del from 'del';
 import fs from 'fs-extra';
