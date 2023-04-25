@@ -2,13 +2,13 @@
   "name": "hpe-design-tokens",
   "version": "0.1.0",
   "description": "a token library for the HPE design system",
-  "main": "index.js",
-  "module": "index.mjs",
+  "main": "cjs/index.js",
+  "module": "index.js",
   "files": [
     "dist",
     "tokens.json"
   ],
-  "types": "./dist/index.d.ts",
+  "types": "index.d.ts",
   "authors": [
     "Eric Soderberg",
     "Taylor Seamans"
@@ -31,6 +31,7 @@
     "@babel/core": "^7.21.4",
     "@babel/eslint-parser": "^7.21.3",
     "@babel/node": "^7.20.7",
+    "@rollup/plugin-typescript": "^11.1.0",
     "@types/jest": "^29.5.0",
     "del": "^6.1.1",
     "eslint": "^8.37.0",
@@ -41,9 +42,9 @@
     "prettier": "^2.8.7",
     "rollup": "^3.20.6",
     "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-typescript2": "^0.34.1",
     "simple-git": "^3.17.0",
     "ts-jest": "^29.1.0",
+    "tslib": "^2.5.0",
     "typescript": "^5.0.4"
   }
 }

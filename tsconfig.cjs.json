@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "dist",
-    "module": "es6",
+    "declarationDir": "dist/cjs",
+    "module": "CommonJS",
     "noImplicitAny": true,
     "esModuleInterop": true,
-    "outDir": "dist",
-    "target": "es6",
+    "outDir": "dist/cjs",
     "emitDeclarationOnly": true,
     "allowImportingTsExtensions": true
   },
