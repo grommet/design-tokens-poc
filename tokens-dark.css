@@ -20,6 +20,9 @@
   --color-text-xweak: #FFFFFF33;
   --color-text-disabled: #FFFFFF80;
   --color-text-active: #FFFFFFF5;
+  --elevation-small-boxShadow: 0px 2px 4px #0000003D;
+  --elevation-medium-boxShadow: 0px 6px 12px #0000005C;
+  --elevation-large-boxShadow: 0px 12px 24px #0000007A;
   --anchor-color: #FFFFFFF5;
   --anchor-label-color: #FFFFFFE6;
   --anchor-label-color-strong: #FFFFFFF5;
@@ -31,6 +34,7 @@
   --button-active-background: #FFFFFF0F;
   --button-badge-background: #FFFFFFF5;
   --card-background: #222222;
+  --card-boxShadow: 0px 6px 12px #0000005C;
   --heading-color: #FFFFFFF5;
   --input-borderColor: #FFFFFF5C;
   --input-borderColor-strong: #FFFFFFB8;
@@ -45,6 +49,7 @@
   --layer-background-validation-warning: #D891284D;
   --layer-background-validation-ok: #17D0A64D;
   --layer-background-active: #FFFFFF0F;
+  --layer-boxShadow: 0px 12px 24px #0000007A;
   --namevaluepair-name-color: #FFFFFFF5;
   --text-color: #FFFFFFE6;
   --text-color-strong: #FFFFFFF5;

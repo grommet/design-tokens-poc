@@ -32,6 +32,17 @@ declare const _default: {
             active: string;
         };
     };
+    elevation: {
+        small: {
+            boxShadow: string;
+        };
+        medium: {
+            boxShadow: string;
+        };
+        large: {
+            boxShadow: string;
+        };
+    };
     anchor: {
         color: string;
         label: {
@@ -58,6 +69,7 @@ declare const _default: {
     };
     card: {
         background: string;
+        boxShadow: string;
     };
     heading: {
         color: string;
@@ -88,6 +100,7 @@ declare const _default: {
             };
             active: string;
         };
+        boxShadow: string;
     };
     namevaluepair: {
         name: {

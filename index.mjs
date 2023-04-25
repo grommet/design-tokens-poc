@@ -70,9 +70,12 @@ var tokens = {
   "content.large": "768px",
   "content.xlarge": "1152px",
   "content.xxlarge": "1536px",
-  "elevation.small.boxShadow": "0px 2px 4px #0000001F",
-  "elevation.medium.boxShadow": "0px 6px 12px #0000001F",
-  "elevation.large.boxShadow": "0px 12px 24px #0000003D",
+  "elevation.small.boxShadow.light": "0px 2px 4px #0000001F",
+  "elevation.small.boxShadow.dark": "0px 2px 4px #0000003D",
+  "elevation.medium.boxShadow.light": "0px 6px 12px #0000001F",
+  "elevation.medium.boxShadow.dark": "0px 6px 12px #0000005C",
+  "elevation.large.boxShadow.light": "0px 12px 24px #0000003D",
+  "elevation.large.boxShadow.dark": "0px 12px 24px #0000007A",
   "font.fontFamily": "Metric, Arial, sans-serif",
   "font.light.url": "https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Light.woff2",
   "font.light.fontWeight": 300,
@@ -218,7 +221,8 @@ var tokens = {
   "button.label": "text.desktop",
   "card.background.light": "#FFFFFF",
   "card.background.dark": "#222222",
-  "card.boxShadow": "0px 6px 12px #0000001F",
+  "card.boxShadow.light": "0px 6px 12px #0000001F",
+  "card.boxShadow.dark": "0px 6px 12px #0000005C",
   "card.borderRadius": "12px",
   "card.body.padding.mobile": "12px",
   "card.body.padding.tablet": "24px",
@@ -283,7 +287,8 @@ var tokens = {
   "layer.background.active.light": "#0000000A",
   "layer.background.active.dark": "#FFFFFF0F",
   "layer.borderRadius": "3px",
-  "layer.boxShadow": "0px 12px 24px #0000003D",
+  "layer.boxShadow.light": "0px 12px 24px #0000003D",
+  "layer.boxShadow.dark": "0px 12px 24px #0000007A",
   "layer.overlay.background": "#00000080",
   "namevaluepair.name.color.light": "#444444",
   "namevaluepair.name.color.dark": "#FFFFFFF5",
@@ -1007,6 +1012,17 @@ var structuredTokensDark = {
       "active": "#FFFFFFF5"
     }
   },
+  "elevation": {
+    "small": {
+      "boxShadow": "0px 2px 4px #0000003D"
+    },
+    "medium": {
+      "boxShadow": "0px 6px 12px #0000005C"
+    },
+    "large": {
+      "boxShadow": "0px 12px 24px #0000007A"
+    }
+  },
   "anchor": {
     "color": "#FFFFFFF5",
     "label": {
@@ -1032,7 +1048,8 @@ var structuredTokensDark = {
     }
   },
   "card": {
-    "background": "#222222"
+    "background": "#222222",
+    "boxShadow": "0px 6px 12px #0000005C"
   },
   "heading": {
     "color": "#FFFFFFF5"
@@ -1062,7 +1079,8 @@ var structuredTokensDark = {
         "ok": "#17D0A64D"
       },
       "active": "#FFFFFF0F"
-    }
+    },
+    "boxShadow": "0px 12px 24px #0000007A"
   },
   "namevaluepair": {
     "name": {

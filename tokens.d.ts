@@ -70,9 +70,12 @@ declare const _default: {
     "content.large": string;
     "content.xlarge": string;
     "content.xxlarge": string;
-    "elevation.small.boxShadow": string;
-    "elevation.medium.boxShadow": string;
-    "elevation.large.boxShadow": string;
+    "elevation.small.boxShadow.light": string;
+    "elevation.small.boxShadow.dark": string;
+    "elevation.medium.boxShadow.light": string;
+    "elevation.medium.boxShadow.dark": string;
+    "elevation.large.boxShadow.light": string;
+    "elevation.large.boxShadow.dark": string;
     "font.fontFamily": string;
     "font.light.url": string;
     "font.light.fontWeight": number;
@@ -218,7 +221,8 @@ declare const _default: {
     "button.label": string;
     "card.background.light": string;
     "card.background.dark": string;
-    "card.boxShadow": string;
+    "card.boxShadow.light": string;
+    "card.boxShadow.dark": string;
     "card.borderRadius": string;
     "card.body.padding.mobile": string;
     "card.body.padding.tablet": string;
@@ -283,7 +287,8 @@ declare const _default: {
     "layer.background.active.light": string;
     "layer.background.active.dark": string;
     "layer.borderRadius": string;
-    "layer.boxShadow": string;
+    "layer.boxShadow.light": string;
+    "layer.boxShadow.dark": string;
     "layer.overlay.background": string;
     "namevaluepair.name.color.light": string;
     "namevaluepair.name.color.dark": string;
