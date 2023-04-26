@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "dist/cjs",
-    "module": "CommonJS",
+    "module": "esnext",
     "noImplicitAny": true,
     "esModuleInterop": true,
     "outDir": "dist/cjs",
