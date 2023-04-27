@@ -69,6 +69,8 @@
   "card.boxShadow": "elevation.medium.boxShadow",
   "card.borderRadius": "radius.large",
   "card.body.padding": "spacing.medium",
+  "drop.zIndex": 99,
+  "drop.background": "color.background.front",
   "heading.color": "color.text.strong",
   "heading.lineHeight": 1,
   "heading.1.desktop.fontSize": "2.25rem",
