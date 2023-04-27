@@ -71,6 +71,9 @@ declare const _default: {
         background: string;
         boxShadow: string;
     };
+    drop: {
+        background: string;
+    };
     heading: {
         color: string;
     };

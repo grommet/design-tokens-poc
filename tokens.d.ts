@@ -227,6 +227,9 @@ declare const _default: {
     "card.body.padding.mobile": string;
     "card.body.padding.tablet": string;
     "card.body.padding.desktop": string;
+    "drop.zIndex": number;
+    "drop.background.light": string;
+    "drop.background.dark": string;
     "heading.1.desktop.fontSize": string;
     "heading.1.desktop.fontWeight": string;
     "heading.1.tablet.fontSize": string;

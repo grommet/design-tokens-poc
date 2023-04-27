@@ -423,6 +423,10 @@ declare const _default: {
             };
         };
     };
+    drop: {
+        zIndex: string;
+        background: string;
+    };
     heading: {
         "1": {
             desktop: {

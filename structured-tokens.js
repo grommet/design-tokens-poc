@@ -423,6 +423,10 @@ var structuredTokens = {
             }
         }
     },
+    "drop": {
+        "zIndex": "99",
+        "background": "#FFFFFF"
+    },
     "heading": {
         "1": {
             "desktop": {

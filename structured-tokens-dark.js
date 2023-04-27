@@ -71,6 +71,9 @@ var structuredTokensDark = {
         "background": "#222222",
         "boxShadow": "0px 6px 12px #0000005C"
     },
+    "drop": {
+        "background": "#222222"
+    },
     "heading": {
         "color": "#FFFFFFF5"
     },

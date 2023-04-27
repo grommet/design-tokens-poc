@@ -191,6 +191,8 @@
   --card-body-padding-mobile: 12px;
   --card-body-padding-tablet: 24px;
   --card-body-padding-desktop: 24px;
+  --drop-zIndex: 99;
+  --drop-background: #FFFFFF;
   --heading-1-desktop-fontSize: 2.25rem;
   --heading-1-desktop-fontWeight: font.weight.regular;
   --heading-1-tablet-fontSize: 1.5rem;
