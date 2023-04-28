@@ -131,6 +131,7 @@
   --button-borderRadius: 2em;
   --button-hover-background: #0000000A;
   --button-active-background: #0000000A;
+  --button-selected-background: #01A982;
   --button-disabled-opacity: 0.3;
   --button-small-paddingTop: 6px;
   --button-small-paddingBottom: 6px;

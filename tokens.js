@@ -164,6 +164,7 @@ var tokens = {
     "button.hover.background.dark": "#FFFFFF0F",
     "button.active.background.light": "#0000000A",
     "button.active.background.dark": "#FFFFFF0F",
+    "button.selected.background": "#01A982",
     "button.disabled.opacity": 0.3,
     "button.small.paddingTop": "6px",
     "button.small.paddingBottom": "6px",

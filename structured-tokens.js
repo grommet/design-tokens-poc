@@ -296,6 +296,9 @@ var structuredTokens = {
         "active": {
             "background": "#0000000A"
         },
+        "selected": {
+            "background": "#01A982"
+        },
         "disabled": {
             "opacity": "0.3"
         },

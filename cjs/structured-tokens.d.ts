@@ -296,6 +296,9 @@ declare const _default: {
         active: {
             background: string;
         };
+        selected: {
+            background: string;
+        };
         disabled: {
             opacity: string;
         };

@@ -164,6 +164,7 @@ declare const _default: {
     "button.hover.background.dark": string;
     "button.active.background.light": string;
     "button.active.background.dark": string;
+    "button.selected.background": string;
     "button.disabled.opacity": number;
     "button.small.paddingTop": string;
     "button.small.paddingBottom": string;
