@@ -14,6 +14,7 @@
   "button.borderRadius": "radius.full",
   "button.hover.background": "color.background.contrast",
   "button.active.background": "color.background.active",
+  "button.selected.background": "color.background.selected",
   "button.disabled.opacity": "opacity.disabled",
   "button.small.paddingTop": "spacing.xsmall.desktop",
   "button.small.paddingBottom": "spacing.xsmall.desktop",

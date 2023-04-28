@@ -15,6 +15,7 @@
   "scripts": {
     "test": "jest --config=jest.config.es.js && jest --config=jest.config.ts.js",
     "build": "rm -rf ./dist && node build.mjs && rollup -c ./rollup.config.mjs",
+    "push": "cd dist && yalc push",
     "release-stable": "babel-node ./tools/release-stable.mjs"
   },
   "repository": {
