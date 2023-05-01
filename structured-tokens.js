@@ -351,9 +351,9 @@ var structuredTokens = {
             }
         },
         "primary": {
-            "background": "#01A982",
+            "background": "linear-gradient(70deg, transparent, #01A982 35%, transparent 70%) #01A982",
             "hover": {
-                "background": ""
+                "backgroundColor": "#008567"
             }
         },
         "option": {

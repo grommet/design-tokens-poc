@@ -353,7 +353,7 @@ declare const _default: {
         primary: {
             background: string;
             hover: {
-                background: string;
+                backgroundColor: string;
             };
         };
         option: {

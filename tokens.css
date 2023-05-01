@@ -159,8 +159,8 @@
   --button-xlarge-iconOnly-padding: 21px;
   --button-cta-primary-background: #01A982;
   --button-cta-primary-hover-background: ;
-  --button-primary-background: #01A982;
-  --button-primary-hover-background: ;
+  --button-primary-background: linear-gradient(70deg, transparent, #01A982 35%, transparent 70%) #01A982;
+  --button-primary-hover-backgroundColor: #008567;
   --button-option-borderRadius: 0px;
   --button-option-paddingLeft-mobile: 6px;
   --button-option-paddingLeft-tablet: 12px;

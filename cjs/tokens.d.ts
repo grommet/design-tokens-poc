@@ -193,7 +193,7 @@ declare const _default: {
     "button.cta-primary.background": string;
     "button.cta-primary.hover.background": string;
     "button.primary.background": string;
-    "button.primary.hover.background": string;
+    "button.primary.hover.backgroundColor": string;
     "button.option.borderRadius": string;
     "button.option.paddingLeft.mobile": string;
     "button.option.paddingLeft.tablet": string;
