@@ -265,7 +265,10 @@ declare const _default: {
     "input.borderColor.weak.dark": string;
     "input.borderRadius": string;
     "input.borderSize.width": string;
-    "input.padding": string;
+    "input.paddingTop": string;
+    "input.paddingBottom": string;
+    "input.paddingLeft": string;
+    "input.paddingRight": string;
     "input.placeholder.color.light": string;
     "input.placeholder.color.dark": string;
     "input.placeholder.fontWeight": number;

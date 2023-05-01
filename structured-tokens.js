@@ -503,7 +503,10 @@ var structuredTokens = {
         "borderSize": {
             "width": "1px"
         },
-        "padding": "6px",
+        "paddingTop": "6px",
+        "paddingBottom": "6px",
+        "paddingLeft": "12px",
+        "paddingRight": "12px",
         "placeholder": {
             "color": "#BBBBBB",
             "fontWeight": "400"

@@ -224,7 +224,10 @@
   --input-borderColor-weak: #0000001F;
   --input-borderRadius: 6px;
   --input-borderSize-width: 1px;
-  --input-padding: 6px;
+  --input-paddingTop: 6px;
+  --input-paddingBottom: 6px;
+  --input-paddingLeft: 12px;
+  --input-paddingRight: 12px;
   --input-placeholder-color: #BBBBBB;
   --input-placeholder-fontWeight: 400;
   --input-value-color: #444444;

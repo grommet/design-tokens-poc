@@ -503,7 +503,10 @@ declare const _default: {
         borderSize: {
             width: string;
         };
-        padding: string;
+        paddingTop: string;
+        paddingBottom: string;
+        paddingLeft: string;
+        paddingRight: string;
         placeholder: {
             color: string;
             fontWeight: string;
