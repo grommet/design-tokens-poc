@@ -102,6 +102,36 @@ var structuredTokens = {
             "selected": "#FFFFFF",
             "active": "#444444"
         },
+        "dataviz": {
+            "single": "",
+            "qualitative": {
+                "1": "#00739D",
+                "2": "#995AFF",
+                "3": "#FF8300",
+                "4": "#00FFE5",
+                "5": "#FFD829",
+                "6": "#FF7CB0",
+                "7": ""
+            },
+            "sequential": {
+                "0": "#00FFA5",
+                "20": "#17EBA0",
+                "30": "#13D896",
+                "50": "#0FC68B",
+                "70": "#08A67A",
+                "80": "#008567",
+                "100": "#00644D"
+            },
+            "divergent": {
+                "negative100": "#FF8300",
+                "negative70": "",
+                "negative30": "#F6EBDF",
+                "center": "#F7F7F7",
+                "positive30": "#F6EBDF",
+                "positive70": "",
+                "positive100": "#82FFF2"
+            }
+        },
         "focus": ""
     },
     "content": {

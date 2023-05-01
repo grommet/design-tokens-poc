@@ -102,6 +102,36 @@ declare const _default: {
             selected: string;
             active: string;
         };
+        dataviz: {
+            single: string;
+            qualitative: {
+                "1": string;
+                "2": string;
+                "3": string;
+                "4": string;
+                "5": string;
+                "6": string;
+                "7": string;
+            };
+            sequential: {
+                "0": string;
+                "20": string;
+                "30": string;
+                "50": string;
+                "70": string;
+                "80": string;
+                "100": string;
+            };
+            divergent: {
+                negative100: string;
+                negative70: string;
+                negative30: string;
+                center: string;
+                positive30: string;
+                positive70: string;
+                positive100: string;
+            };
+        };
         focus: string;
     };
     content: {
