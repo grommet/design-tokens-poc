@@ -53,7 +53,7 @@
   "button.secondary.borderWidth": "border.small",
   "button.secondary.borderColor": "color.brand",
   "button.secondary.active.borderColor": "transparent",
-  "button.secondary.hover.borderWidth": "",
+  "button.secondary.hover.borderWidth": "3px",
   "button.secondary.hover.background": "none",
   "button.toolbar.borderRadius": "radius.medium",
   "button.badge.background": "color.text.strong",
