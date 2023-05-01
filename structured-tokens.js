@@ -399,7 +399,7 @@ var structuredTokens = {
                 "borderColor": "transparent"
             },
             "hover": {
-                "borderWidth": "",
+                "borderWidth": "3px",
                 "background": "none"
             }
         },
