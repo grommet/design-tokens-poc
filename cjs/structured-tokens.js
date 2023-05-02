@@ -105,7 +105,7 @@ var structuredTokens = {
             "active": "#444444"
         },
         "dataviz": {
-            "single": "",
+            "single": "#995AFF",
             "qualitative": {
                 "1": "#00739D",
                 "2": "#995AFF",
@@ -116,21 +116,21 @@ var structuredTokens = {
                 "7": ""
             },
             "sequential": {
-                "0": "#00FFA5",
-                "20": "#17EBA0",
-                "30": "#13D896",
+                "0": "#00FFA520",
+                "20": "#17EBA040",
+                "30": "#13D89680",
                 "50": "#0FC68B",
-                "70": "#08A67A",
-                "80": "#008567",
-                "100": "#00644D"
+                "70": "#0CB682C0",
+                "80": "#059872",
+                "100": "#00775C"
             },
             "divergent": {
                 "negative100": "#FF8300",
-                "negative70": "",
+                "negative70": "#F9C894",
                 "negative30": "#F6EBDF",
-                "center": "#F7F7F7",
-                "positive30": "#F6EBDF",
-                "positive70": "",
+                "center": "#D9E2C6",
+                "positive30": "#D6FAF6",
+                "positive70": "#A3FDF4",
                 "positive100": "#82FFF2"
             }
         },
