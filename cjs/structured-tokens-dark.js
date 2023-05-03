@@ -73,6 +73,18 @@ var structuredTokensDark = {
         "background": "#222222",
         "boxShadow": "0px 6px 12px #0000005C"
     },
+    "dataTable": {
+        "header": {
+            "cell": {
+                "color": "#FFFFFFF5"
+            }
+        },
+        "body": {
+            "cell": {
+                "borderColor": "#FFFFFF1F"
+            }
+        }
+    },
     "drop": {
         "background": "#222222"
     },

@@ -214,6 +214,14 @@
   --card-body-padding-mobile: 12px;
   --card-body-padding-tablet: 24px;
   --card-body-padding-desktop: 24px;
+  --dataTable-cell-paddingTop: 6px;
+  --dataTable-cell-paddingBottom: 6px;
+  --dataTable-cell-paddingLeft: 12px;
+  --dataTable-cell-paddingRight: 12px;
+  --dataTable-header-cell-color: #444444;
+  --dataTable-header-cell-fontWeight: 500;
+  --dataTable-body-cell-borderWidth: 1px;
+  --dataTable-body-cell-borderColor: #0000001F;
   --drop-zIndex: 99;
   --drop-background: #FFFFFF;
   --heading-1-desktop-fontSize: 2.25rem;
@@ -272,9 +280,9 @@
   --page-minWidth: 384px;
   --page-narrow-maxWidth: 768px;
   --page-wide-maxWidth: 1536px;
-  --page-padding-mobile: 12px;
-  --page-padding-tablet: 24px;
-  --page-padding-desktop: 24px;
+  --pageContent-padding-mobile: 24px;
+  --pageContent-padding-tablet: 48px;
+  --pageContent-padding-desktop: 48px;
   --pageheader-subtitle-typography-mobile-fontSize: 1.125rem;
   --pageheader-subtitle-typography-tablet-fontSize: 1.5rem;
   --pageheader-subtitle-typography-tablet-fontWeight: 300;

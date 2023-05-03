@@ -456,6 +456,26 @@ var structuredTokens = {
             }
         }
     },
+    "dataTable": {
+        "cell": {
+            "paddingTop": "6px",
+            "paddingBottom": "6px",
+            "paddingLeft": "12px",
+            "paddingRight": "12px"
+        },
+        "header": {
+            "cell": {
+                "color": "#444444",
+                "fontWeight": "500"
+            }
+        },
+        "body": {
+            "cell": {
+                "borderWidth": "1px",
+                "borderColor": "#0000001F"
+            }
+        }
+    },
     "drop": {
         "zIndex": "99",
         "background": "#FFFFFF"
@@ -582,11 +602,13 @@ var structuredTokens = {
         },
         "wide": {
             "maxWidth": "1536px"
-        },
+        }
+    },
+    "pageContent": {
         "padding": {
-            "mobile": "12px",
-            "tablet": "24px",
-            "desktop": "24px"
+            "mobile": "24px",
+            "tablet": "48px",
+            "desktop": "48px"
         }
     },
     "pageheader": {

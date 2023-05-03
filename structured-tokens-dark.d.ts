@@ -71,6 +71,18 @@ declare const _default: {
         background: string;
         boxShadow: string;
     };
+    dataTable: {
+        header: {
+            cell: {
+                color: string;
+            };
+        };
+        body: {
+            cell: {
+                borderColor: string;
+            };
+        };
+    };
     drop: {
         background: string;
     };

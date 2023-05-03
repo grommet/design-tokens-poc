@@ -456,6 +456,26 @@ declare const _default: {
             };
         };
     };
+    dataTable: {
+        cell: {
+            paddingTop: string;
+            paddingBottom: string;
+            paddingLeft: string;
+            paddingRight: string;
+        };
+        header: {
+            cell: {
+                color: string;
+                fontWeight: string;
+            };
+        };
+        body: {
+            cell: {
+                borderWidth: string;
+                borderColor: string;
+            };
+        };
+    };
     drop: {
         zIndex: string;
         background: string;
@@ -583,6 +603,8 @@ declare const _default: {
         wide: {
             maxWidth: string;
         };
+    };
+    pageContent: {
         padding: {
             mobile: string;
             tablet: string;
