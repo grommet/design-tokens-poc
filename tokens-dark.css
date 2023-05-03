@@ -54,6 +54,8 @@
   --layer-background-active: #FFFFFF0F;
   --layer-boxShadow: 0px 12px 24px #0000007A;
   --namevaluepair-name-color: #FFFFFFF5;
+  --tab-hover-borderColor: #FFFFFF1F;
+  --tab-selected-color: #FFFFFFF5;
   --text-color: #FFFFFFE6;
   --text-color-strong: #FFFFFFF5;
   --text-color-weak: #FFFFFF80;

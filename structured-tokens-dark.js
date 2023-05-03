@@ -122,6 +122,14 @@ var structuredTokensDark = {
             "color": "#FFFFFFF5"
         }
     },
+    "tab": {
+        "hover": {
+            "borderColor": "#FFFFFF1F"
+        },
+        "selected": {
+            "color": "#FFFFFFF5"
+        }
+    },
     "text": {
         "color": {
             "default": "#FFFFFFE6",

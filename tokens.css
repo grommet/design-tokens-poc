@@ -288,6 +288,12 @@
   --pageheader-subtitle-typography-tablet-fontWeight: 300;
   --pageheader-subtitle-typography-desktop-fontSize: 1.875rem;
   --pageheader-subtitle-typography-desktop-fontWeight: 300;
+  --tab-borderWidth: 4px;
+  --tab-color: color.text.default;
+  --tab-hover-borderColor: #0000001F;
+  --tab-selected-borderColor: #01A982;
+  --tab-selected-color: #444444;
+  --tab-selected-fontWeight: 700;
   --text-lineHeight: 1.25;
   --text-color: #6F6F6F;
   --text-color-strong: #444444;

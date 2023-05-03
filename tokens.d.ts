@@ -343,6 +343,14 @@ declare const _default: {
     "pageheader.subtitle.typography.tablet.fontWeight": number;
     "pageheader.subtitle.typography.desktop.fontSize": string;
     "pageheader.subtitle.typography.desktop.fontWeight": number;
+    "tab.borderWidth": string;
+    "tab.color": string;
+    "tab.hover.borderColor.light": string;
+    "tab.hover.borderColor.dark": string;
+    "tab.selected.borderColor": string;
+    "tab.selected.color.light": string;
+    "tab.selected.color.dark": string;
+    "tab.selected.fontWeight": number;
     "text.lineHeight": number;
     "text.color.light": string;
     "text.color.dark": string;

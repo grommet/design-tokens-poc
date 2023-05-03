@@ -122,6 +122,14 @@ declare const _default: {
             color: string;
         };
     };
+    tab: {
+        hover: {
+            borderColor: string;
+        };
+        selected: {
+            color: string;
+        };
+    };
     text: {
         color: {
             default: string;

@@ -628,6 +628,18 @@ declare const _default: {
             };
         };
     };
+    tab: {
+        borderWidth: string;
+        color: string;
+        hover: {
+            borderColor: string;
+        };
+        selected: {
+            borderColor: string;
+            color: string;
+            fontWeight: string;
+        };
+    };
     text: {
         lineHeight: string;
         color: {

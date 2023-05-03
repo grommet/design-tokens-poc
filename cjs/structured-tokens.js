@@ -630,6 +630,18 @@ var structuredTokens = {
             }
         }
     },
+    "tab": {
+        "borderWidth": "4px",
+        "color": "color.text.default",
+        "hover": {
+            "borderColor": "#0000001F"
+        },
+        "selected": {
+            "borderColor": "#01A982",
+            "color": "#444444",
+            "fontWeight": "700"
+        }
+    },
     "text": {
         "lineHeight": "1.25",
         "color": {
