@@ -384,7 +384,8 @@ var structuredTokens = {
             "background": "linear-gradient(70deg, transparent, #01A982 35%, transparent 70%) #01A982",
             "hover": {
                 "backgroundColor": "#008567"
-            }
+            },
+            "color": "#fff"
         },
         "option": {
             "borderRadius": "0px",
@@ -442,7 +443,9 @@ var structuredTokens = {
                 "fontSize": "0.875rem"
             }
         },
-        "label": "text.desktop"
+        "label": {
+            "fontSize": "1.125rem"
+        }
     },
     "card": {
         "background": "#FFFFFF",

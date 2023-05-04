@@ -385,6 +385,7 @@ declare const _default: {
             hover: {
                 backgroundColor: string;
             };
+            color: string;
         };
         option: {
             borderRadius: string;
@@ -442,7 +443,9 @@ declare const _default: {
                 fontSize: string;
             };
         };
-        label: string;
+        label: {
+            fontSize: string;
+        };
     };
     card: {
         background: string;

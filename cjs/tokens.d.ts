@@ -216,6 +216,7 @@ declare const _default: {
     "button.cta-primary.hover.background": string;
     "button.primary.background": string;
     "button.primary.hover.backgroundColor": string;
+    "button.primary.color": string;
     "button.option.borderRadius": string;
     "button.option.paddingLeft.mobile": string;
     "button.option.paddingLeft.tablet": string;
@@ -241,7 +242,7 @@ declare const _default: {
     "button.badge.background.light": string;
     "button.badge.background.dark": string;
     "button.badge.label.fontSize": string;
-    "button.label": string;
+    "button.label.fontSize": string;
     "card.background.light": string;
     "card.background.dark": string;
     "card.boxShadow.light": string;
