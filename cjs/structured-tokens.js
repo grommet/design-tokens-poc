@@ -463,8 +463,8 @@ var structuredTokens = {
     },
     "dataTable": {
         "cell": {
-            "paddingTop": "6px",
-            "paddingBottom": "6px",
+            "paddingTop": "24px",
+            "paddingBottom": "24px",
             "paddingLeft": "12px",
             "paddingRight": "12px"
         },
@@ -611,9 +611,9 @@ var structuredTokens = {
     },
     "pageContent": {
         "padding": {
-            "mobile": "24px",
-            "tablet": "48px",
-            "desktop": "48px"
+            "mobile": "12px",
+            "tablet": "24px",
+            "desktop": "24px"
         }
     },
     "pageheader": {
