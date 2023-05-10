@@ -239,81 +239,65 @@ declare const _default: {
         icon: {
             color: string;
         };
-        label: {
-            lineHeight: string;
-            color: {
-                default: string;
-                strong: string;
-                weak: string;
-                xweak: string;
-                disabled: string;
-                selected: string;
-                active: string;
+        xsmall: {
+            mobile: {
+                fontSize: string;
             };
-            xsmall: {
-                mobile: {
-                    fontSize: string;
-                };
-                tablet: {
-                    fontSize: string;
-                };
-                desktop: {
-                    fontSize: string;
-                };
+            tablet: {
+                fontSize: string;
             };
-            small: {
-                mobile: {
-                    fontSize: string;
-                };
-                tablet: {
-                    fontSize: string;
-                };
-                desktop: {
-                    fontSize: string;
-                };
+            desktop: {
+                fontSize: string;
             };
-            medium: {
-                mobile: {
-                    fontSize: string;
-                };
-                tablet: {
-                    fontSize: string;
-                };
-                desktop: {
-                    fontSize: string;
-                };
+        };
+        small: {
+            mobile: {
+                fontSize: string;
             };
-            large: {
-                mobile: {
-                    fontSize: string;
-                };
-                tablet: {
-                    fontSize: string;
-                };
-                desktop: {
-                    fontSize: string;
-                    fontWeight: string;
-                };
+            tablet: {
+                fontSize: string;
             };
-            xlarge: {
-                mobile: {
-                    fontSize: string;
-                };
-                tablet: {
-                    fontSize: string;
-                    fontWeight: string;
-                };
-                desktop: {
-                    fontSize: string;
-                    fontWeight: string;
-                };
+            desktop: {
+                fontSize: string;
+            };
+        };
+        medium: {
+            mobile: {
+                fontSize: string;
+            };
+            tablet: {
+                fontSize: string;
+            };
+            desktop: {
+                fontSize: string;
             };
         };
         large: {
+            mobile: {
+                fontSize: string;
+            };
+            tablet: {
+                fontSize: string;
+            };
+            desktop: {
+                fontSize: string;
+                fontWeight: string;
+            };
             color: string;
             textDecoration: string;
         };
         xlarge: {
+            mobile: {
+                fontSize: string;
+            };
+            tablet: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            desktop: {
+                fontSize: string;
+                fontWeight: string;
+            };
             color: string;
             textDecoration: string;
         };
@@ -332,7 +316,34 @@ declare const _default: {
         disabled: {
             opacity: string;
         };
+        xsmall: {
+            mobile: {
+                fontSize: string;
+            };
+            tablet: {
+                fontSize: string;
+            };
+            desktop: {
+                fontSize: string;
+            };
+            paddingTop: string;
+            paddingBottom: string;
+            paddingLeft: string;
+            paddingRight: string;
+            iconOnly: {
+                padding: string;
+            };
+        };
         small: {
+            mobile: {
+                fontSize: string;
+            };
+            tablet: {
+                fontSize: string;
+            };
+            desktop: {
+                fontSize: string;
+            };
             paddingTop: string;
             paddingBottom: string;
             paddingLeft: string;
@@ -342,6 +353,16 @@ declare const _default: {
             };
         };
         medium: {
+            mobile: {
+                fontSize: string;
+            };
+            tablet: {
+                fontSize: string;
+            };
+            desktop: {
+                fontSize: string;
+                lineHeight: string;
+            };
             paddingTop: string;
             paddingBottom: string;
             paddingLeft: string;
@@ -357,6 +378,16 @@ declare const _default: {
             };
         };
         large: {
+            mobile: {
+                fontSize: string;
+            };
+            tablet: {
+                fontSize: string;
+            };
+            desktop: {
+                fontSize: string;
+                fontWeight: string;
+            };
             paddingTop: string;
             paddingBottom: string;
             paddingLeft: string;
@@ -366,6 +397,17 @@ declare const _default: {
             };
         };
         xlarge: {
+            mobile: {
+                fontSize: string;
+            };
+            tablet: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            desktop: {
+                fontSize: string;
+                fontWeight: string;
+            };
             paddingTop: string;
             paddingBottom: string;
             paddingLeft: string;
@@ -379,6 +421,7 @@ declare const _default: {
             hover: {
                 background: string;
             };
+            color: string;
         };
         primary: {
             background: string;
@@ -411,7 +454,10 @@ declare const _default: {
             };
             selected: {
                 background: string;
+                color: string;
+                fontWeight: string;
             };
+            fontWeight: string;
         };
         secondary: {
             borderWidth: {
@@ -443,20 +489,17 @@ declare const _default: {
                 fontSize: string;
             };
         };
-        label: {
-            fontSize: string;
-        };
+        color: string;
+        fontWeight: string;
     };
     card: {
         background: string;
         boxShadow: string;
         borderRadius: string;
-        body: {
-            padding: {
-                mobile: string;
-                tablet: string;
-                desktop: string;
-            };
+        padding: {
+            mobile: string;
+            tablet: string;
+            desktop: string;
         };
     };
     dataTable: {

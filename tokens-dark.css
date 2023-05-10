@@ -24,15 +24,10 @@
   --elevation-medium-boxShadow: 0px 6px 12px #0000005C;
   --elevation-large-boxShadow: 0px 12px 24px #0000007A;
   --anchor-color: #FFFFFFF5;
-  --anchor-label-color: #FFFFFFE6;
-  --anchor-label-color-strong: #FFFFFFF5;
-  --anchor-label-color-weak: #FFFFFF80;
-  --anchor-label-color-xweak: #FFFFFF33;
-  --anchor-label-color-disabled: #FFFFFF80;
-  --anchor-label-color-active: #FFFFFFF5;
   --button-hover-background: #FFFFFF0F;
   --button-active-background: #FFFFFF0F;
   --button-badge-background: #FFFFFFF5;
+  --button-color: #FFFFFFF5;
   --card-background: #222222;
   --card-boxShadow: 0px 6px 12px #0000005C;
   --dataTable-header-cell-color: #FFFFFFF5;

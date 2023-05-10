@@ -44,17 +44,7 @@ var structuredTokensDark = {
         }
     },
     "anchor": {
-        "color": "#FFFFFFF5",
-        "label": {
-            "color": {
-                "default": "#FFFFFFE6",
-                "strong": "#FFFFFFF5",
-                "weak": "#FFFFFF80",
-                "xweak": "#FFFFFF33",
-                "disabled": "#FFFFFF80",
-                "active": "#FFFFFFF5"
-            }
-        }
+        "color": "#FFFFFFF5"
     },
     "button": {
         "hover": {
@@ -65,7 +55,8 @@ var structuredTokensDark = {
         },
         "badge": {
             "background": "#FFFFFFF5"
-        }
+        },
+        "color": "#FFFFFFF5"
     },
     "card": {
         "background": "#222222",

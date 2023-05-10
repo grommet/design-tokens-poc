@@ -45,16 +45,6 @@ declare const _default: {
     };
     anchor: {
         color: string;
-        label: {
-            color: {
-                default: string;
-                strong: string;
-                weak: string;
-                xweak: string;
-                disabled: string;
-                active: string;
-            };
-        };
     };
     button: {
         hover: {
@@ -66,6 +56,7 @@ declare const _default: {
         badge: {
             background: string;
         };
+        color: string;
     };
     card: {
         background: string;

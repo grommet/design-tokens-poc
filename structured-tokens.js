@@ -239,81 +239,65 @@ var structuredTokens = {
         "icon": {
             "color": "#01A982"
         },
-        "label": {
-            "lineHeight": "1.25",
-            "color": {
-                "default": "#6F6F6F",
-                "strong": "#444444",
-                "weak": "#757575",
-                "xweak": "#BBBBBB",
-                "disabled": "#757575",
-                "selected": "#FFFFFF",
-                "active": "#444444"
+        "xsmall": {
+            "mobile": {
+                "fontSize": "0.875rem"
             },
-            "xsmall": {
-                "mobile": {
-                    "fontSize": "0.875rem"
-                },
-                "tablet": {
-                    "fontSize": "0.875rem"
-                },
-                "desktop": {
-                    "fontSize": "0.875rem"
-                }
+            "tablet": {
+                "fontSize": "0.875rem"
             },
-            "small": {
-                "mobile": {
-                    "fontSize": "0.875rem"
-                },
-                "tablet": {
-                    "fontSize": "0.875rem"
-                },
-                "desktop": {
-                    "fontSize": "1rem"
-                }
+            "desktop": {
+                "fontSize": "0.875rem"
+            }
+        },
+        "small": {
+            "mobile": {
+                "fontSize": "0.875rem"
             },
-            "medium": {
-                "mobile": {
-                    "fontSize": "0.875rem"
-                },
-                "tablet": {
-                    "fontSize": "1rem"
-                },
-                "desktop": {
-                    "fontSize": "1.125rem"
-                }
+            "tablet": {
+                "fontSize": "0.875rem"
             },
-            "large": {
-                "mobile": {
-                    "fontSize": "1rem"
-                },
-                "tablet": {
-                    "fontSize": "1.125rem"
-                },
-                "desktop": {
-                    "fontSize": "1.5rem",
-                    "fontWeight": "300"
-                }
+            "desktop": {
+                "fontSize": "1rem"
+            }
+        },
+        "medium": {
+            "mobile": {
+                "fontSize": "0.875rem"
             },
-            "xlarge": {
-                "mobile": {
-                    "fontSize": "1.125rem"
-                },
-                "tablet": {
-                    "fontSize": "1.5rem",
-                    "fontWeight": "300"
-                },
-                "desktop": {
-                    "fontSize": "1.875rem",
-                    "fontWeight": "300"
-                }
+            "tablet": {
+                "fontSize": "1rem"
+            },
+            "desktop": {
+                "fontSize": "1.125rem"
             }
         },
         "large": {
+            "mobile": {
+                "fontSize": "1rem"
+            },
+            "tablet": {
+                "fontSize": "1.125rem"
+            },
+            "desktop": {
+                "fontSize": "1.5rem",
+                "fontWeight": "700"
+            },
             "color": "#01A982",
             "textDecoration": "none"
         },
         "xlarge": {
+            "mobile": {
+                "fontSize": "1.125rem"
+            },
+            "tablet": {
+                "fontSize": "1.5rem",
+                "fontWeight": "300"
+            },
+            "desktop": {
+                "fontSize": "1.875rem",
+                "fontWeight": "700"
+            },
             "color": "#01A982",
             "textDecoration": "none"
         }
@@ -332,7 +316,34 @@ var structuredTokens = {
         "disabled": {
             "opacity": "0.3"
         },
+        "xsmall": {
+            "mobile": {
+                "fontSize": "0.875rem"
+            },
+            "tablet": {
+                "fontSize": "0.875rem"
+            },
+            "desktop": {
+                "fontSize": "0.875rem"
+            },
+            "paddingTop": "6px",
+            "paddingBottom": "6px",
+            "paddingLeft": "16px",
+            "paddingRight": "16px",
+            "iconOnly": {
+                "padding": "8px"
+            }
+        },
         "small": {
+            "mobile": {
+                "fontSize": "0.875rem"
+            },
+            "tablet": {
+                "fontSize": "0.875rem"
+            },
+            "desktop": {
+                "fontSize": "1rem"
+            },
             "paddingTop": "6px",
             "paddingBottom": "6px",
             "paddingLeft": "18px",
@@ -342,6 +353,16 @@ var structuredTokens = {
             }
         },
         "medium": {
+            "mobile": {
+                "fontSize": "0.875rem"
+            },
+            "tablet": {
+                "fontSize": "1rem"
+            },
+            "desktop": {
+                "fontSize": "19px",
+                "lineHeight": "24px"
+            },
             "paddingTop": "6px",
             "paddingBottom": "6px",
             "paddingLeft": "18px",
@@ -357,6 +378,16 @@ var structuredTokens = {
             }
         },
         "large": {
+            "mobile": {
+                "fontSize": "1rem"
+            },
+            "tablet": {
+                "fontSize": "1.125rem"
+            },
+            "desktop": {
+                "fontSize": "1.5rem",
+                "fontWeight": "300"
+            },
             "paddingTop": "8px",
             "paddingBottom": "8px",
             "paddingLeft": "24px",
@@ -366,6 +397,17 @@ var structuredTokens = {
             }
         },
         "xlarge": {
+            "mobile": {
+                "fontSize": "1.125rem"
+            },
+            "tablet": {
+                "fontSize": "1.5rem",
+                "fontWeight": "300"
+            },
+            "desktop": {
+                "fontSize": "1.875rem",
+                "fontWeight": "300"
+            },
             "paddingTop": "18px",
             "paddingBottom": "18px",
             "paddingLeft": "30px",
@@ -378,7 +420,8 @@ var structuredTokens = {
             "background": "#01A982",
             "hover": {
                 "background": ""
-            }
+            },
+            "color": "#FFFFFF"
         },
         "primary": {
             "background": "linear-gradient(70deg, transparent, #01A982 35%, transparent 70%) #01A982",
@@ -410,8 +453,11 @@ var structuredTokens = {
                 "desktop": "6px"
             },
             "selected": {
-                "background": "#01A982"
-            }
+                "background": "#01A982",
+                "color": "#FFFFFF",
+                "fontWeight": "700"
+            },
+            "fontWeight": "500"
         },
         "secondary": {
             "borderWidth": {
@@ -443,26 +489,23 @@ var structuredTokens = {
                 "fontSize": "0.875rem"
             }
         },
-        "label": {
-            "fontSize": "1.125rem"
-        }
+        "color": "#444444",
+        "fontWeight": "700"
     },
     "card": {
         "background": "#FFFFFF",
         "boxShadow": "0px 6px 12px #0000001F",
         "borderRadius": "12px",
-        "body": {
-            "padding": {
-                "mobile": "12px",
-                "tablet": "24px",
-                "desktop": "24px"
-            }
+        "padding": {
+            "mobile": "12px",
+            "tablet": "24px",
+            "desktop": "24px"
         }
     },
     "dataTable": {
         "cell": {
-            "paddingTop": "24px",
-            "paddingBottom": "24px",
+            "paddingTop": "6px",
+            "paddingBottom": "6px",
             "paddingLeft": "12px",
             "paddingRight": "12px"
         },
