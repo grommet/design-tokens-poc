@@ -1,0 +1,495 @@
+/* from --font-*-url and --font-*-fontWeight */
+@font-face {
+  font-family: "Metric";
+  src: url("https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Light.woff2;") format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Metric";
+  src: url("https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Regular.woff2;") format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Metric";
+  src: url("https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Medium.woff2;") format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Metric";
+  src: url("https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Semibold.woff2;") format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Metric";
+  src: url("https://www.hpe.com/h41225/hfws-static/fonts/metric-hpe-web/MetricHPE-Web-Bold.woff2;") format('woff2');
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: var(--page-minWidth);
+  font-family: var(--font-fontFamily);
+  font-size: var(--text-medium-mobile-fontSize);
+  color: var(--text-color);
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-medium-desktop);
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: var(--card-background);
+  box-shadow: var(--card-boxShadow);
+  border-radius: var(--card-borderRadius);
+  padding: var(--card-padding-mobile);
+}
+
+.card h2,
+.card h3,
+.card h4 {
+  margin-top: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav.row {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-medium-desktop);
+}
+
+nav.row.small {
+  gap: var(--spacing-small-desktop);
+}
+
+h1 {
+  font-size: var(--heading-1-mobile-fontSize);
+  font-weight: var(--heading-1-mobile-fontWeight);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--heading-2-mobile-fontSize);
+  font-weight: var(--heading-2-mobile-fontWeight);
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--heading-3-mobile-fontSize);
+  font-weight: var(--heading-3-mobile-fontWeight);
+  margin: 0;
+}
+
+h4 {
+  font-size: var(--heading-4-mobile-fontSize);
+  font-weight: var(--heading-4-mobile-fontWeight);
+  margin: 0;
+}
+
+p {
+  max-width: 20em;
+  margin: 0;
+}
+
+p.xsmall,
+span.xsmall {
+  font-size: var(--text-xsmall-mobile-fontSize);
+  font-weight: var(--text-xsmall-mobile-fontWeight);
+}
+
+p.small,
+span.small {
+  font-size: var(--text-small-mobile-fontSize);
+  font-weight: var(--text-small-mobile-fontWeight);
+}
+
+p.large,
+span.large {
+  font-size: var(--text-large-mobile-fontSize);
+  font-weight: var(--text-large-mobile-fontWeight);
+}
+
+p.xlarge,
+span.xlarge {
+  font-size: var(--text-xlarge-mobile-fontSize);
+  font-weight: var(--text-xlarge-mobile-fontWeight);
+}
+
+p.weak,
+span.weak {
+  color: var(--text-color-weak);
+}
+
+p.strong,
+span.strong {
+  color: var(--text-color-strong);
+}
+
+p.regular,
+span.regular {
+  font-weight: var(--font-regular-fontWeight);
+}
+
+p.medium,
+span.medium {
+  font-weight: var(--font-medium-fontWeight);
+}
+
+p.semibold,
+span.semibold {
+  font-weight: var(--font-semibold-fontWeight);
+}
+
+p.bold,
+span.bold {
+  font-weight: var(--font-bold-fontWeight);
+}
+
+a {
+  color: var(--anchor-color);
+  text-decoration: var(--anchor-textDecoration);
+  font-size: var(--anchor-medium-mobile-fontSize);
+  font-weight: var(--anchor-fontWeight);
+}
+
+a:hover {
+  text-decoration: var(--anchor-hover-textDecoration);
+}
+
+a.small {
+  font-size: var(--anchor-small-mobile-fontSize);
+}
+
+a.large {
+  font-size: var(--anchor-large-mobile-fontSize);
+  color: var(--anchor-large-color);
+  text-decoration: var(--anchor-large-textDecoration);
+}
+
+button {
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  border-radius: var(--button-borderRadius);
+  color: inherit;
+  font-family: inherit;
+  font-size: var(--button-medium-mobile-fontSize);
+  font-weight: inherit;
+  padding-top: var(--button-medium-paddingTop);
+  padding-bottom: var(--button-medium-paddingBottom);
+  padding-left: var(--button-medium-paddingLeft);
+  padding-right: var(--button-medium-paddingRight);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--button-hover-background);
+}
+
+button.iconOnly {
+  padding: var(--button-medium-iconOnly-padding);
+  line-height: 0;
+}
+
+button.small {
+  font-size: var(--button-small-mobile-fontSize);
+  padding-top: var(--button-small-paddingTop);
+  padding-bottom: var(--button-small-paddingBottom);
+  padding-left: var(--button-small-paddingLeft);
+  padding-right: var(--button-small-paddingRight);
+}
+
+button.small.iconOnly {
+  padding: var(--button-small-iconOnly-padding);
+}
+
+button.large {
+  font-size: var(--button-large-mobile-fontSize);
+  padding-top: var(--button-large-paddingTop);
+  padding-bottom: var(--button-large-paddingBottom);
+  padding-left: var(--button-large-paddingLeft);
+  padding-right: var(--button-large-paddingRight);
+}
+
+button.large.iconOnly {
+  padding: var(--button-large-iconOnly-padding);
+}
+
+button.primary {
+  background: var(--button-primary-background);
+  color: var(--button-primary-color);
+}
+
+button.primary:hover {
+  background-color: var(--button-primary-hover-backgroundColor);
+}
+
+button.secondary {
+  border-style: solid;
+  border-width: var(--button-secondary-borderWidth-mobile-width);
+  border-color: var(--button-secondary-borderColor);
+}
+
+button.secondary:hover {
+  border-width: var(--button-secondary-hover-borderWidth);
+  background: var(--button-secondary-hover-background);
+}
+
+input {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  appearance: none;
+  background: transparent;
+  color: var(--input-value-color);
+  font-weight: var(--input-value-fontWeight);
+  width: 100%;
+  padding-top: var(--input-paddingTop);
+  padding-bottom: var(--input-paddingBottom);
+  padding-left: var(--input-paddingLeft);
+  padding-right: var(--input-paddingRight);
+  border-style: solid;
+  border-width: var(--input-borderSize-width);
+  border-color: var(--input-borderColor-default);
+  border-radius: var(--input-borderRadius);
+}
+
+input::before {
+  box-sizing: border-box;
+}
+
+input::after {
+  box-sizing: border-box;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+.tag {
+  padding: var(--spacing-xsmall-mobile) var(--spacing-medium-mobile);
+  background-color: var(--color-background-contrast);
+  border-radius: 2em;
+}
+
+/* --breakpoints-tablet-minWidth */
+@media (min-width: 768px) {
+  body {
+    font-size: var(--text-medium-tablet-fontSize);
+  }
+
+  .card {
+    padding: var(--card-padding-tablet);
+  }
+
+  h1 {
+    font-size: var(--heading-1-tablet-fontSize);
+    font-weight: var(--heading-1-tablet-fontWeight);
+  }
+
+  h2 {
+    font-size: var(--heading-2-tablet-fontSize);
+    font-weight: var(--heading-2-tablet-fontWeight);
+  }
+
+  h3 {
+    font-size: var(--heading-3-tablet-fontSize);
+    font-weight: var(--heading-3-tablet-fontWeight);
+  }
+
+  h4 {
+    font-size: var(--heading-4-tablet-fontSize);
+    font-weight: var(--heading-4-tablet-fontWeight);
+  }
+
+  p.xsmall,
+  span.xsmall {
+    font-size: var(--text-xsmall-tablet-fontSize);
+    font-weight: var(--text-xsmall-tablet-fontWeight);
+  }
+
+  p.small,
+  span.small {
+    font-size: var(--text-small-tablet-fontSize);
+    font-weight: var(--text-small-tablet-fontWeight);
+  }
+
+  p.large,
+  span.large {
+    font-size: var(--text-large-tablet-fontSize);
+    font-weight: var(--text-large-tablet-fontWeight);
+  }
+
+  p.xlarge,
+  span.xlarge {
+    font-size: var(--text-xlarge-tablet-fontSize);
+    font-weight: var(--text-xlarge-tablet-fontWeight);
+  }
+
+  a {
+    font-size: var(--anchor-medium-tablet-fontSize);
+  }
+
+  a.xsmall,
+  nav.xsmall a {
+    font-size: var(--anchor-xsmall-tablet-fontSize);
+  }
+
+  a.small,
+  nav.small a {
+    font-size: var(--anchor-small-tablet-fontSize);
+  }
+
+  a.large,
+  nav.large a {
+    font-size: var(--anchor-large-tablet-fontSize);
+  }
+
+  button {
+    font-size: var(--button-medium-tablet-fontSize);
+  }
+
+  button.small {
+    font-size: var(--button-small-tablet-fontSize);
+  }
+
+  button.large {
+    font-size: var(--button-large-tablet-fontSize);
+  }
+
+  .tag {
+    padding: var(--spacing-xsmall-tablet) var(--spacing-medium-tablet);
+  }
+}
+
+/* --breakpoints-desktop-minWidth */
+@media (min-width: 1536px) {
+  body {
+    font-size: var(--text-medium-desktop-fontSize);
+  }
+
+  .card {
+    padding: var(--card-padding-desktop);
+  }
+
+  h1 {
+    font-size: var(--heading-1-desktop-fontSize);
+    font-weight: var(--heading-1-desktop-fontWeight);
+  }
+
+  h2 {
+    font-size: var(--heading-2-desktop-fontSize);
+    font-weight: var(--heading-2-desktop-fontWeight);
+  }
+
+  h3 {
+    font-size: var(--heading-3-desktop-fontSize);
+    font-weight: var(--heading-3-desktop-fontWeight);
+  }
+
+  h4 {
+    font-size: var(--heading-4-desktop-fontSize);
+    font-weight: var(--heading-4-desktop-fontWeight);
+  }
+
+  p.xsmall,
+  span.xsmall {
+    font-size: var(--text-xsmall-desktop-fontSize);
+    font-weight: var(--text-xsmall-desktop-fontWeight);
+  }
+
+  p.small,
+  span.small {
+    font-size: var(--text-small-desktop-fontSize);
+    font-weight: var(--text-small-desktop-fontWeight);
+  }
+
+  p.large,
+  span.large {
+    font-size: var(--text-large-desktop-fontSize);
+    font-weight: var(--text-large-desktop-fontWeight);
+  }
+
+  p.xlarge,
+  span.xlarge {
+    font-size: var(--text-xlarge-desktop-fontSize);
+    font-weight: var(--text-xlarge-desktop-fontWeight);
+  }
+
+  p.strong,
+  span.strong {
+    color: var(--text-color-strong);
+  }
+
+  p.regular,
+  span.regular {
+    font-weight: var(--font-regular-fontWeight);
+  }
+
+  p.medium,
+  span.medium {
+    font-weight: var(--font-medium-fontWeight);
+  }
+
+  p.semibold,
+  span.semibold {
+    font-weight: var(--font-semibold-fontWeight);
+  }
+
+  p.bold,
+  span.bold {
+    font-weight: var(--font-bold-fontWeight);
+  }
+
+  a {
+    font-size: var(--anchor-medium-tablet-fontSize);
+  }
+
+  a.xsmall,
+  nav.xsmall a {
+    font-size: var(--anchor-xsmall-desktop-fontSize);
+  }
+
+  a.small,
+  nav.small a {
+    font-size: var(--anchor-small-desktop-fontSize);
+  }
+
+  a.large,
+  nav.large a {
+    font-size: var(--anchor-large-desktop-fontSize);
+  }
+
+  button {
+    font-size: var(--button-large-tablet-fontSize);
+  }
+
+  button.small {
+    font-size: var(--button-large-tablet-fontSize);
+  }
+
+  button.large {
+    font-size: var(--button-large-tablet-fontSize);
+  }
+
+  .tag {
+    padding: var(--spacing-xsmall-desktop) var(--spacing-medium-desktop);
+  }
+}
