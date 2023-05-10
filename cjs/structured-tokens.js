@@ -370,7 +370,7 @@ var structuredTokens = {
             "paddingLeft": "18px",
             "paddingRight": "18px",
             "iconOnly": {
-                "padding": "9px"
+                "padding": "10px"
             },
             "toolbar": {
                 "paddingTop": "6px",
@@ -506,8 +506,8 @@ var structuredTokens = {
     },
     "dataTable": {
         "cell": {
-            "paddingTop": "6px",
-            "paddingBottom": "6px",
+            "paddingTop": "24px",
+            "paddingBottom": "24px",
             "paddingLeft": "12px",
             "paddingRight": "12px"
         },
@@ -588,7 +588,7 @@ var structuredTokens = {
             "height": "1.875rem"
         },
         "xxlarge": {
-            "height": "text.xxlarge.desktop.fontSize"
+            "height": "2.25rem"
         }
     },
     "input": {
@@ -754,6 +754,76 @@ var structuredTokens = {
             },
             "desktop": {
                 "fontSize": "1.875rem",
+                "fontWeight": "300"
+            }
+        },
+        "xxlarge": {
+            "mobile": {
+                "fontSize": "1.5rem",
+                "fontWeight": "300"
+            },
+            "tablet": {
+                "fontSize": "1.875rem",
+                "fontWeight": "300"
+            },
+            "desktop": {
+                "fontSize": "2.25rem",
+                "fontWeight": "300"
+            }
+        },
+        "3xl": {
+            "mobile": {
+                "fontSize": "1.875rem",
+                "fontWeight": "300"
+            },
+            "tablet": {
+                "fontSize": "2.25rem",
+                "fontWeight": "300"
+            },
+            "desktop": {
+                "fontSize": "2.625rem",
+                "fontWeight": "300"
+            }
+        },
+        "4xl": {
+            "mobile": {
+                "fontSize": "2.25rem",
+                "fontWeight": "300"
+            },
+            "tablet": {
+                "fontSize": "2.625rem",
+                "fontWeight": "300"
+            },
+            "desktop": {
+                "fontSize": "3rem",
+                "fontWeight": "300"
+            }
+        },
+        "5xl": {
+            "mobile": {
+                "fontSize": "2.625rem",
+                "fontWeight": "300"
+            },
+            "tablet": {
+                "fontSize": "3rem",
+                "fontWeight": "300"
+            },
+            "desktop": {
+                "fontSize": "4.5rem",
+                "fontWeight": "300"
+            }
+        },
+        "6xl": {
+            "mobile": {
+                "fontSize": "2.625rem",
+                "fontWeight": "300"
+            },
+            "tablet": {
+                "fontSize": "3rem",
+                "fontWeight": "300"
+            },
+            "desktop": {
+                "fontSize": "4.5rem",
                 "fontWeight": "300"
             }
         }

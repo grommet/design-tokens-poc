@@ -755,6 +755,76 @@ declare const _default: {
                 fontWeight: string;
             };
         };
+        xxlarge: {
+            mobile: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            tablet: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            desktop: {
+                fontSize: string;
+                fontWeight: string;
+            };
+        };
+        "3xl": {
+            mobile: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            tablet: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            desktop: {
+                fontSize: string;
+                fontWeight: string;
+            };
+        };
+        "4xl": {
+            mobile: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            tablet: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            desktop: {
+                fontSize: string;
+                fontWeight: string;
+            };
+        };
+        "5xl": {
+            mobile: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            tablet: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            desktop: {
+                fontSize: string;
+                fontWeight: string;
+            };
+        };
+        "6xl": {
+            mobile: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            tablet: {
+                fontSize: string;
+                fontWeight: string;
+            };
+            desktop: {
+                fontSize: string;
+                fontWeight: string;
+            };
+        };
     };
 };
 export default _default;
