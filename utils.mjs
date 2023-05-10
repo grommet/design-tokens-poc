@@ -24,6 +24,21 @@
 //   return res;
 // };
 
+const merge = (arg1, arg2) => {
+  // bias to second, to mimic Object spread behavior
+  if (typeof arg1 !== 'object' || typeof arg2 !== 'object') return arg2;
+  const result = {};
+  Object.keys(arg1).forEach(k => {
+    if (arg2[k] !== undefined) {
+      result[k] = merge(arg1[k], arg2[k]);
+    } else result[k] = arg1[k];
+  });
+  Object.keys(arg2).forEach(k => {
+    if (arg1[k] === undefined) result[k] = arg2[k];
+  });
+  return result;
+};
+
 export const stretchAndResolveTokens = tokens => {
   const result = {};
 
@@ -61,11 +76,18 @@ export const stretchAndResolveTokens = tokens => {
 
   resolve(result);
 
-  // third, remove 'v'
+  // third, remove 'v' and merge objects
 
   const prune = node => {
     Object.keys(node).forEach(key => {
-      while (node[key].v !== undefined) node[key] = node[key].v;
+      while (node[key].v !== undefined) {
+        const v = node[key].v;
+        if (Object.keys(node[key]).length === 1) node[key] = v;
+        else {
+          node[key] = merge(v, node[key]);
+          delete node[key].v;
+        }
+      }
       if (typeof node[key] === 'object') prune(node[key]);
     });
   };
