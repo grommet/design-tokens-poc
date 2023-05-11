@@ -10,12 +10,10 @@ Currently, there are tokens for global concepts like spacing, rounding, border s
 
 ## Installation
 
+There is not yet an official release of this repository. If you'd like to experiment consuming the design tokens, point to the stable branch in your `package.json`.
+
 ```
-yarn add hpe-design-tokens
-```
-OR
-```
-npm install hpe-design-tokens
+"hpe-design-tokens": "https://github.com/grommet/hpe-design-tokens/tarball/stable"
 ```
 
 
