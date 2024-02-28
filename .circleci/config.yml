@@ -70,6 +70,8 @@ workflows:
               ignore:
                 - stable
       - release-stable:
+          context:
+            - Grommet Team
           requires:
             - build
           filters:
