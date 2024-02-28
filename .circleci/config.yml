@@ -48,16 +48,13 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/grommet-ci
-      - run:
-          command: |
-            echo $CHROMATIC_TOKEN
+      - run: echo $CHROMATIC_TOKEN
   release-stable:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/grommet-ci
-      - run:
-        command: echo $GH_TOKEN
+      - run: echo $GH_TOKEN
       - run:
           command: |
             git config --global user.name "Grommet Community Bot"
