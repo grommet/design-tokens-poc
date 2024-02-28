@@ -4,7 +4,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import { simpleGit as git } from 'simple-git';
 
-const repoURL = `https://${process.env.GH_TOKEN}@github.com/grommet/hpe-design-tokens.git`;
+const repoURL = `https://${process.env.GH_TOKEN_SHARED}@github.com/grommet/hpe-design-tokens.git`;
 const localFolder = path.resolve('.tmp/hpe-design-tokens');
 const localDist = path.resolve('dist');
 
