@@ -43,11 +43,23 @@ jobs:
           root: ~/grommet-ci
           paths:
             - ./
+  tokens:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/grommet-ci
+      - run:
+          command: |
+            echo $CHROMATIC_TOKEN
+            echo $GH_TOKEN
+            echo $SECRET_NPM_TOKEN
   release-stable:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/grommet-ci
+      - run:
+        command: echo $GH_TOKEN
       - run:
           command: |
             git config --global user.name "Grommet Community Bot"
@@ -69,6 +81,9 @@ workflows:
             branches:
               ignore:
                 - stable
+      - tokens:
+          requires:
+            - build
       - release-stable:
           context:
             - Grommet Team
