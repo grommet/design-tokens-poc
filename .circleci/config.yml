@@ -51,8 +51,6 @@ jobs:
       - run:
           command: |
             echo $CHROMATIC_TOKEN
-            echo $GH_TOKEN
-            echo $SECRET_NPM_TOKEN
   release-stable:
     <<: *defaults
     steps:
