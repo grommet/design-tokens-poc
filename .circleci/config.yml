@@ -81,7 +81,7 @@ workflows:
             - build
       - release-stable:
           context:
-            - Grommet Team
+            - grommet-team
           requires:
             - build
           filters:
