@@ -49,7 +49,7 @@ jobs:
       - attach_workspace:
           at: ~/grommet-ci
       - run: echo $CHROMATIC_TOKEN
-  release-stable:
+  test-workflow:
     <<: *defaults
     steps:
       - attach_workspace:
