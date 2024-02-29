@@ -14,6 +14,7 @@
   ],
   "scripts": {
     "test": "jest --config=jest.config.es.js && jest --config=jest.config.ts.js",
+    "test-workflow": "babel-node ./tools/test-script.mjs",
     "build": "rm -rf ./dist && node build.mjs && rollup -c ./rollup.config.mjs",
     "push": "cd dist && yalc push",
     "release-stable": "babel-node ./tools/release-stable.mjs"

@@ -54,6 +54,13 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/grommet-ci
+      - run: echo $GH_TOKEN
+      - run: yarn test-workflow
+  release-stable:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/grommet-ci
       - run: echo $GH_TOKEN_SHARED
       - run:
           command: |
@@ -79,6 +86,15 @@ workflows:
       - tokens:
           requires:
             - build
+      - test-workflow:
+          context:
+            - grommet-team
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - main
       - release-stable:
           context:
             - grommet-team

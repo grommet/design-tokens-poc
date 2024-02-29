@@ -5,3 +5,4 @@ yarn-error.log
 structured-*.ts
 tokens.ts
 tokens.json
+.env
