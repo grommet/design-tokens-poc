@@ -91,10 +91,6 @@ workflows:
             - grommet-team
           requires:
             - build
-          filters:
-            branches:
-              only:
-                - main
       - release-stable:
           context:
             - grommet-team
